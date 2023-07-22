@@ -10,11 +10,11 @@ export function Header(props: HeaderProps){
         <header className='flex items-center mx-auto px-[8rem] py-[1.8rem] '>
             <Image src={logo} alt={'logo-hos'} className='w-auto h-[3rem]' />
             <div className='flex justify-center items-center mx-autotext-[0.8rem] font-semibold  text-grafite '>
-                <a href="" className='mr-[1.8rem] ml-[6rem]'>Soluções</a>
-                <a href="" className='mr-[1.8rem]'>Sobre</a>
-                <a href="" className='mr-[1.8rem]'>Suporte</a>
-                <a href="" className='mr-[1.8rem]'>Universidade</a>
-                <a href="" className='mr-[14rem]'>Blog</a>
+                <a href="" className='mr-[1.8rem] ml-[6rem] hover:text-vermelho'>Soluções</a>
+                <a href="" className='mr-[1.8rem] hover:text-vermelho'>Sobre</a>
+                <a href="" className='mr-[1.8rem] hover:text-vermelho'>Suporte</a>
+                <a href="" className='mr-[1.8rem] hover:text-vermelho'>Universidade</a>
+                <a href="" className='mr-[14rem] hover:text-vermelho'>Blog</a>
             </div>
 
             <div className=' flex items-center'>
