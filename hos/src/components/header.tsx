@@ -9,8 +9,8 @@ interface HeaderProps {
 export function Header(props: HeaderProps){
     return(
         <header className='py-[5rem] px-[3rem] flex justify-around  tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:max-h-[82px]'>
-            <Image src={logo} alt={'logo-hos'} className='h-[3rem]  tablet:w-auto tablet:h-[3rem]' />
-            <span className="w-[3rem] border-2 border-vermelho rounded-md   bg-white px-0 cursor-pointer tablet:hidden block">
+            <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto tablet:w-auto tablet:h-[4.3rem] tablet:ml-[3rem]' />
+            <span className="w-[4rem] h-auto flex border-2 border-vermelho rounded-md   bg-white px-0 cursor-pointer tablet:hidden block">
                 <Image src={hamburguer} alt='menu hamburguer' className=''/>
             </span>
             <div className='hidden tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:text-[0.8rem] tablet:font-semibold tablet:text-grafite '>               
