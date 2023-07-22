@@ -6,6 +6,9 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens:{
+      'tablet':'1024px',
+    },
     extend: {
       colors:{
         'grafite': '#212121',

@@ -2,6 +2,7 @@
 
 export default function Home() {
   return (
-    <h1></h1>
+    <div className="bg-laranja h-[40rem] w-auto">
+      </div>
  )
 }
