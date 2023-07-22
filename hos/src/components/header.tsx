@@ -13,6 +13,7 @@ interface HeaderProps {
 export function Header(props: HeaderProps){
     const [botao1Visivel, setbotao1Visivel] = useState(true)
     const [botao2Visivel, setbotao2Visivel] = useState(false)
+    const [iniciar, setIniciar] = useState(false)
 
     const visibilidadeBotao = () => {
         setbotao1Visivel((prev) => !prev)
@@ -25,18 +26,19 @@ export function Header(props: HeaderProps){
         <header className='py-[5rem] px-[3rem] flex justify-between tablet:max-w-[1200px] tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:max-h-[82px]'>
             <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto tablet:w-auto tablet:h-[4.3rem] tablet:ml-[3rem]' />
             <div>
-            {botao2Visivel && (
+            {botao1Visivel && (
                 <button onClick={visibilidadeBotao} 
                 className="absolute right-11 w-[4rem] h-auto flex border-2 border-vermelho rounded-md   bg-white px-0 cursor-pointer tablet:hidden ">
                     <Image src={hamburguer} alt='menu hamburguer'/>
                 </button>
             )}
-            {botao1Visivel && (
+            {botao2Visivel && (
                 <button onClick={visibilidadeBotao} 
-                className="absolute px-[0.8rem] font-semibold text-vermelho text-[2rem] right-11 w-[3rem] h-auto flex border-2 border-vermelho rounded-md   bg-white cursor-pointer tablet:hidden ">
+                className='absolute px-[0.8rem] font-semibold text-vermelho text-[rem] right-11 w-[3rem] h-auto flex border-2 border-vermelho rounded-md   bg-white cursor-pointer tablet:hidden '>
                     X
                 </button>
             )}
+
             </div>
             <div className='hidden tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto '>
 
@@ -59,14 +61,14 @@ export function Header(props: HeaderProps){
             </div>
         </header> 
             
-        <div className={`bg-vermelho ${botao1Visivel ? 'visible animate-slide-down' : 'hidden'}`}>
+        <div className={`bg-vermelho ${botao1Visivel ? 'hidden' : 'visible transition-all duration-300'}`}>
 
             <div className='tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:text-[0.8rem] tablet:font-semibold tablet:text-grafite '>               
-                    <a href="" className='mr-[1.8rem] tablet:ml-[1rem] hover:text-vermelho'>Soluções</a>
-                    <a href="" className='mr-[1.8rem] hover:text-vermelho'>Sobre</a>
-                    <a href="" className='mr-[1.8rem] hover:text-vermelho'>Suporte</a>
-                    <a href="" className='mr-[1.8rem] hover:text-vermelho'>Universidade</a>
-                    <a href="" className='mr-[3rem] hover:text-vermelho'>Blog</a>
+                    <a href="" className='mr-[1.8rem] tablet:ml-[1rem]'>Soluções</a>
+                    <a href="" className='mr-[1.8rem] '>Sobre</a>
+                    <a href="" className='mr-[1.8rem] '>Suporte</a>
+                    <a href="" className='mr-[1.8rem] '>Universidade</a>
+                    <a href="" className='mr-[3rem]' >Blog</a>
             </div>
 
             <div className='tablet:flex items-center'>
