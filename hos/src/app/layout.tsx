@@ -1,4 +1,5 @@
 import { Header } from '@/components/header'
+import { HeroSection } from '@/components/herosection'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Red_Hat_Display } from 'next/font/google'
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={red.className}>
-        <Header />
+
         {children}</body>
     </html>
   )

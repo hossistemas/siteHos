@@ -19,6 +19,9 @@ module.exports = {
       animation: {
         'slide-down': 'slideDown 0.5s ease-in',
       },
+      transitionDuration: {
+        '2000': '2000ms',
+      },
       keyframes: {
         slideDown: {
           '0%': { transform: 'translateY(0)', opacity: 0 },

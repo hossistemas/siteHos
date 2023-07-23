@@ -61,7 +61,7 @@ export function Header(props: HeaderProps){
             </div>
         </header> 
             
-        <div className={`bg-vermelho ${botao1Visivel ? 'hidden' : 'visible transition-all duration-300'}`}>
+        <div className={`bg-vermelho  ${botao1Visivel ? 'hidden' : 'visible transition-all ease-in duration-500'}`}>
 
             <div className='grid gap-y-3 text-white pt-[1rem] ml-[3rem] text-[1rem] font-semibold tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:text-[0.8rem] tablet:font-semibold tablet:text-grafite '>               
                     <a href="" className=''>Soluções</a>

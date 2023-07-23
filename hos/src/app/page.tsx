@@ -1,8 +1,12 @@
+import { Header } from "@/components/header";
+import { HeroSection } from "@/components/herosection";
 
 
 export default function Home() {
   return (
-    <div className="bg-laranja h-[40rem] w-auto">
-      </div>
+    <>
+    <Header />
+    <HeroSection />
+    </>
  )
 }
