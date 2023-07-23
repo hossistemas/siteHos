@@ -23,7 +23,7 @@ export function Sistema(props: SistemaProps){
     return(
       
         <Carousel>
-        <div>
+        <div className=''>
         <h3 style={contentStyle}>1</h3>
         </div>
         <div>
