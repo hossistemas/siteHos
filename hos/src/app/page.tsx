@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/herosection/herosection";
+import { Beneficios } from "@/components/beneficios/beneficios";
 import banner from '../../public/banner.png'
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       buttonClassName={"bg-darker text-white"}
       img={banner}
     />
+    <Beneficios />
 
       
 
