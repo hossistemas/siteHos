@@ -1,6 +1,6 @@
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/herosection/herosection";
-import banner from '../../public/banner1.png'
+import banner from '../../public/banner.png'
 
 export default function Home() {
   return (
