@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import arrow from '../../../public/arrow.svg'
 import { useState } from 'react'
 
 interface HeroSectionProps {
@@ -27,7 +28,10 @@ export function HeroSection({title, text, img, bgClassName, titleClassName, text
             <div className='flex justify-center'>
                 <Image src={img} alt='' className='h-auto w-[15rem]'/>
             </div>
-
+            
+            <div className='hidden justify-center bg-magenta rounded-lg px-4 py-6 rotate-45'>
+                <Image src={arrow} alt='' className='' />
+            </div>
 
         </div>
 
