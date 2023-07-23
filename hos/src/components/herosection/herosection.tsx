@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import arrow from '../../../public/arrow.svg'
-import { useState } from 'react'
+
 
 interface HeroSectionProps {
     title: string;
