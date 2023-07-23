@@ -4,6 +4,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Red_Hat_Display } from 'next/font/google'
 
+
+
 const red = Red_Hat_Display({ 
   weight: ['400', '500','600', '700'],
   subsets: ['latin'] })
@@ -21,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={red.className}>
-
-        {children}</body>
+      {children}
+        </body>
     </html>
   )
 }

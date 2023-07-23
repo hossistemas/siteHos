@@ -1,6 +1,7 @@
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/herosection/herosection";
 import { Beneficios } from "@/components/beneficios/beneficios";
+import { Sistema } from "@/components/sistema/sistema";
 import banner from '../../public/banner.png'
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
       img={banner}
     />
     <Beneficios />
-
+    <Sistema />
       
 
     </>
