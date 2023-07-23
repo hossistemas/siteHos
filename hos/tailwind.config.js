@@ -34,6 +34,7 @@ module.exports = {
         'magenta': '#FF4358',
         'darker': '#4C1813',
         'vermelho': '#DA4536',
+        'white': '#FBFBFB',
       }
     },
   },

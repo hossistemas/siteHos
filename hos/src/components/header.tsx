@@ -23,7 +23,7 @@ export function Header(props: HeaderProps){
 
     return(
         <>
-        <header className='py-[5rem] px-[3rem] flex justify-between tablet:max-w-[1200px] tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:max-h-[82px]'>
+        <header className='py-[5rem] px-[3rem] flex justify-between tablet: tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:max-h-[82px]'>
             <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto tablet:w-auto tablet:h-[4.3rem] tablet:ml-[3rem]' />
             <div>
             {botao1Visivel && (
