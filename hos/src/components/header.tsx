@@ -23,18 +23,20 @@ export function Header(props: HeaderProps){
 
     return(
         <>
-        <header className='py-[5rem] px-[3rem] flex justify-between tablet:max-w-[1200px] tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:max-h-[82px]'>
-            <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto tablet:w-auto tablet:h-[4.3rem] tablet:ml-[3rem]' />
+        <header className='py-[5rem] px-[3rem] flex justify-between tablet: tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:max-h-[82px] tablet:w-auto'>
+            <div className='tablet:flex tablet:justify-center tablet:mx-auto tablet:max-w-[1200px]'>
+
+                <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto  tablet:h-[4.3rem] tablet:mr-[3rem] tablet:max-w-[1200px]' />
             <div>
             {botao1Visivel && (
                 <button onClick={visibilidadeBotao} 
-                className="absolute right-11 w-[4rem] h-auto flex border-2 border-vermelho rounded-md   bg-white px-0 cursor-pointer tablet:hidden ">
+                className="absolute right-[135px] -mr-[4rem] top-[90px] w-[4rem] h-auto flex border-2 border-vermelho rounded-md   bg-white px-0 cursor-pointer tablet:hidden ">
                     <Image src={hamburguer} alt='menu hamburguer'/>
                 </button>
             )}
             {botao2Visivel && (
                 <button onClick={visibilidadeBotao} 
-                className='absolute  py-[1rem] px-[1rem] right-11 w-[5rem] h-auto flex border-2 border-vermelho rounded-md   bg-white cursor-pointer tablet:hidden '>
+                className='absolute  py-[1rem] px-[1rem] right-[135px] -mr-[4rem] top-[90px] w-[5rem] h-auto flex border-2 border-vermelho rounded-md   bg-white cursor-pointer tablet:hidden '>
                     <Image src={xis} alt='menu hamburguer' className='w-[4rem] '/>
                 </button>
             )}
@@ -50,17 +52,19 @@ export function Header(props: HeaderProps){
                         <a href="" className='mr-[3rem] hover:text-vermelho'>Blog</a>
                 </div>
 
-                <div className='tablet:flex items-center'>
+                <div className='tablet:flex items-center tablet:'>
                     <div className='tablet:flex tablet:justify-center tablet:items-center'>
-                        <button className='tablet:bg-gradient-to-b tablet:from-laranja tablet:to-magenta tablet:hover:bg-gradient-to-b tablet:hover:from-darker tablet:hover:to-darker tablet:hover:duration-1000 tablet:text-[0.8rem] tablet:font-semibold tablet:text-white tablet:rounded-md tablet:w-[13rem] tablet:px-[1.5rem] tablet:py-[1rem] '>Solicite uma demonstração</button>
+                        <button className='tablet:bg-gradient-to-b tablet:from-laranja tablet:to-magenta tablet:hover:bg-gradient-to-b tablet:hover:from-darker tablet:hover:to-darker tablet:hover:duration-1000 tablet:text-[0.8rem] tablet:font-semibold tablet:text-white tablet:rounded-md tablet:w-[13rem] tablet:px-[1.5rem] tablet:py-[0.5rem] '>Solicite uma demonstração</button>
                     </div>
-                    <div className='tablet:flex tablet:ml-[2rem] tablet:justify-center tablet:items-center tablet:bg-white tablet:border-2 tablet:border-vermelho tablet:rounded-md tablet:w-[13rem] tablet:px-[1.5rem] tablet:py-[0.8rem]'>
+                    <div className='tablet:flex tablet:ml-[1rem] tablet:justify-center tablet:items-center tablet:bg-white tablet:border-2 tablet:border-vermelho tablet:rounded-md tablet:w-[9rem] tablet:px-[0.5rem] tablet:py-[0.4rem]'>
                         <button className='tablet:text-[0.8rem] tablet:font-semibold  tablet:text-vermelho'>Área do cliente</button>
                     </div>
                 </div>
             </div>
+            </div>
         </header> 
             
+    
         <div className={`bg-vermelho  ${botao1Visivel ? 'hidden' : 'visible transition-all ease-in duration-500'}`}>
 
             <div className='grid gap-y-3 text-white pt-[1rem] ml-[3rem] text-[1rem] font-semibold tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:text-[0.8rem] tablet:font-semibold tablet:text-grafite '>               
