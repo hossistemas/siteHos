@@ -13,7 +13,7 @@ export function Beneficios(props: BeneficiosProps){
             <div className="max-w-[460px] mx-auto tablet:max-w-[1200px] tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto">
 
                 <div className="pb-[1.7rem] tablet:mr-[4rem]">
-                    <Image src={beneficios} alt="" className="max-w-[17rem] h-auto mx-auto tablet:max-w-[37rem] tablet:h-auto"/>
+                    <Image src={beneficios} alt="" className="max-w-[17rem] h-auto mx-auto tablet:max-w-[33rem] tablet:h-auto"/>
                 </div>
 
                 <div className="max-w-[17rem] mx-auto tablet:max-w-[27rem]">
