@@ -9,33 +9,21 @@ interface SistemaProps {
 
 
 
-const contentStyle: React.CSSProperties = {
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-  };
+
 
 
 export function Sistema(props: SistemaProps){
 
     return(
-      
+        <div>
+            <h1>Por que o HOS é o melhor sistema para você?</h1>
         <Carousel>
-        <div className=''>
-        <h3 style={contentStyle}>1</h3>
+            <div className=''>
+            <h3>1</h3>
+            </div>
+    
+        </Carousel>
         </div>
-        <div>
-        <h3 style={contentStyle}>2</h3>
-        </div>
-        <div>
-        <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-        <h3 style={contentStyle}>4</h3>
-        </div>
-    </Carousel>
 
     
        
