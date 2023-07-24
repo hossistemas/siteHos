@@ -1,8 +1,8 @@
 import { Header } from "@/components/header";
-import { HeroSection } from "@/components/herosection/herosection";
-import { Beneficios } from "@/components/beneficios/beneficios";
-import { Sistema } from "@/components/sistema/sistema";
-import banner from '../../public/banner.png'
+import { HeroSection } from "@/components/herosection";
+import { Beneficios } from "@/components/beneficios";
+import { Sistema } from "@/components/sistema";
+import banner from '../../public/Homepage.png'
 
 export default function Home() {
   return (
@@ -14,11 +14,11 @@ export default function Home() {
       titleClassName={"text-white"}
       text={"Temos a receita certa para o sucesso da sua drogaria ou farmácia de manipulação."} 
       textClassName={"text-white"}
-      buttonClassName={"bg-darker text-white"}
+      buttonClassName={"bg-darker text-white hover:bg-white hover:text-darker hover:transition hover:duration-500"}
       img={banner}
     />
     <Beneficios />
-    <Sistema />
+    <Sistema onClick={undefined} />
       
 
     </>

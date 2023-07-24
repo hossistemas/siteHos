@@ -1,5 +1,3 @@
-import { Header } from '@/components/header'
-import { HeroSection } from '@/components/herosection/herosection'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Red_Hat_Display } from 'next/font/google'
