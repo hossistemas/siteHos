@@ -26,7 +26,7 @@ export function Header(props: HeaderProps){
         <header className='py-[5rem] px-[3rem] flex justify-between tablet: tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:max-h-[82px] tablet:w-auto'>
             <div className='tablet:flex tablet:justify-center tablet:mx-auto tablet:max-w-[1200px]'>
 
-                <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto  tablet:h-[4.3rem] tablet:mr-[3rem] tablet:max-w-[1200px]' />
+                <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto  tablet:h-[4.3rem] tablet:mr-[8rem] tablet:max-w-[1200px]' />
             <div>
             {botao1Visivel && (
                 <button onClick={visibilidadeBotao} 
@@ -42,7 +42,7 @@ export function Header(props: HeaderProps){
             )}
 
             </div>
-            <div className='hidden tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto '>
+            <div className='hidden tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:-ml-[5rem] '>
 
                 <div className='tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:text-[0.8rem] tablet:font-semibold tablet:text-grafite '>               
                         <a href="" className='mr-[1.8rem] tablet:ml-[1rem] hover:text-vermelho'>Soluções</a>
@@ -52,7 +52,7 @@ export function Header(props: HeaderProps){
                         <a href="" className='mr-[3rem] hover:text-vermelho'>Blog</a>
                 </div>
 
-                <div className='tablet:flex items-center tablet:'>
+                <div className='tablet:flex items-center tablet:ml-[4rem]'>
                     <div className='tablet:flex tablet:justify-center tablet:items-center'>
                         <button className='tablet:bg-gradient-to-b tablet:from-laranja tablet:to-magenta tablet:hover:bg-gradient-to-b tablet:hover:from-darker tablet:hover:to-darker tablet:hover:duration-1000 tablet:text-[0.8rem] tablet:font-semibold tablet:text-white tablet:rounded-md tablet:w-[13rem] tablet:px-[1.5rem] tablet:py-[0.5rem] '>Solicite uma demonstração</button>
                     </div>
