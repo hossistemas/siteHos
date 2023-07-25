@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import React from 'react';
 import lucro from '../../public/Lucro.svg'
@@ -20,11 +22,12 @@ interface SistemaProps {
 export function Sistema(props: SistemaProps){
     const [currentIndex, setCurrentIndex] = useState(0)
 
-    const prevSlide =() =>{
-        const isFirstSlide = currentIndex === 0;
-        const newIndex = isFirstSlide ? cards.length - 1 : currentIndex -1;
+    const prevCard =() =>{
+        const isFirstCard = currentIndex === 0;
+        const newIndex = isFirstCard ? cards.length - 1 : currentIndex -1;
+        setCurrentIndex(newIndex);
     }
-    const nextSlide =() =>{}
+    const nextCard =() =>{}
 
     const cards = [
 
@@ -49,18 +52,16 @@ export function Sistema(props: SistemaProps){
             
             <div className='flex justify-center items-center mx-auto cursor-pointer relative group'>
                 <div className='group-hover:block'>
-                    <Image src={arrow} alt='' className='hidden rotate-180'/>
+                    <Image src={arrow} alt='' className='hidden rotate-180' onClick={prevCard}/>
                 </div>
 
-                <div ref={cards}></div>
+                <Image src={cards[currentIndex]} alt=''/>
             
                 </div>
             <div className='group-hover:block'>
-                <Image src={arrow} alt='' className='hidden cursor-pointer' />
+                <Image src={arrow} alt='' className='hidden cursor-pointer' onClick={nextCard}/>
             </div>
          </div>
-
-        </div>
         
     
 
