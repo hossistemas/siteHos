@@ -36,6 +36,7 @@ module.exports = {
         'vermelho': '#DA4536',
         'white': '#FBFBFB',
         'fundo': '#F7F7F7',
+        'cinza': '#727070',
       }
     },
   },

@@ -14,7 +14,7 @@ export function CardSistema({ img, titulo , texto}: cardProps){
   
     return( 
     
-        
+        <>
         <div className='bg-white  flex justify-center items-center mx-auto drop-shadow-lg w-[16.375rem] h-[15.437rem] rounded-md  '>
             <div >
             <Image src={ img } alt='' className='w-[3.8rem] h-auto flex justify-center items-center mx-auto mt-[2rem] mb-[1.8rem]'/>
@@ -23,6 +23,9 @@ export function CardSistema({ img, titulo , texto}: cardProps){
                   <p className='w-[13.93rem] mx-auto text-[0.8rem] text-grafite font-normal text-center mb-[2rem]'>{texto}</p>
               </div>
         </div>
+
+        </>
+        
         
 
     

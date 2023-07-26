@@ -2,9 +2,10 @@ import { Header } from "@/components/header";
 import { HeroSection } from "@/components/herosection";
 import { Beneficios } from "@/components/beneficios";
 import { Sistema } from "@/components/sistema";
-import banner from '../../public/Homepage.png'
+import banner from '../../public/Homepage.png';
 
 export default function Home() {
+  
   return (
     <>
     <Header />
@@ -18,7 +19,8 @@ export default function Home() {
       img={banner}
     />
     <Beneficios />
-    <Sistema onClick={undefined} />
+    <Sistema />
+   
       
 
     </>
