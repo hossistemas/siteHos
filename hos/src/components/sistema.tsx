@@ -118,7 +118,7 @@ export function Sistema(props: SistemaProps){
 
 
 <Carousel
-        className='bg-fundo tablet:visible'
+        className='bg-fundo tablet:visible tablet:pt-[5rem]'
         maw="auto"
         mx="auto"
         withIndicators
@@ -126,7 +126,7 @@ export function Sistema(props: SistemaProps){
         styles={{
             
         indicator: { 
-            color: "gray",
+            color: "grey",
             width: rem(25),
             height: rem(8),           
             transition: 'width 500ms ease',
