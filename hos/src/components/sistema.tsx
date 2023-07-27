@@ -17,11 +17,12 @@ import { Carousel  } from '@mantine/carousel';
 import { rem } from '@mantine/core';
 
 interface SistemaProps {
+    isVisible: boolean;
 }
 
 
 
-export function Sistema(props: SistemaProps){
+export function Sistema({ isVisible }: SistemaProps){
      
     return (
     <>
@@ -114,11 +115,11 @@ export function Sistema(props: SistemaProps){
    
     </Carousel>
 
+
+
+
 <Carousel
-
-
-
-    className='bg-fundo tablet:visible ' 
+        className='bg-fundo tablet:visible'
         maw="auto"
         mx="auto"
         withIndicators
