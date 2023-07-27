@@ -1,7 +1,7 @@
 import Image from "next/image"
 import gestao from '../../public/saudeFinanceira.svg'
 import boletos from '../../public/boletos.svg'
-import saude from '../../public/saudeFinanceira.svg'
+import sistema from '../../public/sistemaCobranca.svg'
 interface FinanceiroWebProps {
 
 }
@@ -31,7 +31,7 @@ export function FinanceiroWeb(props: FinanceiroWebProps){
 
                 <div className="">
                     <div className="bg-white w-[5.7rem] h-[5.6rem] mt-[1.5rem] rounded-3xl drop-shadow-2xl flex justify-center mx-auto tablet:w-[8.1rem] tablet:h-[8rem]">
-                        <Image src={saude} alt="" className=" w-[3.9rem] h-auto tablet:w-[5rem] tablet:h-auto"/>
+                        <Image src={sistema} alt="" className=" w-[3.9rem] h-auto tablet:w-[5rem] tablet:h-auto"/>
                     </div>
                     <h4 className="w-[13rem] text-[1rem] mt-[1.5rem] font-extrabold text-center text-grafite mx-auto tablet:w-[16.1rem] tablet:text-[1.25rem]">Sistema de cobrança</h4>
                     <p className="w-[12.25rem] text-[0.87rem] text-center mt-[0.6rem] mx-auto text-grafite tablet:w-[15.75rem] tablet:text-[1rem]">Notificações de cobranças via WhatsApp e SMS conforme regra geral especifica.</p>
