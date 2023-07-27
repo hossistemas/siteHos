@@ -17,12 +17,11 @@ import { Carousel  } from '@mantine/carousel';
 import { rem } from '@mantine/core';
 
 interface SistemaProps {
-    isVisible: boolean;
 }
 
 
 
-export function Sistema({ isVisible }: SistemaProps){
+export function Sistema(props: SistemaProps){
      
     return (
     <>
