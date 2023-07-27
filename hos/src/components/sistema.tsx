@@ -118,7 +118,7 @@ export function Sistema(props: SistemaProps){
 
 
 <Carousel
-        className='bg-fundo tablet:visible tablet:pt-[5rem]'
+        className='bg-fundo hidden tablet:visible tablet:pt-[5rem]'
         maw="auto"
         mx="auto"
         withIndicators
