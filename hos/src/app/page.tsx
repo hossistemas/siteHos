@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/herosection";
 import { Beneficios } from "@/components/beneficios";
 import { Sistema } from "@/components/sistema";
 import { Solucoes } from "@/components/solucoes";
+import { FinanceiroWeb } from "@/components/financeiroWeb";
 import banner from '../../public/Homepage.png';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
     <Beneficios />
     <Sistema />
     <Solucoes />
+    <FinanceiroWeb />
    
       
 
