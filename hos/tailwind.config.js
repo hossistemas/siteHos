@@ -28,6 +28,9 @@ module.exports = {
           '100%': { transform: 'translateY(0)', opacity: 1 },
         },
       },
+      backgroundImage: {
+        'fundocta': "url('/public/fundoCta.png')",
+      },
       colors:{
         'grafite': '#212121',
         'laranja': '#FF6251',
