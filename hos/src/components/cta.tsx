@@ -10,7 +10,7 @@ export function Cta(props: CtaProps){
     return(
         <div >
             <Image src={fundo} alt="" className="relative w-auto  h-[18.6rem]"/>
-            <div className="w-[20rem] h-[13.9rem] bg-white rounded-lg absolute left-3 bottom-[-209rem] ">
+            <div className="w-[20rem] h-[13.9rem] bg-white rounded-lg absolute left-5 bottom-[-209rem] ">
                 <div >
                     <div className="flex mx-auto bg-white justify-center w-[2.9rem] h-[2.9rem] -mt-6 shadow-xl rounded-lg">
                         <Image src={impulsionar} alt="" className=""/>
