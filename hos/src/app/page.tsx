@@ -29,7 +29,7 @@ export default function Home() {
     <FinanceiroWeb />
     <Painel />
     <Cta />
-   <Contador />
+    <Contador initialValue={0} />
    
       
 

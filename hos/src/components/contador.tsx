@@ -1,11 +1,14 @@
 'use client'
 
-import { count } from "console";
-import Image from "next/image"
+import pdv from '../../public/pdv.svg'
+import brasil from '../../public/brasil.svg'
+import rede from '../../public/rede.svg'
+import Image from 'next/image'
 import { useEffect, useState } from "react";
 
-interface ContadorProps {
 
+interface ContadorProps {
+    initialValue: number;
 }
 
 
@@ -15,30 +18,35 @@ export  function Contador(props: ContadorProps)  {
 
     const Card = ({ initialValue, finalValue }: { initialValue: number; finalValue: number }) => {
         const [count, setCount] = useState(initialValue);
-      
+    
         useEffect(() => {
           const interval = setInterval(() => {
             setCount((prevCount) => (prevCount < finalValue ? prevCount + 1 : prevCount));
-          }, 30);
-      
+          }, 100);
+    
           return () => clearInterval(interval);
         }, [finalValue]);
-
     
-        return(
+        return (
+            <p className="text-white text-[1.25rem] font-extrabold">{count}</p>
+
+        );
+      };
+    
+      return (
         <>
-        <div className="border p-4 m-4 rounded-lg shadow-md">
-        <p className="text-4xl font-bold">{count}</p>
-        </div>
-
-        <div className="flex justify-center items-center h-screen">
-        <Card initialValue={0} finalValue={50} />
-        <Card initialValue={0} finalValue={100} />
-        <Card initialValue={0} finalValue={200} />
-        </div>
+            <div className="bg-fundo pt-5 px-[1rem] grid-cols-2 ">
+                <div className="w-[9.8rem] h-[12.3rem] rounded-lg bg-gradient-to-b from-degradeUm to-degradeDois">
+                <Image src={pdv} alt=''/>
+                <div className="text-white text-[1.25rem] font-extrabold flex">
+                <p>+</p>
+                <Card initialValue={0} finalValue={10}></Card>
+                <p>MIL</p>
+                </div>
+                </div>
+            </div>
         </>
-        )    
-
+      );
     }
-};
+;
     
