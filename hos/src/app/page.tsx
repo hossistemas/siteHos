@@ -6,8 +6,9 @@ import { Solucoes } from "@/components/solucoes";
 import { FinanceiroWeb } from "@/components/financeiroWeb";
 import { Painel } from "@/components/painel";
 import { Cta } from "@/components/cta";
-import banner from '../../public/Homepage.png';
 import {Contador} from "@/components/contador";
+import { Feedback } from "@/components/feedback";
+import banner from '../../public/Homepage.png';
 
 export default function Home() {
   
@@ -30,6 +31,7 @@ export default function Home() {
     <Painel />
     <Cta />
     <Contador initialValue={0} />
+    <Feedback />
    
       
 
