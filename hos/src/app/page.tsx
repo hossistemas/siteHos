@@ -7,6 +7,7 @@ import { FinanceiroWeb } from "@/components/financeiroWeb";
 import { Painel } from "@/components/painel";
 import { Cta } from "@/components/cta";
 import banner from '../../public/Homepage.png';
+import {Contador} from "@/components/contador";
 
 export default function Home() {
   
@@ -28,6 +29,7 @@ export default function Home() {
     <FinanceiroWeb />
     <Painel />
     <Cta />
+   <Contador />
    
       
 
