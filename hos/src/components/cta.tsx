@@ -12,7 +12,7 @@ export function Cta(props: CtaProps){
             <Image src={fundo} alt="" className="relative w-auto  h-[18.6rem]"/>
             <div className="w-[20rem] h-[13.9rem] bg-white rounded-lg absolute left-5 bottom-[-209rem] ">
                 <div >
-                    <div className="flex mx-auto bg-white justify-center w-[2.9rem] h-[2.9rem] -mt-6 shadow-xl rounded-lg">
+                    <div className="flex mx-auto bg-white justify-center w-[2.9rem] h-[2.9rem] -mt-6 drop-shadow-botao rounded-lg">
                         <Image src={impulsionar} alt="" className=""/>
                     </div>
                     <h3 className="text-[0.68rem] flex mx-auto justify-center mt-[2rem] text-grafite">Descubra como podemos impulsionar seus resultados</h3>

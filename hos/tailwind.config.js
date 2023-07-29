@@ -40,6 +40,12 @@ module.exports = {
         'white': '#FBFBFB',
         'fundo': '#F7F7F7',
         'cinza': '#727070',
+      },
+      dropShadow: {
+        'botao': [
+            '-3px -5px 8px rgba(255, 255, 255, 0.9)',
+            '4px 8px 8px rgba(0, 0, 0, 0.3)'
+        ]
       }
     },
   },
