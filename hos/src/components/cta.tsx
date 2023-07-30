@@ -10,8 +10,8 @@ export function Cta(props: CtaProps){
     return(
         <div >
             <Image src={fundo} alt="" className="relative w-auto  h-[18.6rem] tablet:h-[30rem] tablet:w-[90rem]"/>
-            <div className="w-[20rem] h-[13.9rem] bg-white rounded-lg absolute left-5 bottom-[-209rem] tablet:w-[57.5rem] tablet:h-[24rem] tablet:drop-shadow-lg tablet:bottom-[-175rem] tablet:left-[15rem] ">
-                <div >
+            <div className="w-[20rem] h-[13.9rem] bg-white rounded-lg absolute left-5 bottom-[-219rem] tablet:w-[57.5rem] tablet:h-[24rem] tablet:drop-shadow-lg tablet:bottom-[-211rem] tablet:left-[15rem] ">
+                <div>
                     <div className="flex mx-auto bg-white justify-center w-[2.9rem] h-[2.9rem] -mt-6 drop-shadow-botao rounded-lg tablet:w-[6.2rem] tablet:h-[6.2rem] tablet:rounded-3xl">
                         <Image src={impulsionar} alt="" className="tablet:w-[3.9rem]  tablet:h-auto"/>
                     </div>
