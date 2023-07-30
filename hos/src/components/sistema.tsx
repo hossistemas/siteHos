@@ -1,199 +1,94 @@
 'use client'
 
-import React from 'react';
-import vendas from '../../public/Vendas.svg';
-import lucro from '../../public/Lucro.svg';
-import sngpc from '../../public/SNGPC.svg';
-import inteligente from '../../public/inteligente.svg';
-import pbm from '../../public/PBMs.svg';
-import fidelizacao from '../../public/Fidelização.svg';
-import atualizacao from '../../public/Atualização.svg';
-import suporte from '../../public/Suporte.svg';
-import anos from '../../public/anos.svg';
-
-
-import { CardSistema } from './cardSistema';
-import { Carousel  } from '@mantine/carousel';
-import { rem } from '@mantine/core';
+import Image from 'next/image'
+import { useEffect, useState } from 'react';
+import arrowRight from '../../public/arrowRight.svg'
 
 interface SistemaProps {
+    
 }
 
+
+const images = [
+    '/geraldo.png',
+     '/luciana.png',
+   '/marilva.png',
+    '/roberto.png',
+    '/rodrigo.png',
+    '/valfarma.png'
+    
+  ];
 
 
 export function Sistema(props: SistemaProps){
-     
-    return (
-    <>
-    <Carousel
-    className='bg-fundo tablet:hidden' 
-        maw="auto"
-        mx="auto"
-        withIndicators
-        height={300}
-        styles={{
-            
-        indicator: { 
-            color: "gray",
-            width: rem(25),
-            height: rem(8),           
-            transition: 'width 500ms ease',
-
-            '&[data-active]': {
-            width: rem(30),
-            backgroundColor: "grey"
-            },
-        },
-        }}
-    >
-
-    <Carousel.Slide>
-        <CardSistema  
-        img={lucro}
-        titulo={'Maximize sua margem de lucro'}
-        texto={'Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.'}/>
-    </Carousel.Slide>
-
-    <Carousel.Slide className='' >
-    <CardSistema  
-        img={vendas}
-        titulo={'Prioridade de Vendas'}
-        texto={'Cadastre seus produtos e estabeleça cores para indicar as prioridades de vendas (verde, amarelo e vermelho), de acordo com a margem de lucro, vencimento e promoções.'}/>
-    </Carousel.Slide>
-
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [itemsPerSlide, setItemsPerSlide] = useState(1);
+    const totalPages = Math.ceil(images.length / itemsPerSlide);
+  
+    const prevSlide = () => {
+      setCurrentIndex((prevIndex) => (prevIndex - itemsPerSlide + images.length) % images.length);
+    };
+  
+    const nextSlide = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + itemsPerSlide) % images.length);
+    };
+  
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth >= 1400) {
+          setItemsPerSlide(3);
+        } else {
+          setItemsPerSlide(1);
+        }
+      };
+  
+      handleResize();
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+    return( 
     
-    <Carousel.Slide className=''>
-        <CardSistema  
-        img={sngpc}
-        titulo={'Integração com SNGPC'}
-        texto={'Aprimore a gestão de medicamentos controlados. Agilize a movimentação, acompanhe envios e entregas e mantenha o controle de inventário atualizado.'}/>
-    </Carousel.Slide>
+    <div className="relative bg-fundo">
+        <div className='text-[1.25rem] pt-[3rem] text-center font-extrabold text-grafite leading-tight w-[16rem] flex mx-auto pb-[2rem]'>
+                <h2>Já ajudamos <span className='text-vermelho'> centenas de farmácias</span> e drogarias a descomplicar suas rotinas. </h2>
+            </div>
+      <div className="carousel overflow-hidden tablet:w-[1200px] flex mx-auto">
+        <div className="carousel-slides flex transition-transform ease-in-out duration-300 tablet:w-1/3" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {images.map((image, index) => (
+            <div key={index} className={`carousel-slide flex-shrink-0 w-full ${index === currentIndex ? 'active' : ''}`}>
+              <Image src={image} alt={`Image ${index + 1}`} width={250} height={210} className='flex mx-auto tablet:w-[25rem]'/>
+            </div>
+          ))}
+        </div>
+      </div>
 
-    <Carousel.Slide className=''>
-        <CardSistema  
-        img={inteligente}
-        titulo={'Associação Inteligente'}
-        texto={' Utiliza o histórico de vendas para identificar tendências e oferece produtos complementares mais adequados para cada atendimento, maximizando suas vendas.'}/>
-    </Carousel.Slide>
+        <div className="flex justify-center -mt-[0.4rem]   ">
+            <button
+            className=" bg-fundo mr-[1rem] border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta hover:text-fundo hover:transition hover:ease-in hover:duration-300 hover:border-0"
+            onClick={prevSlide}
+            >
+            <Image src={arrowRight} alt='' className='rotate-180 w-[1rem] h-[1rem] mx-[0.4rem] hover:mx-[0.6rem] hover:filter hover:grayscale '/>
+            </button>
+            <button
+            className=" bg-fundo  border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer   hover:bg-magenta hover:hover:transition hover:ease-in hover:duration-300 hover:border-0"
+            onClick={nextSlide}
+            >
+            <Image src={arrowRight} alt='' className='w-[1rem] h-[1rem] mx-[0.4rem] hover:mx-[0.6rem]'/>
+            </button>
+        </div>
 
-    <Carousel.Slide className=''>
-        <CardSistema  
-        img={pbm}
-        titulo={'Integração com PBMs'}
-        texto={'Consulte de forma atualizada o PBM, gerencie a quantidade de itens vendidos e obtenha descontos dos fabricantes, proporcionando ainda mais benefícios para sua farmácia.'}/>
-    </Carousel.Slide>
-
-
-    <Carousel.Slide className=''>
-        <CardSistema  
-        img={fidelizacao}
-        titulo={'Sistema de Fidelização'}
-        texto={'Possibilita a gestão dos relacionamentos para usuários de medicamentos contínuos, bem como a configuração de plano de fidelidade específico para sua realidade.'}/>
-    </Carousel.Slide>
-
-    <Carousel.Slide className=''>
-        <CardSistema  
-        img={atualizacao}
-        titulo={'Atualização Constante'}
-        texto={'Os softwares e programas da HOS são atualizados constantemente, adequando rotinas fiscais e boas práticas de gestão.'}/>
-    </Carousel.Slide>
-
-    <Carousel.Slide className=''>
-        <CardSistema  
-        img={suporte}
-        titulo={'Suporte Ágil'}
-        texto={'Na HOS Sistemas você conta com uma ampla equipe de técnicos para lhe atender de maneira simples e rápida.'}/>
-    </Carousel.Slide>
-
-    <Carousel.Slide className=''>
-        <CardSistema  
-        img={anos}
-        titulo={'28 anos de mercado'}
-        texto={'Trabalhe com a segurança de um parceiro com mais de 28 anos de experiência.'}/>
-    </Carousel.Slide>
-   
-    </Carousel>
-
-
-
-
-<Carousel
-        className='bg-fundo hidden tablet:visible tablet:pt-[5rem]'
-        maw="auto"
-        mx="auto"
-        withIndicators
-        height={330}
-        styles={{
-            
-        indicator: { 
-            color: "grey",
-            width: rem(25),
-            height: rem(8),           
-            transition: 'width 500ms ease',
-
-            '&[data-active]': {
-            width: rem(30),
-            backgroundColor: "grey"
-            },
-        },
-        }}
-    >
-
-    <Carousel.Slide className='flex'>
-        <CardSistema  
-        img={lucro}
-        titulo={'Maximize sua margem de lucro'}
-        texto={'Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.'}/>
-
-        <CardSistema  
-        img={vendas}
-        titulo={'Prioridade de Vendas'}
-        texto={'Cadastre seus produtos e estabeleça cores para indicar as prioridades de vendas (verde, amarelo e vermelho), de acordo com a margem de lucro, vencimento e promoções.'}/>
-    
-        <CardSistema  
-        img={sngpc}
-        titulo={'Integração com SNGPC'}
-        texto={'Aprimore a gestão de medicamentos controlados. Agilize a movimentação, acompanhe envios e entregas e mantenha o controle de inventário atualizado.'}/>
-    </Carousel.Slide>
-
-
-
-    <Carousel.Slide className='flex'>
-        <CardSistema  
-        img={inteligente}
-        titulo={'Associação Inteligente'}
-        texto={' Utiliza o histórico de vendas para identificar tendências e oferece produtos complementares mais adequados para cada atendimento, maximizando suas vendas.'}/>
-    
-        <CardSistema  
-        img={pbm}
-        titulo={'Integração com PBMs'}
-        texto={'Consulte de forma atualizada o PBM, gerencie a quantidade de itens vendidos e obtenha descontos dos fabricantes, proporcionando ainda mais benefícios para sua farmácia.'}/>
-    
-        <CardSistema  
-        img={fidelizacao}
-        titulo={'Sistema de Fidelização'}
-        texto={'Possibilita a gestão dos relacionamentos para usuários de medicamentos contínuos, bem como a configuração de plano de fidelidade específico para sua realidade.'}/>
-    </Carousel.Slide>
-
-    <Carousel.Slide className='flex'>
-        <CardSistema  
-        img={atualizacao}
-        titulo={'Atualização Constante'}
-        texto={'Os softwares e programas da HOS são atualizados constantemente, adequando rotinas fiscais e boas práticas de gestão.'}/>
-    
-        <CardSistema  
-        img={suporte}
-        titulo={'Suporte Ágil'}
-        texto={'Na HOS Sistemas você conta com uma ampla equipe de técnicos para lhe atender de maneira simples e rápida.'}/>
-
-        <CardSistema  
-        img={anos}
-        titulo={'28 anos de mercado'}
-        texto={'Trabalhe com a segurança de um parceiro com mais de 28 anos de experiência.'}/>
-    
-    </Carousel.Slide>
-
-    </Carousel>
-</>
-    );
-}
+        <div className="carousel-pagination flex justify-center mt-4">
+        {Array.from({ length: totalPages }, (_, index) => index).map((page) => (
+          <button
+            key={page}
+            className={`pagination-item mx-1 w-4 h-4 rounded-full ${
+              page === currentIndex / itemsPerSlide ? 'bg-magenta' : 'bg-laranja'
+            }`}
+            onClick={() => setCurrentIndex(page * itemsPerSlide)}
+          />
+        ))}
+      </div>
+    </div>
+    )
+};

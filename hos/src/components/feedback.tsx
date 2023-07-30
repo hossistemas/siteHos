@@ -19,9 +19,11 @@ const images = [
     
   ];
 
+
 export function Feedback(props: FeedbackProps){
     const [currentIndex, setCurrentIndex] = useState(0);
     const [itemsPerSlide, setItemsPerSlide] = useState(1);
+    const totalPages = Math.ceil(images.length / itemsPerSlide);
   
     const prevSlide = () => {
       setCurrentIndex((prevIndex) => (prevIndex - itemsPerSlide + images.length) % images.length);
@@ -40,7 +42,7 @@ export function Feedback(props: FeedbackProps){
         }
       };
   
-      handleResize(); // Call it once to set initial state
+      handleResize();
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -75,6 +77,18 @@ export function Feedback(props: FeedbackProps){
             <Image src={arrowRight} alt='' className='w-[1rem] h-[1rem] mx-[0.4rem] hover:mx-[0.6rem]'/>
             </button>
         </div>
+
+        <div className="carousel-pagination flex justify-center mt-4">
+        {Array.from({ length: totalPages }, (_, index) => index).map((page) => (
+          <button
+            key={page}
+            className={`pagination-item mx-1 w-4 h-4 rounded-full ${
+              page === currentIndex / itemsPerSlide ? 'bg-magenta' : 'bg-laranja'
+            }`}
+            onClick={() => setCurrentIndex(page * itemsPerSlide)}
+          />
+        ))}
+      </div>
     </div>
     )
 };
