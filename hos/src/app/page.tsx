@@ -10,6 +10,7 @@ import {Contador} from "@/components/contador";
 import { Feedback } from "@/components/feedback";
 import banner from '../../public/Homepage.png';
 import { Simplifique } from "@/components/simplifique";
+import { Marcas } from "@/components/marcas";
 
 export default function Home() {
   
@@ -34,6 +35,7 @@ export default function Home() {
     <Contador initialValue={0} />
     <Feedback />
     <Simplifique />
+    <Marcas />
    
       
 
