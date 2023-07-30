@@ -50,9 +50,10 @@ export function Feedback(props: FeedbackProps){
     return( 
     
     <div className="relative bg-fundo">
-        <div className='text-[1.25rem] pt-[3rem] text-center font-extrabold text-grafite leading-tight w-[16rem] flex mx-auto pb-[2rem]'>
+        <div className='text-[1.25rem] pt-[3rem] text-center font-extrabold text-grafite leading-tight w-[16rem] flex mx-auto pb-[2rem] tablet:w-[41.12rem] tablet:text-[2rem] tablet:pt-[10rem]'>
                 <h2>Já ajudamos <span className='text-vermelho'> centenas de farmácias</span> e drogarias a descomplicar suas rotinas. </h2>
-            </div>
+        </div>
+
       <div className="carousel overflow-hidden tablet:w-[1200px] flex mx-auto">
         <div className="carousel-slides flex transition-transform ease-in-out duration-300 tablet:w-1/3" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {images.map((image, index) => (
@@ -65,7 +66,7 @@ export function Feedback(props: FeedbackProps){
 
         <div className="flex justify-center -mt-[0.4rem]   ">
             <button
-            className=" bg-fundo mr-[1rem] border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta hover:text-fundo hover:transition hover:ease-in hover:duration-300 hover:border-0"
+            className=" bg-fundo mr-[1rem] border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta hover:transition hover:ease-in hover:duration-300 hover:border-0"
             onClick={prevSlide}
             >
             <Image src={arrowRight} alt='' className='rotate-180 w-[1rem] h-[1rem] mx-[0.4rem] hover:mx-[0.6rem] hover:filter hover:grayscale '/>
@@ -77,18 +78,6 @@ export function Feedback(props: FeedbackProps){
             <Image src={arrowRight} alt='' className='w-[1rem] h-[1rem] mx-[0.4rem] hover:mx-[0.6rem]'/>
             </button>
         </div>
-
-        <div className="carousel-pagination flex justify-center mt-4">
-        {Array.from({ length: totalPages }, (_, index) => index).map((page) => (
-          <button
-            key={page}
-            className={`pagination-item mx-1 w-4 h-4 rounded-full ${
-              page === currentIndex / itemsPerSlide ? 'bg-magenta' : 'bg-laranja'
-            }`}
-            onClick={() => setCurrentIndex(page * itemsPerSlide)}
-          />
-        ))}
-      </div>
     </div>
     )
 };
