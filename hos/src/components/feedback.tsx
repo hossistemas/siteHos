@@ -2,13 +2,7 @@
 
 import Image from 'next/image'
 import { useState } from 'react';
-import { Carousel } from '@mantine/carousel';
-import geraldo from '../../public/geraldo.png'
-import luciana from '../../public/luciana.png'
-import marilva from '../../public/marilva.png'
-import roberto from '../../public/roberto.png'
-import rodrigo from '../../public/rodrigo.png'
-import valfarmar from '../../public/valfarma.png'
+import arrowRight from '../../public/arrowRight.svg'
 
 interface FeedbackProps {
     
@@ -42,7 +36,7 @@ export function Feedback(props: FeedbackProps){
     
     <div className="relative bg-fundo">
       <div className="carousel overflow-hidden">
-        <div className="carousel-slides flex transition-transform ease-in-out duration-300" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        <div className="carousel-slides flex transition-transform ease-in-out duration-300 tablet:w-1/3" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {images.map((image, index) => (
             <div key={index} className={`carousel-slide flex-shrink-0 w-full ${index === currentIndex ? 'active' : ''}`}>
               <Image src={image} alt={`Image ${index + 1}`} width={284} height={222} className='flex mx-auto'/>
@@ -51,18 +45,18 @@ export function Feedback(props: FeedbackProps){
         </div>
       </div>
 
-        <div className="carousel-arrows flex justify-center mt-[1rem] ">
+        <div className="flex justify-center mt-[1rem] ">
             <button
             className=" bg-fundo rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta"
             onClick={prevSlide}
             >
-            &larr;
+            <Image src={arrowRight} alt='' className='rotate-180'/>
             </button>
             <button
             className="rounded-full bg-fundo text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta"
             onClick={nextSlide}
             >
-            &rarr;
+            <Image src={arrowRight} alt='' className=''/>
             </button>
         </div>
     </div>
