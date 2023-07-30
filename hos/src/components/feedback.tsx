@@ -45,18 +45,18 @@ export function Feedback(props: FeedbackProps){
         </div>
       </div>
 
-        <div className="flex justify-center mt-[1rem] ">
+        <div className="flex justify-center -mt-[0.4rem]   ">
             <button
-            className=" bg-fundo rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta"
+            className=" bg-fundo mr-[1rem] border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta hover:text-fundo hover:transition hover:ease-in hover:duration-300 hover:border-0"
             onClick={prevSlide}
             >
-            <Image src={arrowRight} alt='' className='rotate-180'/>
+            <Image src={arrowRight} alt='' className='rotate-180 w-[1rem] h-[1rem] mx-[0.4rem] hover:bg-white hover:mx-[0.6rem]'/>
             </button>
             <button
-            className="rounded-full bg-fundo text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta"
+            className=" bg-fundo  border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta hover:transition hover:ease-in hover:duration-300 hover:border-0"
             onClick={nextSlide}
             >
-            <Image src={arrowRight} alt='' className=''/>
+            <Image src={arrowRight} alt='' className='w-[1rem] h-[1rem] mx-[0.4rem] hover:mx-[0.6rem]'/>
             </button>
         </div>
     </div>
