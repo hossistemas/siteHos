@@ -9,6 +9,7 @@ import { Cta } from "@/components/cta";
 import {Contador} from "@/components/contador";
 import { Feedback } from "@/components/feedback";
 import banner from '../../public/Homepage.png';
+import { Simplifique } from "@/components/simplifique";
 
 export default function Home() {
   
@@ -32,6 +33,7 @@ export default function Home() {
     <Cta />
     <Contador initialValue={0} />
     <Feedback />
+    <Simplifique />
    
       
 

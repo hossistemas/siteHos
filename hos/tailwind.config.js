@@ -42,6 +42,7 @@ module.exports = {
         'cinza': '#727070',
         'degradeUm': '#E34338',
         'degradeDois': '#D02C1C',
+        'marcacao': '#E0E0E0',
       },
       dropShadow: {
         'botao': [
