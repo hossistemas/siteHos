@@ -10,7 +10,7 @@ export function Simplifique(props: SimplifiqueProps){
     
     return(
         <div className="bg-fundo  ">
-        <div className="pt-[2rem] tablet:grid tablet:grid-cols-2 tablet:pt-[10rem] tablet:w-[1200px]">
+        <div className="pt-[2rem] tablet:grid tablet:grid-cols-2 tablet:pt-[8rem] tablet:w-[1200px] tablet:mx-auto">
            <div className="mx-auto tablet:col-start-1 tablet:mt-[5rem] ">
                 <h2 className="text-[1.5rem] text-grafite font-extrabold leading-tight text-center tablet:text-left tablet:text-[2rem] tablet:w-[25.12rem] ">Simplifique processos e potencialize resultados</h2>  
                 <p className="text-[0.87rem] text-grafite mx-auto my-[1.38rem] w-[15rem] text-center tablet:text-left tablet:text-[1.25rem] tablet:w-[21.87rem] tablet:mx-0">
