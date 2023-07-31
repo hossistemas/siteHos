@@ -50,8 +50,8 @@ export function Sistema(props: SistemaProps){
     return( 
     
     <div className="relative bg-fundo">
-        <div className='text-[1.25rem] pt-[3rem] text-center font-extrabold text-grafite leading-tight w-[16rem] flex mx-auto pb-[2rem]'>
-                <h2>Já ajudamos <span className='text-vermelho'> centenas de farmácias</span> e drogarias a descomplicar suas rotinas. </h2>
+        <div className='text-[1.25rem] pt-[3rem] text-left font-extrabold text-grafite leading-tight w-[16rem] flex mx-auto pb-[2rem] tablet:text-center tablet:w-[42.4rem] tablet:text-[2rem]'>
+                <h2>Por que o <span className='text-vermelho'>HOS</span> é o melhor sistema para você? </h2>
             </div>
       <div className="carousel overflow-hidden tablet:w-[1200px] flex mx-auto">
         <div className="carousel-slides flex transition-transform ease-in-out duration-300 tablet:w-1/3" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
