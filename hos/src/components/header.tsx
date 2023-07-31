@@ -36,7 +36,7 @@ export function Header(props: HeaderProps){
             )}
             {botao2Visivel && (
                 <button onClick={visibilidadeBotao} 
-                className='absolute  py-[1rem] px-[1rem] right-[135px] -mr-[4rem] top-[90px] w-[5rem] h-auto flex border-2 border-vermelho rounded-md   bg-white cursor-pointer tablet:hidden '>
+                className='absolute   right-[138px] -mr-[4rem] top-[90px] w-[4rem] h-auto flex border-2 border-vermelho rounded-md   bg-white cursor-pointer tablet:hidden '>
                     <Image src={xis} alt='menu hamburguer' className='w-[4rem] '/>
                 </button>
             )}
