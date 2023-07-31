@@ -2,36 +2,28 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import arrowRight from '../../public/arrowRight.svg';
-import { transitions } from '@mantine/core/lib/Transition/transitions';
+
 
 interface MarcasProps {}
 
 const images = [
-  '/geraldo.png',
-  '/luciana.png',
-  '/marilva.png',
-  '/roberto.png',
-  '/rodrigo.png',
-  '/valfarma.png',
+  '/ifood.png',
+  '/bling.png',
+  '/iqvia.png',
+  '/stone.png',
 ];
 
 export function Marcas(props: MarcasProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(1);
-  const totalPages = Math.ceil(images.length / itemsPerSlide);
 
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + itemsPerSlide) % images.length);
-  };
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1400) {
-        setItemsPerSlide(4);
-      } else {
         setItemsPerSlide(2);
+      } else {
+        setItemsPerSlide(1);
       }
     };
 
@@ -63,7 +55,7 @@ export function Marcas(props: MarcasProps) {
         // Quando chegar ao último card, reinicie o carrossel para o primeiro card após 500ms
         const timeout = setTimeout(() => {
             setCurrentIndex(0);
-        }, 1000);
+        }, 2000);
 
         // Limpar o timeout quando o componente é desmontado ou o currentIndex muda antes dos 500ms
         return () => clearTimeout(timeout);
@@ -78,10 +70,10 @@ export function Marcas(props: MarcasProps) {
         </div>
 
       <div className="carousel overflow-hidden tablet:w-[1200px] flex mx-auto">
-        <div className="carousel-slides flex transition-transform ease-in-out duration-500 tablet:w-1/3" style={{ transform: `translateX(-${currentIndex * (280 / itemsPerSlide)}%)` }}>
+        <div className="carousel-slides flex transition-transform ease-in-out duration-500 tablet:w-1/3" style={{ transform: `translateX(-${currentIndex * (100 / itemsPerSlide)}%)` }}>
           {images.map((image, index) => (
-             <div key={index} className={`carousel-slide flex-shrink-0 w-full ${index === currentIndex ? 'active' : ''}`}>
-              <Image src={image} alt={`Image ${index + 1}`} width={250} height={210} className='flex mx-auto tablet:w-[25rem]'/>
+             <div key={index} className={`carousel-slide flex-shrink-0 w-full tablet:-mx-[5rem] ${index === currentIndex ? 'active' : ''}`}>
+              <Image src={image} alt={`Image ${index + 1}`} width={150} height={75} className='flex mx-auto tablet:w-[10rem] '/>
             </div>
           ))}
         </div>

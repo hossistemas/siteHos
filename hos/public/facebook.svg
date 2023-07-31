@@ -1,0 +1,11 @@
+<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon/facebook">
+<path id="Vector" d="M24.75 13.5682C24.75 7.317 19.7137 2.25 13.5 2.25C7.28625 2.25 2.25 7.317 2.25 13.5682C2.25 19.2188 6.363 23.901 11.742 24.75V16.8405H8.886V13.5675H11.742V11.0745C11.742 8.238 13.4213 6.6705 15.9915 6.6705C17.2215 6.6705 18.51 6.89175 18.51 6.89175V9.67725H17.0903C15.693 9.67725 15.258 10.5503 15.258 11.4457V13.5682H18.378L17.8793 16.8397H15.258V24.75C20.637 23.901 24.75 19.2188 24.75 13.5682Z" fill="url(#paint0_linear_1644_1809)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1644_1809" x1="13.5" y1="2.25" x2="13.5" y2="24.75" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF6251"/>
+<stop offset="1" stop-color="#FF4358"/>
+</linearGradient>
+</defs>
+</svg>

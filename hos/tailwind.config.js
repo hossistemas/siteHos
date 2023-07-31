@@ -43,6 +43,7 @@ module.exports = {
         'degradeUm': '#E34338',
         'degradeDois': '#D02C1C',
         'marcacao': '#E0E0E0',
+        'fundofooter': '#F1F1F1',
       },
       dropShadow: {
         'botao': [

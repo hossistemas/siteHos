@@ -11,6 +11,8 @@ import { Feedback } from "@/components/feedback";
 import banner from '../../public/Homepage.png';
 import { Simplifique } from "@/components/simplifique";
 import { Marcas } from "@/components/marcas";
+import { Footer } from "@/components/footer";
+
 
 export default function Home() {
   
@@ -36,6 +38,7 @@ export default function Home() {
     <Feedback />
     <Simplifique />
     <Marcas />
+    <Footer />
    
       
 
