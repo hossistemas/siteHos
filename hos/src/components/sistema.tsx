@@ -10,14 +10,39 @@ interface SistemaProps {
 
 
 const images = [
-    '/geraldo.png',
-     '/luciana.png',
-   '/marilva.png',
-    '/roberto.png',
-    '/rodrigo.png',
-    '/valfarma.png'
-    
-  ];
+  {
+    image: '/Lucro.svg',
+    title: 'Maximize sua margem de lucro',
+    text: 'Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.',
+  },
+  {
+    image: '/Vendas.svg',
+    title: 'Prioridade de Vendas',
+    text: 'Cadastre seus produtos e estabeleça cores para indicar as prioridades de vendas (verde, amarelo e vermelho), de acordo com a margem de lucro, vencimento e promoções.',
+  },
+  {
+    image: '/SNGPC.svg',
+    title: 'Integração com SNGPC',
+    text: 'Aprimore a gestão de medicamentos controlados. Agilize a movimentação, acompanhe envios e entregas e mantenha o controle de inventário atualizado.',
+  },
+  {
+    image: '/Inteligente.svg',
+    title: 'Associação Inteligente',
+    text: 'Utiliza o histórico de vendas para identificar tendências e oferece produtos complementares mais adequados para cada atendimento, maximizando suas vendas.',
+  },
+  {
+    image: '/PBMs.svg',
+    title: 'Integração com PBMs',
+    text: 'Consulte de forma atualizada o PBM, gerencie a quantidade de itens vendidos e obtenha descontos dos fabricantes, proporcionando ainda mais benefícios para sua farmácia.',
+  },  
+  {
+    image: '/Fidelização.svg',
+    title: 'Sistema de Fidelização',
+    text: 'Possibilita a gestão dos relacionamentos para usuários de medicamentos contínuos, bem como a configuração de plano de fidelidade específico para sua realidade.',
+  },
+  
+
+];
 
 
 export function Sistema(props: SistemaProps){
@@ -55,9 +80,11 @@ export function Sistema(props: SistemaProps){
             </div>
       <div className="carousel overflow-hidden tablet:w-[1200px] flex mx-auto">
         <div className="carousel-slides flex transition-transform ease-in-out duration-300 tablet:w-1/3" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-          {images.map((image, index) => (
+          {images.map((item, index) => (
             <div key={index} className={`carousel-slide flex-shrink-0 w-full ${index === currentIndex ? 'active' : ''}`}>
-              <Image src={image} alt={`Image ${index + 1}`} width={250} height={210} className='flex mx-auto tablet:w-[25rem]'/>
+              <Image src={item.image} alt={`Image ${index + 1}`} width={250} height={210} className='flex mx-auto tablet:w-[25rem]'/>
+              <h2>{item.title}</h2>
+              <p>{item.text}</p>
             </div>
           ))}
         </div>
