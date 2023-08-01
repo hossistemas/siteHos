@@ -40,6 +40,21 @@ const images = [
     title: 'Sistema de Fidelização',
     text: 'Possibilita a gestão dos relacionamentos para usuários de medicamentos contínuos, bem como a configuração de plano de fidelidade específico para sua realidade.',
   },
+  {
+    image: '/Atualização.svg',
+    title: 'Atualização Constante',
+    text: 'Os softwares e programas da HOS são atualizados constantemente, adequando rotinas fiscais e boas práticas de gestão.',
+  },
+  {
+    image: '/Suporte.svg',
+    title: 'Suporte Ágil',
+    text: 'Na HOS Sistemas você conta com uma ampla equipe de técnicos para lhe atender de maneira simples e rápida.',
+  },
+  {
+    image: '/anos.svg',
+    title: '28 anos de mercado',
+    text: 'Trabalhe com a segurança de um parceiro com mais de 28 anos de experiência.',
+  },
   
 
 ];
