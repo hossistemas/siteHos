@@ -93,19 +93,31 @@ export function Sistema(props: SistemaProps){
         <div className='text-[1.25rem] pt-[3rem] text-left font-extrabold text-grafite leading-tight w-[16rem] flex mx-auto pb-[2rem] tablet:text-center tablet:w-[42.4rem] tablet:text-[2rem]'>
                 <h2>Por que o <span className='text-vermelho'>HOS</span> é o melhor sistema para você? </h2>
             </div>
-      <div className="carousel overflow-hidden tablet:w-[1200px] flex mx-auto">
+      <div className="carousel overflow-hidden tablet:w-[1200px] flex mx-auto h-[19rem]">
         <div className="carousel-slides flex transition-transform ease-in-out duration-300 tablet:w-1/3" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {images.map((item, index) => (
-            <div key={index} className={`carousel-slide flex-shrink-0 w-full ${index === currentIndex ? 'active' : ''}`}>
-              <Image src={item.image} alt={`Image ${index + 1}`} width={250} height={210} className='flex mx-auto tablet:w-[25rem]'/>
-              <h2>{item.title}</h2>
-              <p>{item.text}</p>
+            <div key={index} className={`carousel-slide flex-shrink-0 w-[16rem] h-[15rem] mb-[5rem] mx-[0.8rem] bg-white drop-shadow-lg rounded-xl  ${index === currentIndex ? 'active' : ''}`}>
+              <Image src={item.image} alt={`Image ${index + 1}`} width={70} height={100} className='flex mx-auto pt-[2rem] tablet:w-[25rem]'/>
+              <h2 className='text-center text-[1rem] text-grafite font-bold'>{item.title}</h2>
+              <p className='text-center text-[0.8rem] text-grafite '>{item.text}</p>
             </div>
           ))}
         </div>
       </div>
 
-        <div className="flex justify-center -mt-[0.4rem]   ">
+      <div className="carousel-pagination flex justify-center -mt-[3rem]">
+        {Array.from({ length: totalPages }, (_, index) => index).map((page) => (
+          <button
+            key={page}
+            className={`pagination-item mx-1 w-4 h-1 rounded-full transition-all ease-in duration-100 ${
+              page === currentIndex / itemsPerSlide ? 'bg-cinza' : 'bg-fundofooter'
+            }`}
+            onClick={() => setCurrentIndex(page * itemsPerSlide)}
+          />
+        ))}
+      </div>
+
+        <div className="flex justify-center mt-[1rem]">
             <button
             className=" bg-fundo mr-[1rem] border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta hover:text-fundo hover:transition hover:ease-in hover:duration-300 hover:border-0"
             onClick={prevSlide}
@@ -120,17 +132,7 @@ export function Sistema(props: SistemaProps){
             </button>
         </div>
 
-        <div className="carousel-pagination flex justify-center mt-4">
-        {Array.from({ length: totalPages }, (_, index) => index).map((page) => (
-          <button
-            key={page}
-            className={`pagination-item mx-1 w-4 h-4 rounded-full ${
-              page === currentIndex / itemsPerSlide ? 'bg-magenta' : 'bg-laranja'
-            }`}
-            onClick={() => setCurrentIndex(page * itemsPerSlide)}
-          />
-        ))}
-      </div>
+
     </div>
     )
 };
