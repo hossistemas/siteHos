@@ -69,11 +69,11 @@ export function Sistema(props: SistemaProps) {
   const totalPages = Math.ceil(images.length / itemsPerSlide);
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex - itemsPerSlide + images.length) % images.length);
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + itemsPerSlide) % images.length);
   };
 
   useEffect(() => {
@@ -121,17 +121,17 @@ export function Sistema(props: SistemaProps) {
       </div>
 
         <div className="flex justify-center mt-[0.5rem] tablet:visible tablet:flex tablet:justify-center tablet:mt-[1rem]">
-            <button
-            className=" bg-fundo mr-[1rem] border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta hover:text-fundo hover:transition hover:ease-in hover:duration-300 hover:border-0"
+        <button
+            className=" bg-fundo mr-[1rem] border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:px-[0.6rem] hover:py-[1.1rem] hover:bg-magenta hover:transition hover:ease-in hover:duration-300 hover:border-0"
             onClick={prevSlide}
             >
-            <Image src={arrowRight} alt='' className='rotate-180 w-[1rem] h-[1rem] mx-[0.4rem] hover:mx-[0.6rem] hover:filter hover:grayscale '/>
+            <Image src={arrowRight} alt='' className='rotate-180 w-[1rem] h-[1rem] mx-[0.4rem] hover:filter hover:grayscale '/>
             </button>
             <button
-            className=" bg-fundo  border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer   hover:bg-magenta hover:hover:transition hover:ease-in hover:duration-300 hover:border-0"
+            className=" bg-fundo  border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer  hover:px-[0.6rem] hover:py-[1.1rem] hover:bg-magenta hover:hover:transition hover:ease-in hover:duration-300 hover:border-0"
             onClick={nextSlide}
             >
-            <Image src={arrowRight} alt='' className='w-[1rem] h-[1rem] mx-[0.4rem] hover:mx-[0.6rem]'/>
+            <Image src={arrowRight} alt='' className='w-[1rem] h-[1rem] mx-[0.4rem] '/>
             </button>
         </div>
 
