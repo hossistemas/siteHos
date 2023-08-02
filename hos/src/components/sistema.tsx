@@ -99,7 +99,7 @@ export function Sistema(props: SistemaProps) {
       <div className="carousel overflow-hidden  flex mx-auto h-[19rem] tablet:h-[26rem] tablet:w-[1090px] ">
         <div className="carousel-slides flex transition-transform ease-in-out duration-300 tablet:w-1/3" style={{ transform: `translateX(-${currentIndex *(100 / itemsPerSlide)}%)` }}>
           {images.map((item, index) => (
-            <div key={index} className={`carousel-slide flex-shrink-0 w-[16rem] h-[15rem] mb-[5rem] mx-[0.8rem] justify-center bg-white drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem] ${index === currentIndex ? 'active' : ''}`}>
+            <div key={index} className={`carousel-slide flex-shrink-0 w-[16rem] h-[15rem] mb-[5rem] mx-[0.8rem] justify-center bg-white scroll-smooth drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem] ${index === currentIndex ? 'active' : ''}`}>
               <Image src={item.image} alt={`Image ${index + 1}`} width={70} height={100} className='flex mx-auto pt-[2rem] tablet:w-[6rem] tablet:pt-[3rem] tablet:pb-[2rem]'/>
               <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>{item.title}</h2>
               <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem]'>{item.text}</p>
@@ -108,7 +108,7 @@ export function Sistema(props: SistemaProps) {
         </div>
       </div>
 
-      <div className="carousel-pagination flex justify-center -mt-[3rem]">
+      <div className="carousel-pagination hidden tablet:visible tablet:flex tablet:justify-center">
         {Array.from({ length: totalPages }, (_, index) => index).map((page) => (
           <button
             key={page}
@@ -120,7 +120,7 @@ export function Sistema(props: SistemaProps) {
         ))}
       </div>
 
-        <div className="flex justify-center mt-[1rem]">
+        <div className="hidden tablet:visible tablet:flex tablet:justify-center tablet:mt-[1rem]">
             <button
             className=" bg-fundo mr-[1rem] border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:bg-magenta hover:text-fundo hover:transition hover:ease-in hover:duration-300 hover:border-0"
             onClick={prevSlide}
