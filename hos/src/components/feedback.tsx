@@ -12,27 +12,27 @@ interface FeedbackProps {
 const images = [
     { image:'/estrelas.svg',
     title: 'Valfarma',
-    text: 'Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.'
+    text: 'Simplesmente o melhor sistema de gestão que ja trabalhei. Atende todas as demandas das minhas drogarias.'
     },
     { image:'/estrelas.svg',
-    title: 'Maximize sua margem de lucro',
-    text: 'Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.'
+    title: 'Roberto',
+    text: 'Sistema top, só tive controle e gestão depois q mudei para a HOS sistemas, um sistema completo, bacana pois tem tudo que existe de inovador!'
     },
     { image:'/estrelas.svg',
-    title: 'Maximize sua margem de lucro',
-    text: 'Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.'
+    title: 'Luciana',
+    text: 'Minha experiência tem sido ótima, troquei a 3 anos o antigo pela HOS e estou muito satisfeita.'
     },
     { image:'/estrelas.svg',
-    title: 'Maximize sua margem de lucro',
-    text: 'Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.'
+    title: 'Marilva',
+    text: 'Sempre muito bem atendida, soluções das solicitações rápidas. Cliente desde 1999. Satisfeita, super indico.'
     },
     { image:'/estrelas.svg',
-    title: 'Maximize sua margem de lucro',
-    text: 'Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.'
+    title: 'Rodrigo',
+    text: 'Trabalhamos com o sistema da Hos há pelo menos 25 anos, somos fãs! Principalmente pelo atendimento! Equipe sempre comprometida em entregar a melhor solução para os clientes!'
     },
     { image:'/estrelas.svg',
-    title: 'Maximize sua margem de lucro',
-    text: 'Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.'
+    title: 'Geraldo',
+    text: 'Sistema muito bom, interativo, muitos relatórios. Já trabalho com ele a mais de 10 anos.'
     },
     
   ];
@@ -76,9 +76,9 @@ export function Feedback(props: FeedbackProps){
         <div className="carousel-slides flex transition-transform ease-in-out duration-300  tablet:w-1/3" style={{ transform: `translateX(-${currentIndex *(100 / itemsPerSlide)}%)` }}>
           {images.map((item, index) => (
             <div key={index} className={`carousel-slide flex-shrink-0 w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem] ${index === currentIndex ? 'active' : ''}`}>
-              <Image src={item.image} alt={`Image ${index + 1}`} width={70} height={100} className='flex mx-auto pt-[2rem]  tablet:w-[6rem] tablet:pt-[3rem] tablet:pb-[2rem]'/>
-              <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>{item.title}</h2>
-              <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>{item.text}</p>
+              <Image src={item.image} alt={`Image ${index + 1}`} width={70} height={100} className='flex ml-[10rem] pt-[3.8rem]  tablet:w-[6rem] tablet:pt-[3rem] tablet:pb-[2rem]'/>
+              <h2 className='text-left text-[1.1rem] text-grafite pl-[2rem] -mt-[1.5rem] font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>{item.title}</h2>
+              <p className='text-left pl-[2rem] pr-[1.4rem] pt-[1rem] leading-tight text-[0.7rem] font-medium text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>{item.text}</p>
             </div>
           ))}
         </div>
