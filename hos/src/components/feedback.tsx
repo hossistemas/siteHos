@@ -73,7 +73,7 @@ export function Feedback(props: FeedbackProps){
         </div>
 
         <div className="carousel overflow-hidden  flex mx-auto h-[19rem] tablet:h-[26rem] tablet:w-[1090px] ">
-        <div className="carousel-slides flex transition-transform ease-in-out duration-300  tablet:w-1/3" style={{ transform: `translateX(-${currentIndex *(100 / itemsPerSlide)}%)` }}>
+        <div className="carousel-slides flex transition-transform ease-in-out duration-300  tablet:w-1/3" style={{ transform: `translateX(-${currentIndex *( 100 / itemsPerSlide / totalPages)}%)` }}>
           {images.map((item, index) => (
             <div key={index} className={`carousel-slide flex-shrink-0 w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem] ${index === currentIndex ? 'active' : ''}`}>
               <Image src={item.image} alt={`Image ${index + 1}`} width={70} height={100} className='flex ml-[10rem] pt-[3.8rem]  tablet:w-[6rem] tablet:pt-[3rem] tablet:pb-[2rem]'/>
