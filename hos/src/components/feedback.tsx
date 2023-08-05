@@ -75,16 +75,16 @@ export function Feedback(props: FeedbackProps){
         <div className="carousel overflow-hidden  flex mx-auto h-[19rem] tablet:h-[26rem] tablet:w-[1090px] ">
         <div className="carousel-slides flex transition-transform ease-in-out duration-300  tablet:w-1/3" style={{ transform: `translateX(-${currentIndex *( 100 / itemsPerSlide / totalPages)}%)` }}>
           {images.map((item, index) => (
-            <div key={index} className={`carousel-slide flex-shrink-0 w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem] ${index === currentIndex ? 'active' : ''}`}>
-              <Image src={item.image} alt={`Image ${index + 1}`} width={70} height={100} className='flex ml-[10rem] pt-[3.8rem]  tablet:w-[6rem] tablet:pt-[3rem] tablet:pb-[2rem]'/>
-              <h2 className='text-left text-[1.1rem] text-grafite pl-[2rem] -mt-[1.5rem] font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>{item.title}</h2>
+            <div key={index} className={`carousel-slide flex-shrink-0 w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[22rem] tablet:h-[17rem] ${index === currentIndex ? 'active' : ''}`}>
+              <Image src={item.image} alt={`Image ${index + 1}`} width={70} height={100} className='flex ml-[10rem] pt-[3.8rem]  tablet:w-[6rem]  tablet:ml-[14rem]'/>
+              <h2 className='text-left text-[1.1rem] text-grafite pl-[2rem] -mt-[1.5rem] font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem] tablet:pl-[4rem]'>{item.title}</h2>
               <p className='text-left pl-[2rem] pr-[1.4rem] pt-[1rem] leading-tight text-[0.7rem] font-medium text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>{item.text}</p>
             </div>
           ))}
         </div>
       </div>
 
-        <div className="flex justify-center -mt-[0.4rem]   ">
+        <div className="flex justify-center -mt-[0.4rem] tablet:-mt-[7rem] ">
             <button
             className=" bg-fundo mr-[1rem] border-2 rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:px-[0.6rem] hover:py-[1.1rem] hover:bg-magenta hover:transition hover:ease-in hover:duration-300 hover:border-0"
             onClick={prevSlide}
