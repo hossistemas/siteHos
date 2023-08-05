@@ -7,10 +7,38 @@ import { useState, useEffect } from 'react';
 interface MarcasProps {}
 
 const images = [
-  '/ifood.png',
-  '/bling.png',
-  '/iqvia.png',
-  '/stone.png',
+  '/ifood.svg',
+  '/bling.svg',
+  '/IQVIA.svg',
+  '/stone.svg',
+  '/REDESOMA.svg',
+  '/AGAFARMA.svg',
+  '/AVANT.svg',
+  '/CB.svg',
+  'DROGABEK.svg',
+  '/guiafarmacia.svg',
+  '/IMENDES.svg',
+  '/INOVA.svg',
+  '/melhorcompra.svg',
+  '/multifarma.svg',
+  '/NAPP.svg',
+  '/REDESOMA.svg',
+  '/ifood.svg',
+  '/bling.svg',
+  '/IQVIA.svg',
+  '/stone.svg',
+  '/REDESOMA.svg',
+  '/AGAFARMA.svg',
+  '/AVANT.svg',
+  '/CB.svg',
+  'DROGABEK.svg',
+  '/guiafarmacia.svg',
+  '/IMENDES.svg',
+  '/INOVA.svg',
+  '/melhorcompra.svg',
+  '/multifarma.svg',
+  '/NAPP.svg',
+  '/REDESOMA.svg',
 ];
 
 export function Marcas(props: MarcasProps) {
@@ -69,10 +97,10 @@ export function Marcas(props: MarcasProps) {
                 <h2>Já ajudamos <span className='text-vermelho'> centenas de farmácias</span> e drogarias a descomplicar suas rotinas. </h2>
         </div>
 
-      <div className="carousel overflow-hidden tablet:w-[1200px] flex mx-auto">
+      <div className="carousel overflow-hidden tablet:w-[1000px] flex mx-auto">
         <div className="carousel-slides flex transition-transform ease-in-out duration-500 tablet:w-1/3" style={{ transform: `translateX(-${currentIndex * (100 / itemsPerSlide)}%)` }}>
           {images.map((image, index) => (
-             <div key={index} className={`carousel-slide flex-shrink-0 w-full tablet:-mx-[5rem] ${index === currentIndex ? 'active' : ''}`}>
+             <div key={index} className={`carousel-slide flex-shrink-0 w-full drop-shadow-lg pb-[2rem] tablet:-mx-[2.7rem] ${index === currentIndex ? 'active' : ''}`}>
               <Image src={image} alt={`Image ${index + 1}`} width={150} height={75} className='flex mx-auto tablet:w-[10rem] '/>
             </div>
           ))}
