@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/herosection";
 import { Subheader } from "@/components/subheader";
 import gerenciamento from '../../../../public/gerenciamento.png'
 import { Otimize } from "@/components/otimize";
+import { Render } from "@/components/carrosselsolucoes";
 
 export default function Administracao() {
   return(
@@ -24,6 +25,7 @@ export default function Administracao() {
       img={gerenciamento}
       /> 
       <Otimize /> 
+      <Render />
   
       </>
    )
