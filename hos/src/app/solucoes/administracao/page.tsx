@@ -4,6 +4,7 @@ import { Subheader } from "@/components/subheader";
 import gerenciamento from '../../../../public/gerenciamento.png'
 import { Otimize } from "@/components/otimize";
 import { Render } from "@/components/carrosselsolucoes";
+import { Cta } from "@/components/cta";
 
 export default function Administracao() {
   return(
@@ -26,6 +27,7 @@ export default function Administracao() {
       /> 
       <Otimize /> 
       <Render />
+      <Cta />
   
       </>
    )
