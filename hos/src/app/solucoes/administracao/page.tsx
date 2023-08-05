@@ -5,6 +5,7 @@ import gerenciamento from '../../../../public/gerenciamento.png'
 import { Otimize } from "@/components/otimize";
 import { Render } from "@/components/carrosselsolucoes";
 import { Cta } from "@/components/cta";
+import { Footer } from "@/components/footer";
 
 export default function Administracao() {
   return(
@@ -12,9 +13,9 @@ export default function Administracao() {
       <Header />
       <Subheader
       primeiro={"Administração"} hrefPrimeiro={"/solucoes/administracao"}
-      segundo={"Gerenciamento de Loja"}  hrefSegundo={"/"}
-      terceiro={"Processos de Manipulação"} hrefTerceiro={""}
-      quarto={"Soluções complementares"}  hrefQuarto={""}
+      segundo={"Gerenciamento de Loja"}  hrefSegundo={"/solucoes/gerenciamento"}
+      terceiro={"Processos de Manipulação"} hrefTerceiro={"/solucoes/processos"}
+      quarto={"Soluções complementares"}  hrefQuarto={"/solucoes/complementares"}
       />
       <HeroSection 
       bgClassName={"bg-fundo"}
@@ -28,6 +29,7 @@ export default function Administracao() {
       <Otimize /> 
       <Render />
       <Cta />
+      <Footer />
   
       </>
    )
