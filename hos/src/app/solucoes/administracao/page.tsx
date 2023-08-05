@@ -5,7 +5,12 @@ export default function Administracao() {
   return(
       <>
       <Header />
-      <Subheader primeiro={"Administração"} segundo={"Gerenciamento de Loja"} terceiro={"Processos de Manipulação"} quarto={"Soluções complementares"} />
+      <Subheader
+      primeiro={"Administração"} hrefPrimeiro={"/solucoes/administracao"}
+      segundo={"Gerenciamento de Loja"}  hrefSegundo={"/"}
+      terceiro={"Processos de Manipulação"} hrefTerceiro={""}
+      quarto={"Soluções complementares"}  hrefQuarto={""}
+      />
         
   
       </>
