@@ -4,7 +4,7 @@ import facebook from '../../public/facebook.svg'
 import instagram from '../../public/instagram.svg'
 import linkedin from '../../public/linkedin.svg'
 import youtube from '../../public/youtube.svg'
-import { link } from "fs"
+import Link from 'next/link'
 
 interface FooterProps {
 
@@ -17,7 +17,9 @@ export function Footer(props: FooterProps){
         <div className="mx-auto tablet:flex tablet:max-w-[1200px] tablet:pt-[3rem] tablet:justify-center">
 
             <div className="">
-                <Image src={logo} alt="" className='w-[4.1rem] h-auto flex mx-auto py-[2rem] tablet:flex tablet:mx-0'/>
+                <Link href='/'> 
+                    <Image src={logo} alt="" className='w-[4.1rem] h-auto flex mx-auto py-[2rem] tablet:flex tablet:mx-0'/>
+                </Link>
                 <p className="text-center text-[0.75rem] font-grafite leading-relaxed tablet:text-left">©HOS Software para Farmácias. 
                 <br/>
                 Todos os direitos reservados.

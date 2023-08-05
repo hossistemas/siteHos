@@ -5,6 +5,7 @@ import logo from '../../public/logo.svg'
 import hamburguer from '../../public/hamburguer.svg'
 import xis from '../../public/xis.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 
 interface HeaderProps {
@@ -24,9 +25,11 @@ export function Header(props: HeaderProps){
     return(
         <>
         <header className='py-[5rem] px-[3rem] flex justify-between tablet: tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:max-h-[82px] tablet:w-auto'>
-            <div className='tablet:flex tablet:justify-center tablet:mx-auto tablet:max-w-[1200px]'>
-
-                <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto  tablet:h-[4.3rem] tablet:mr-[8rem] tablet:max-w-[1200px]' />
+            <div  className='tablet:flex tablet:justify-center tablet:mx-auto tablet:max-w-[1200px]'>
+                
+              <Link href='/'> 
+              <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto cursor-pointer tablet:h-[4.3rem] tablet:mr-[8rem] tablet:max-w-[1200px]' />
+              </Link>
             <div>
             {botao1Visivel && (
                 <button onClick={visibilidadeBotao} 
@@ -45,7 +48,7 @@ export function Header(props: HeaderProps){
             <div className='hidden tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:-ml-[5rem] '>
 
                 <div className='tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:text-[0.8rem] tablet:font-semibold tablet:text-grafite '>               
-                        <a href="" className='mr-[1.8rem] tablet:ml-[1rem] hover:text-vermelho'>Soluções</a>
+                        <Link href="/solucoes/administracao" className='mr-[1.8rem] tablet:ml-[1rem] hover:text-vermelho'>Soluções </Link>
                         <a href="" className='mr-[1.8rem] hover:text-vermelho'>Sobre</a>
                         <a href="" className='mr-[1.8rem] hover:text-vermelho'>Suporte</a>
                         <a href="" className='mr-[1.8rem] hover:text-vermelho'>Universidade</a>
