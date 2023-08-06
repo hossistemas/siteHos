@@ -49,7 +49,7 @@ export function Header(props: HeaderProps){
 
                 <div className='tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:text-[0.8rem] tablet:font-semibold tablet:text-grafite '>               
                         <Link href="/solucoes/administracao" className='mr-[1.8rem] tablet:ml-[1rem] hover:text-vermelho'>Soluções </Link>
-                        <a href="" className='mr-[1.8rem] hover:text-vermelho'>Sobre</a>
+                        <Link href="/sobre/quemsomos" className='mr-[1.8rem] hover:text-vermelho'>Sobre</Link>
                         <a href="" className='mr-[1.8rem] hover:text-vermelho'>Suporte</a>
                         <a href="" className='mr-[1.8rem] hover:text-vermelho'>Universidade</a>
                         <a href="" className='mr-[3rem] hover:text-vermelho'>Blog</a>
@@ -72,10 +72,10 @@ export function Header(props: HeaderProps){
 
             <div className='grid gap-y-3 text-white pt-[1rem] ml-[3rem] text-[1rem] font-semibold tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:text-[0.8rem] tablet:font-semibold tablet:text-grafite '>               
                     <Link href="/solucoes/administracao" className=''>Soluções</Link>
-                    <a href="" className=' '>Sobre</a>
+                    <Link href="/sobre/quemsomos" className=''>Sobre</Link>
                     <a href="" className=''>Suporte</a>
                     <a href="" className=''>Universidade</a>
-                    <a href="" className='' >Blog</a>
+                    <a href="" className=''>Blog</a>
             </div>
 
             <div className=''>
