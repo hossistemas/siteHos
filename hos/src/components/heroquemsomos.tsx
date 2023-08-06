@@ -25,9 +25,9 @@ export function Heroquemsomos(props : HeroquemsomosProps){
                         <br></br><br />
                         Foi quando tivemos um <span className=' font-bold'>insight:</span> contratar um programador interno para trabalhar lado a lado com <span className=' font-bold'>nossa equipe</span>. Conforme <span className=' font-bold'>aprimorávamos</span> nossos produtos e nos <span className=' font-bold'>conectávamos</span> com as demandas do mercado, percebemos que tínhamos uma oportunidade única de ir além, então criamos a <span className=' font-bold'>HOS</span>.
                         <br></br><br />
-                        O nome <span className=' font-bold'>HOS</span> foi escolhido em homenagem aos criadores: Henrique da Silva, Oneide Moraes e Silvano Peruzzo. Após cumprir sua missão, a HOS se desvinculou da farmácia, ganhando uma personalidade própria.
+                        O nome <span className=' font-bold'>HOS</span> foi escolhido em homenagem aos criadores: Henrique da Silva, Oneide Moraes e Silvano Peruzzo. Após cumprir sua missão, a <span className=' font-bold'>HOS</span> se desvinculou da farmácia, ganhando uma <span className=' font-bold'>personalidade própria</span>.
                         <br></br><br />
-                        Atualmente nossos softwares estão presentes em centenas de farmácias em todo o Brasil, resultado do trabalho conjunto de nossos clientes, colaboradores e representantes. Buscamos constantemente o que há de mais moderno, mantendo a qualidade de nossos produtos.
+                        Atualmente nossos softwares estão presentes em <span className=' font-bold'>centenas de farmácias</span> em todo o Brasil, resultado do trabalho conjunto de nossos clientes, colaboradores e representantes. Buscamos constantemente o que há de <span className=' font-bold'>mais moderno</span>, mantendo a <span className=' font-bold'>qualidade de nossos produtos</span>.
 
                         </p>
                     </div>
