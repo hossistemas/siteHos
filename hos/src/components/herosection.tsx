@@ -26,7 +26,7 @@ export function HeroSection({title, text, img, bgClassName, titleClassName, text
                 </div>
 
                 <div className=' tablet:flex  '>
-                    <Image src={img} alt='' className=' tablet:w-[500px] h-auto tablet:mt-[3.6rem]'/>
+                    <Image src={img} alt='' className=' tablet:w-[500px] h-auto tablet:mt-[3.46rem]'/>
                 </div>
             
             </div>

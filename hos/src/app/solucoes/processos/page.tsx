@@ -1,13 +1,12 @@
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/herosection";
 import { Subheader } from "@/components/subheader";
-import loja from '../../../../public/loja.png'
+import manipulacao from '../../../../public/manipulacao.png'
 import { Cta } from "@/components/cta";
 import { Footer } from "@/components/footer";
-import { Potencialize } from "@/components/potencialize";
-import { Circulo } from "@/components/circulo";
+import { Maximize } from "@/components/maximiza";
 
-export default function Gerenciamento() {
+export default function Processos() {
   return(
       <>
       <Header />
@@ -19,15 +18,14 @@ export default function Gerenciamento() {
       />
       <HeroSection 
       bgClassName={"bg-gradient-to-b from-laranja to-magenta"}
-      title={"Transforme sua farmácia em um sucesso lucrativo"} 
+      title={"Gestão descomplicada para farmácias de manipulação"} 
       titleClassName={"text-fundo"}
-      text={"Agilize processos, amplie vendas e aumente as margens de lucro com eficiência"} 
+      text={"Manipulação, Frente de Caixa e Controles Administrativos em um só lugar!"} 
       textClassName={"text-fundo"}
       buttonClassName={"bg-darker text-white hover:bg-fundo hover:text-darker hover:transition hover:duration-500"}
-      img={loja}
+      img={manipulacao}
       /> 
-      <Potencialize />
-      <Circulo /> 
+      <Maximize />
     
       <Cta />
       <Footer />
