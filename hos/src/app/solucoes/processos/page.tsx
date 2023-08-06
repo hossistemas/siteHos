@@ -5,6 +5,7 @@ import manipulacao from '../../../../public/manipulacao.png'
 import { Cta } from "@/components/cta";
 import { Footer } from "@/components/footer";
 import { Maximize } from "@/components/maximiza";
+import { Gestao } from "@/components/gestao";
 
 export default function Processos() {
   return(
@@ -26,6 +27,7 @@ export default function Processos() {
       img={manipulacao}
       /> 
       <Maximize />
+      <Gestao />
     
       <Cta />
       <Footer />
