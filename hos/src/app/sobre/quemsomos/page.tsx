@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import { Subheader } from "@/components/subheader";
 import { Footer } from "@/components/footer";
 import { Heroquemsomos } from "@/components/heroquemsomos";
+import { Tres } from "@/components/quemsomostres";
 
 
 export default function Administracao() {
@@ -15,6 +16,7 @@ export default function Administracao() {
       quarto={"Revendas"}  hrefQuarto={"/sobre/revendas"}
       />
       <Heroquemsomos />
+      <Tres />
       <Footer />
   
       </>
