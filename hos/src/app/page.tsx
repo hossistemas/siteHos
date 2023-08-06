@@ -1,3 +1,4 @@
+'use client'
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/herosection";
 import { Beneficios } from "@/components/beneficios";
@@ -12,12 +13,16 @@ import banner from '../../public/Homepage.png';
 import { Simplifique } from "@/components/simplifique";
 import { Marcas } from "@/components/marcas";
 import { Footer } from "@/components/footer";
+import {NextUIProvider} from "@nextui-org/react";
 
 
 export default function Home() {
   
   return (
+
     <>
+    <NextUIProvider>
+
     <Header />
     <HeroSection 
       bgClassName={"bg-gradient-to-b from-laranja to-magenta"}
@@ -27,7 +32,7 @@ export default function Home() {
       textClassName={"text-white"}
       buttonClassName={"bg-darker text-white hover:bg-white hover:text-darker hover:transition hover:duration-500"}
       img={banner}
-    />
+      />
     <Beneficios />
     <Sistema />
     <Solucoes />
@@ -39,6 +44,7 @@ export default function Home() {
     <Simplifique />
     <Marcas />
     <Footer />
+    </NextUIProvider>
    
       
 
