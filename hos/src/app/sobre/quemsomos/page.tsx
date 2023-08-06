@@ -1,6 +1,8 @@
 import { Header } from "@/components/header";
 import { Subheader } from "@/components/subheader";
 import { Footer } from "@/components/footer";
+import { Heroquemsomos } from "@/components/heroquemsomos";
+
 
 export default function Administracao() {
   return(
@@ -12,7 +14,7 @@ export default function Administracao() {
       terceiro={"Contato"} hrefTerceiro={"/sobre/contato"}
       quarto={"Revendas"}  hrefQuarto={"/sobre/revendas"}
       />
-
+      <Heroquemsomos />
       <Footer />
   
       </>
