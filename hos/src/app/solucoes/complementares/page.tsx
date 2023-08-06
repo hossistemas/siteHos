@@ -6,6 +6,7 @@ import complementares from '../../../../public/complementares.png'
 import { Cta } from "@/components/cta";
 import { Footer } from "@/components/footer";
 import { Conformidade } from "@/components/conformidade";
+import { Recursos } from "@/components/recursos";
 
 export default function Administracao() {
   return(
@@ -27,9 +28,9 @@ export default function Administracao() {
       img={complementares}
       /> 
       <Conformidade />
+      <Recursos />
       <Cta />
       <Footer />
-  
       </>
    )
   }
