@@ -5,6 +5,7 @@ import complementares from '../../../../public/complementares.png'
  
 import { Cta } from "@/components/cta";
 import { Footer } from "@/components/footer";
+import { Conformidade } from "@/components/conformidade";
 
 export default function Administracao() {
   return(
@@ -25,6 +26,7 @@ export default function Administracao() {
       buttonClassName={"bg-gradient-to-b from-laranja to-magenta text-white hover:bg-gradient-to-b hover:from-darker hover:to-darker hover:transition hover:duration-500"}
       img={complementares}
       /> 
+      <Conformidade />
       <Cta />
       <Footer />
   
