@@ -6,6 +6,7 @@ import { Cta } from "@/components/cta";
 import { Footer } from "@/components/footer";
 import { Maximize } from "@/components/maximiza";
 import { Gestao } from "@/components/gestao";
+import { Emuitomais } from "@/components/emuitomais";
 
 export default function Processos() {
   return(
@@ -28,6 +29,7 @@ export default function Processos() {
       /> 
       <Maximize />
       <Gestao />
+      <Emuitomais />
     
       <Cta />
       <Footer />
