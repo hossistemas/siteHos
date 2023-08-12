@@ -17,8 +17,38 @@ export function Revendedor () {
         setSelectedEstado(event.target.value)
     }
 
+    const revendedores = [
+        {
+            image:'/maletinha.svg',
+            title:'Inforsas',
+            cidade:'Arapiraca - Alagoas',
+            email:'inforsas@gmail.com',
+            telefone:'(84) 9.9697-1337',
+        },
+        {
+            image:'/maletinha.svg',
+            title:'Consultime Soluções',
+            cidade:'Arapiraca - Alagoas',
+            email:'inforsas@gmail.com',
+            telefone:'(84) 9.9697-1337',
+        },
+    ];
+
     return (
         <div className="bg-fundo">   
+
+        {revendedores.map((item, index) => (
+        <div key={index} className="pb-[5rem]">
+          <Image src={item.image} width={100} height={100} alt='' className="flex w-[2rem] h-[2rem]"
+          />
+          <h2>{item.title}</h2>
+          <p> <span>Cidade:</span> {item.cidade} </p>
+          <p> <span>E-mail:</span> {item.email} </p>
+          <p> <span>Telefone:</span> {item.telefone} </p>
+        </div>
+      ))}
+
+
 
 
             <div className="tablet:grid tablet:grid-cols-2">
