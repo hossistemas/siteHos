@@ -53,18 +53,18 @@ export function Faq () {
                     <h2 className="text-[1.5rem] text-white font-bold flex justify-center mx-auto pt-[0.8rem] tablet:mx-0 tablet:text-[2.75rem] tablet:ml-6 tablet:mb-3">Perguntas Frequentes</h2>
                 </div>
             </div>
-        <div className="bg-fundo">
-            <div className="pb-[5rem] ">
-                <Acordeao sections={perguntasRespostas} section={undefined} index={undefined} sectionIndex={undefined}/>
-            </div>
+            <div className="bg-fundo">
+                <div className="pb-[5rem] ">
+                    <Acordeao sections={perguntasRespostas} section={undefined} index={undefined} sectionIndex={undefined}/>
+                </div>
 
-            <div className="pb-[3rem]">
-            <p className="text-[1rem] text-grafite font-semibold w-[13rem] flex mx-auto text-center">Não encontrou a resposta para sua dúvida?</p>
-            <button className="flex justify-center items-center mx-auto mt-[1rem] pt-[1.2rem] w-[13.4rem] h-[0.9rem]  py-[1.3rem] px-[0.8rem] rounded-lg bg-gradient-to-b from-laranja to-magenta tablet:-mt-[4rem] tablet:col-start-1 tablet:ml-[6rem] tablet:w-[15rem] tablet:h-[3.5rem] tablet:rounded-lg tablet:hover:bg-gradient-to-b tablet:hover:from-darker tablet:hover:to-darker tablet:hover:duration-1000">
-                        <p className="text-fundo text-[0.87rem] font-normal text-center pr-[0.5rem]">Entre em contato conosco</p>
-                        <Image src={flecha} alt="" />
-                </button>
-            </div>
+                <div className="pb-[3rem] tablet:pb-[6rem] tablet:pt-[9rem]">
+                    <p className="text-[1rem] text-grafite font-semibold w-[13rem] flex mx-auto text-center tablet:text-[1.25rem] tablet:w-[25rem]">Não encontrou a resposta para sua dúvida?</p>
+                    <button className="flex justify-center items-center mx-auto mt-[1rem] pt-[1.2rem] w-[13.4rem] h-[0.9rem]  py-[1.3rem] px-[0.8rem] rounded-lg bg-gradient-to-b from-laranja to-magenta  tablet:pt-[1.5rem] tablet:w-[15rem] tablet:h-[3.5rem] tablet:rounded-lg tablet:hover:bg-gradient-to-b tablet:hover:from-darker tablet:hover:to-darker tablet:hover:duration-1000">
+                                <p className="text-fundo text-[0.87rem] font-normal text-center pr-[0.5rem]">Entre em contato conosco</p>
+                                <Image src={flecha} alt="" />
+                    </button>
+                </div>
             </div>
         </div>
     )
