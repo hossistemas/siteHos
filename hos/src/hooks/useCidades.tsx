@@ -14,13 +14,24 @@ export interface ICidade {
 
 export default function useCidades ({ siglaUF }: IUseCidadesProps) {
     const [cidades, setCidades] = useState<ICidade[]>([]);
+   
 
-    useEffect (() => {
-        fetch(`https://brasilapi.com.br/api/ibge/municipios/v1/${siglaUF}?providers=dados-abertos-br,gov,wikipedia`)
-        .then((response) => response.json())
-        .then((data) => setCidades(data))
-
-    }, [siglaUF]);
+    useEffect(() => {
+        fetch(`https://brasilapi.com.br/api/ibge/municipios/v1/${siglaUF}`)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Erro na requisição");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            setCidades(data);
+          })
+          .catch((error) => {
+            console.error("Erro ao buscar cidades:", error);
+            setCidades([]);
+          });
+      }, [siglaUF]);
 
     return {
         cidades, useCidades
