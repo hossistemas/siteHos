@@ -99,24 +99,24 @@ export function Formulario () {
             <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full '>
                 <Image src={whatsapp} alt="" />
             </div>
-                <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem]" >Telefone</h5>
-                <p className="text-cinza text-[0.9rem] w-[10rem] font-semibold text-center mx-auto mt-[-0.3rem]">+55 (54) 2621-4400</p>
+                <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem]" >WhatsApp</h5>
+                <p className="text-cinza text-[0.9rem] w-[10rem] font-semibold text-center mx-auto mt-[-0.3rem]">+55 (54) 9 9640 0699</p>
         </div>
 
         <div className="pt-[2.5rem]">
             <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full '>
                 <Image src={horario} alt="" />
             </div>
-                <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem]" >Telefone</h5>
-                <p className="text-cinza text-[0.9rem] w-[10rem] font-semibold text-center mx-auto mt-[-0.3rem]">+55 (54) 2621-4400</p>
+                <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem]" >Horário de atendimento</h5>
+                <p className="text-cinza text-[0.9rem] w-[10rem] font-semibold text-center mx-auto mt-[-0.3rem] leading-tight">Segunda à Sexta-feira: 08h às 18h</p>
         </div>
 
         <div className="pt-[2.5rem] pb-[3rem]">
             <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full '>
                 <Image src={localizacao} alt="" />
             </div>
-                <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem]" >Telefone</h5>
-                <p className="text-cinza text-[0.9rem] w-[10rem] font-semibold text-center mx-auto mt-[-0.3rem]">+55 (54) 2621-4400</p>
+                <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem]" >Endereço</h5>
+                <p className="text-cinza text-[0.9rem] w-[12.2rem] font-semibold text-center mx-auto mt-[-0.3rem] leading-tight">Rua Pernambuco, 212, Bairro Humaitá, Bento Gonçalves RS - 95705-024</p>
         </div>
 
 
