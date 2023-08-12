@@ -28,9 +28,37 @@ export function Revendedor () {
         {
             image:'/maletinha.svg',
             title:'Consultime Soluções',
-            cidade:'Arapiraca - Alagoas',
-            email:'inforsas@gmail.com',
-            telefone:'(84) 9.9697-1337',
+            cidade:'Salvador - Bahia',
+            email:'consultimesolucoes@gmail.com',
+            telefone:'(71) 3372-4545',
+        },
+        {
+            image:'/maletinha.svg',
+            title:'Contabilize Gestão',
+            cidade:'Castelo - Espírito Santo',
+            email:'nubia@contabilizegestao.com.br',
+            telefone:'(26) 3542-5165',
+        },
+        {
+            image:'/maletinha.svg',
+            title:'Rafael Lucena Consultoria',
+            cidade:'Guarapari - Espírito Santo',
+            email:'rafaellucenaconsultoria@gmail.com',
+            telefone:'(27) 9.9652-1589',
+        },
+        {
+            image:'/maletinha.svg',
+            title:'Lef Sistemas',
+            cidade:'Várzea Grande - Mato Grosso',
+            email:'ilson.ramos@lefsistemas.com.br',
+            telefone:'(65) 3044-3573',
+        },
+        {
+            image:'/maletinha.svg',
+            title:'Andrade Silva Tecnologia',
+            cidade:'Campo Grande - Mato Grosso do Sul',
+            email:'paulo@infoin.com.br',
+            telefone:'(67) 9.9129-0789',
         },
     ];
 
