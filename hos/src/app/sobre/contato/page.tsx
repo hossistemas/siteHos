@@ -3,7 +3,8 @@
 import { Header } from "@/components/header";
 import { Subheader } from "@/components/subheader";
 import { Footer } from "@/components/footer";
-import { Faq } from "@/components/faq";
+import { Formulario } from "@/components/converse";
+
 
 
 export default function Contato () {
@@ -16,7 +17,7 @@ export default function Contato () {
       terceiro={"Contato"} hrefTerceiro={"/sobre/contato"}
       quarto={"Revendas"}  hrefQuarto={"/sobre/revendas"}
       />
-      
+      <Formulario />
       <Footer />
   
       </>
