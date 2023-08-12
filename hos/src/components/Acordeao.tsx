@@ -49,7 +49,7 @@ const AcordeaoSection = ({section, isActiveSection, sectionIndex, setActiveIndex
 const Acordeao = ({ sections } : AcordeaoProps) => {
     const [activeIndex, setActiveIndex] = useState(0);
 return (
-    <div className="bg-creme-claro w-[360px] px-[2rem]">
+    <div className=" w-[360px] px-[2rem]">
         {sections.map((section: any, index: Key | null | undefined) => (
         <AcordeaoSection section={section} key={index} 
         isActiveSection={index === activeIndex} 
