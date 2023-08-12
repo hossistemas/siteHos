@@ -29,7 +29,7 @@ const AcordeaoSection = ({section, isActiveSection, sectionIndex, setActiveIndex
 
     return (
         <div className='bg-fundo'>
-        <div className='mt-[3rem] pt-[0.5rem] -my-[2rem] rounded-lg bg-white drop-shadow-lg  max-w-[20.3rem] h-auto tablet:max-w-[31rem] tablet:pt-[1rem] tablet:pb-[0.5rem] tablet:px-2 tablet:ml-2'>
+        <div className='mt-[3rem] pt-[0.5rem] -my-[2rem] rounded-lg bg-white drop-shadow-lg  max-w-[20.3rem] h-auto tablet:max-w-[31rem] tablet:pt-[1rem] tablet:pb-[0.5rem] tablet:ml-2'>
             
             <div onClick={toggleSection} className='flex pl-1 justify-between items-center pb-2 mx-auto  '>
                 <div className='flex ml-2 justify-start items-center  font-semibold text-grafite text-[0.8rem] leading-tight tablet:text-[1.125rem]'>{section.title}</div>
@@ -49,7 +49,7 @@ const AcordeaoSection = ({section, isActiveSection, sectionIndex, setActiveIndex
 const Acordeao = ({ sections } : AcordeaoProps) => {
     const [activeIndex, setActiveIndex] = useState(0);
 return (
-    <div className=" w-[360px] px-[2rem] tablet:grid tablet:grid-cols-2 tablet:w-[64rem] tablet:h-[26rem]">
+    <div className=" w-[360px] px-[2rem] tablet:grid tablet:grid-cols-2 tablet:w-[64rem] tablet:h-[26rem] tablet:mx-auto tablet:gap-y-4 tablet:gap-x-4">
         {sections.map((section: any, index: Key | null | undefined) => (
         <AcordeaoSection section={section} key={index} 
         isActiveSection={index === activeIndex} 
