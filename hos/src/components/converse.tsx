@@ -2,9 +2,10 @@ import useCidades from "@/hooks/useCidades";
 import useEstados from "@/hooks/useEstados";
 import { SetStateAction, useState } from "react";
 import InputMask from 'react-input-mask';
-
 import Image from 'next/image'
 
+import telefone from '../../public/telefone.svg'
+import whatsapp from '../../public/whatsapp.svg'
 
 
 
@@ -18,7 +19,7 @@ export function Formulario () {
     }
 
     return (
-        <div>
+        <div className="bg-fundo">
              <div className="bg-gradient-to-b from-laranja to-magenta w-auto h-[16rem] pt-[3rem] tablet:h-[21rem]">
                 <div className="tablet:flex tablet:justify-center tablet:items-center tablet:pt-[4.5rem]">
                     <h4 className="text-[1.25rem] font-bold text-white">Converse com um de nossos consultoress</h4>
@@ -28,7 +29,7 @@ export function Formulario () {
             </div>
             
             
-            <form action="" className="bg-white mx-auto w-[22rem] h-[56rem] rounded-lg drop-shadow-botao mt-[-2rem]">
+            <form action="" className="bg-white mx-auto w-[22rem] h-[48rem] rounded-lg drop-shadow-botao mt-[-2rem]">
                 <div className="mx-[1rem] py-[2rem] grid grid-cols-2">
                     <label className="nome text-[0.875rem] text-cinza font-bold col-span-2" >Nome completo*
                         <input type="text" placeholder="Digite aqui seu nome completo" className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem]" />
@@ -71,18 +72,28 @@ export function Formulario () {
                     </label>  
 
                     <label className="mensagem text-[0.875rem] text-cinza font-bold col-span-2">Deixe uma mensagem*
-                        <textarea  placeholder="Digite sua mensagem" className="w-[20rem] h-[6rem] border-2 rounded-lg  font-normal text-[0.7rem] pl-[0.7rem] pt-[0.3rem] mt-[0.3rem] mb-[1.5rem]"
+                        <textarea  placeholder="Digite sua mensagem" className="w-[20rem] h-[6rem] border-2 rounded-lg  font-normal text-[0.7rem] pl-[0.7rem] pt-[0.3rem] mt-[0.3rem] mb-[0.5rem]"
                         />
                     </label>  
 
-                    <p>*Campos obrigatórios</p>
+                    <p className="text-[0.6rem] text-grafite flex items-end justify-end col-start-2 ">*Campos obrigatórios</p>
 
-                    <button> enviar </button>
+                    <button className="col-start-2 w-[9rem] h-[2.5rem] mt-[1.4rem] ml-[1.2rem] rounded-lg bg-gradient-to-b from-laranja to-magenta">
+                        <p className="text-white text-[0.7rem] font-semibold">Enviar</p>
+                        </button>
                 </div>
             </form>
         
-            
+
+        <div className="pt-[15rem]">
+            <div>
+                <Image src={telefone} alt="" />
+            </div>
+                <h5></h5>
+                <p></p>
         </div>
+</div>
+         
     )
   };
   
