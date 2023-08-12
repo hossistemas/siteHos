@@ -1,6 +1,8 @@
 import useCidades from "@/hooks/useCidades";
 import useEstados from "@/hooks/useEstados";
 import { SetStateAction, useState } from "react";
+import InputMask from 'react-input-mask';
+
 import Image from 'next/image'
 
 
@@ -60,16 +62,17 @@ export function Formulario () {
                         </select>
                     </label>
 
-                    <label className="telefone">Telefone*
-                        <input type="text" placeholder="(__)_____-____" />
+                    <label className="telefone text-[0.875rem] text-cinza font-bold">Telefone*
+                     <InputMask  mask="(99) 99999-9999"  maskChar=""  placeholder="(DD) _____-____" className='w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-1' required />
                     </label>  
 
-                    <label className="horário">Horário para contato*
-                        <input type="text" placeholder="00:00" />
+                    <label className="horário text-[0.875rem] text-cinza font-bold">Horário para contato*
+                        <input type="time" placeholder="00:00" className='w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.18rem] mb-[1.5rem]' />
                     </label>  
 
-                    <label className="mensagem">Deixe uma mensagem*
-                        <input type="text" placeholder="Digite sua mensagem" />
+                    <label className="mensagem text-[0.875rem] text-cinza font-bold col-span-2">Deixe uma mensagem*
+                        <textarea  placeholder="Digite sua mensagem" className="w-[20rem] h-[6rem] border-2 rounded-lg  font-normal text-[0.7rem] pl-[0.7rem] pt-[0.3rem] mt-[0.3rem] mb-[1.5rem]"
+                        />
                     </label>  
 
                     <p>*Campos obrigatórios</p>
