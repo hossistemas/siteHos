@@ -8,6 +8,10 @@ import telefone from '../../public/telefone.svg'
 import whatsapp from '../../public/whatsapp.svg'
 import localizacao from '../../public/localizacao.svg'
 import horario from '../../public/horario.svg'
+import facebook from '../../public/facebook.svg'
+import instagram from '../../public/instagram.svg'
+import linkedin from '../../public/linkedin.svg'
+import youtube from '../../public/youtube.svg'
 
 
 
@@ -23,10 +27,10 @@ export function Formulario () {
     return (
         <div className="bg-fundo">
              <div className="bg-gradient-to-b from-laranja to-magenta w-auto h-[16rem] pt-[3rem] tablet:h-[21rem]">
-                <div className="tablet:flex tablet:justify-center tablet:items-center tablet:pt-[4.5rem]">
-                    <h4 className="text-[1.25rem] font-bold text-white">Converse com um de nossos consultoress</h4>
-                    <div />
-                    <p>Você ainda tem alguma dúvida? Entre em contato conosco pelos canais oficiais.</p>
+                <div className="ml-[3rem] tablet:flex tablet:justify-center tablet:items-center tablet:pt-[4.5rem]">
+                    <h4 className="text-[1.25rem] font-bold text-white w-[12.5rem] leading-tight">Converse com um de nossos consultores</h4>
+                    <div className="bg-white w-[3rem] h-[0.1rem] my-[0.5rem]"/>
+                    <p className="text-[0.8rem] text-white font-medium w-[12.5rem] leading-tight">Você ainda tem alguma dúvida? Entre em contato conosco pelos canais oficiais.</p>
                 </div>
             </div>
             
@@ -119,6 +123,16 @@ export function Formulario () {
                 <p className="text-cinza text-[0.9rem] w-[12.2rem] font-semibold text-center mx-auto mt-[-0.3rem] leading-tight">Rua Pernambuco, 212, Bairro Humaitá, Bento Gonçalves RS - 95705-024</p>
         </div>
 
+
+        <div>
+            <p className="text-[0.9rem] text-grafite text-center mx-auto font-semibold">Siga-nos nas redes sociais!</p>
+            <div className="flex justify-center items-center pt-[1rem] pb-[3rem] gap-x-6 tablet:justify-end tablet:pb-[3rem]">
+                    <Image src={facebook} alt=""/>
+                    <Image src={instagram} alt=""/>
+                    <Image src={linkedin} alt=""/>
+                    <Image src={youtube} alt=""/>
+            </div>
+        </div>    
 
 </div>
          
