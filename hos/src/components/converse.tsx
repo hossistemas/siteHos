@@ -6,6 +6,8 @@ import Image from 'next/image'
 
 import telefone from '../../public/telefone.svg'
 import whatsapp from '../../public/whatsapp.svg'
+import localizacao from '../../public/localizacao.svg'
+import horario from '../../public/horario.svg'
 
 
 
@@ -85,13 +87,39 @@ export function Formulario () {
             </form>
         
 
-        <div className="pt-[15rem]">
-            <div>
+        <div className="pt-[5rem]">
+            <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full '>
                 <Image src={telefone} alt="" />
             </div>
-                <h5></h5>
-                <p></p>
+                <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem]" >Telefone</h5>
+                <p className="text-cinza text-[0.9rem] w-[10rem] font-semibold text-center mx-auto mt-[-0.3rem]">+55 (54) 2621-4400</p>
         </div>
+
+        <div className="pt-[2.5rem]">
+            <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full '>
+                <Image src={whatsapp} alt="" />
+            </div>
+                <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem]" >Telefone</h5>
+                <p className="text-cinza text-[0.9rem] w-[10rem] font-semibold text-center mx-auto mt-[-0.3rem]">+55 (54) 2621-4400</p>
+        </div>
+
+        <div className="pt-[2.5rem]">
+            <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full '>
+                <Image src={horario} alt="" />
+            </div>
+                <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem]" >Telefone</h5>
+                <p className="text-cinza text-[0.9rem] w-[10rem] font-semibold text-center mx-auto mt-[-0.3rem]">+55 (54) 2621-4400</p>
+        </div>
+
+        <div className="pt-[2.5rem] pb-[3rem]">
+            <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full '>
+                <Image src={localizacao} alt="" />
+            </div>
+                <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem]" >Telefone</h5>
+                <p className="text-cinza text-[0.9rem] w-[10rem] font-semibold text-center mx-auto mt-[-0.3rem]">+55 (54) 2621-4400</p>
+        </div>
+
+
 </div>
          
     )
