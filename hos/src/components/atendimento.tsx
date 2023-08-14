@@ -1,8 +1,8 @@
-
+import telefone from '../../public/telefone.svg'
+import plantao from '../../public/plantao.svg'
+import email from '../../public/email.svg'
 import Image from "next/image"
-import telefone from './../../public/telefone.svg'
-import plantao from '../../../public/plantao.svg'
-import email from '../../../public/email.svg'
+
 
 
 export function Atendimento(){
