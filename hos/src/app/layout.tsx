@@ -21,6 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
+      
       <body className={red.className}>
       {children}
         </body>
