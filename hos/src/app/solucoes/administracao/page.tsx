@@ -18,14 +18,13 @@ export default function Administracao() {
       quarto={"Soluções complementares"}  hrefQuarto={"/solucoes/complementares"}
       />
       <HeroSection 
-      bgClassName={"bg-fundo"}
-      title={"Melhore sua margem de lucro em cada oportunidade de venda"} 
-      titleClassName={"text-grafite"}
-      text={"Velocidade e entendimento do cliente como chave para o seu sucesso."} 
-      textClassName={"text-grafite"}
-      buttonClassName={"bg-gradient-to-b from-laranja to-magenta text-white hover:bg-gradient-to-b hover:from-darker hover:to-darker hover:transition hover:duration-500"}
-      img={gerenciamento}
-      /> 
+        bgClassName={"bg-fundo"}
+        title={"Melhore sua margem de lucro em cada oportunidade de venda"}
+        titleClassName={"text-grafite"}
+        text={"Velocidade e entendimento do cliente como chave para o seu sucesso."}
+        textClassName={"text-grafite"}
+        buttonClassName={"bg-gradient-to-b from-laranja to-magenta text-white hover:bg-gradient-to-b hover:from-darker hover:to-darker hover:transition hover:duration-500"}
+        img={gerenciamento} buttonName={undefined}      /> 
       <Otimize /> 
       <Render />
       <Cta />
