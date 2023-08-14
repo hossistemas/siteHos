@@ -2,6 +2,8 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/herosection";
 import suporte from '../../../public/suporte.png'
+
+
 import { Atendimento } from "@/components/atendimento";
 
 
