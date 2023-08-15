@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
 
 interface HeroSectionProps {
@@ -23,7 +24,9 @@ export function HeroSection({title, text, img, bgClassName, titleClassName, text
                 <div className='pt-[3rem] px-[3rem] max-w-[500px] tablet:pl-[2rem] tablet: tablet:max-w-[590px]  '>
                     <h1 className={`text-[1.5rem] font-bold leading-none tablet:text-[2.25rem] ${titleClassName}`}>{title}</h1>
                     <p className={`text-[0.8rem] font-normal my-[2rem] tablet:text-[1.5rem] ${textClassName}`}>{text}</p>
-                    <button className={`text-[1rem] font-regular mb-[1.3rem] px-[1.3rem] py-[0.4rem] rounded-md tablet:text-[1.2rem] ${buttonClassName}`}>{buttonName}</button>
+                    <Link href="/sobre/contato">
+                        <button className={`text-[1rem] font-regular mb-[1.3rem] px-[1.3rem] py-[0.4rem] rounded-md tablet:text-[1.2rem] ${buttonClassName}`}>{buttonName}</button>
+                    </Link>
                 </div>
 
                 <div className=' tablet:flex  '>

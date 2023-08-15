@@ -13,8 +13,7 @@ export default function Suporte() {
       <Herouniversidade />
       <Videos />
       <Cta />
-      <Footer />
-  
+      <Footer />  
       </>
    )
   }

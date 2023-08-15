@@ -57,7 +57,9 @@ export function Header(props: HeaderProps){
 
                 <div className='tablet:flex items-center tablet:ml-[4rem]'>
                     <div className='tablet:flex tablet:justify-center tablet:items-center'>
+                    <Link href="/sobre/contato">
                         <button className='tablet:bg-gradient-to-b tablet:from-laranja tablet:to-magenta tablet:hover:bg-gradient-to-b tablet:hover:from-darker tablet:hover:to-darker tablet:hover:duration-1000 tablet:text-[0.8rem] tablet:font-semibold tablet:text-white tablet:rounded-md tablet:w-[13rem] tablet:px-[1.5rem] tablet:py-[0.5rem] '>Solicite uma demonstração</button>
+                    </Link>
                     </div>
                     <div className='tablet:flex tablet:ml-[1rem] tablet:justify-center tablet:items-center tablet:bg-white tablet:border-2 tablet:border-vermelho tablet:rounded-md tablet:w-[9rem] tablet:px-[0.5rem] tablet:py-[0.4rem]'>
                         <button className='tablet:text-[0.8rem] tablet:font-semibold  tablet:text-vermelho'>Área do cliente</button>
