@@ -51,7 +51,7 @@ export function Header(props: HeaderProps){
                         <Link href="/solucoes/administracao" className='mr-[1.8rem] tablet:ml-[1rem] hover:text-vermelho'>Soluções </Link>
                         <Link href="/sobre/quemsomos" className='mr-[1.8rem] hover:text-vermelho'>Sobre</Link>
                         <Link href="/suporte" className='mr-[1.8rem] hover:text-vermelho'>Suporte</Link>
-                        <a href="" className='mr-[1.8rem] hover:text-vermelho'>Universidade</a>
+                        <Link href="/universidade" className='mr-[1.8rem] hover:text-vermelho'>Universidade</Link>
                         <a href="" className='mr-[3rem] hover:text-vermelho'>Blog</a>
                 </div>
 
@@ -74,7 +74,7 @@ export function Header(props: HeaderProps){
                     <Link href="/solucoes/administracao" className=''>Soluções</Link>
                     <Link href="/sobre/quemsomos" className=''>Sobre</Link>
                     <Link href="/suporte" className=''>Suporte</Link>
-                    <a href="" className=''>Universidade</a>
+                    <Link href="/universidade" className=''>Universidade</Link>
                     <a href="" className=''>Blog</a>
             </div>
 
