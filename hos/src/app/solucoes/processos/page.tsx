@@ -19,14 +19,13 @@ export default function Processos() {
       quarto={"Soluções complementares"}  hrefQuarto={"/solucoes/complementares"}
       />
       <HeroSection 
-      bgClassName={"bg-gradient-to-b from-laranja to-magenta"}
-      title={"Gestão descomplicada para farmácias de manipulação"} 
-      titleClassName={"text-fundo"}
-      text={"Manipulação, Frente de Caixa e Controles Administrativos em um só lugar!"} 
-      textClassName={"text-fundo"}
-      buttonClassName={"bg-darker text-white hover:bg-fundo hover:text-darker hover:transition hover:duration-500"}
-      img={manipulacao}
-      /> 
+        bgClassName={"bg-gradient-to-b from-laranja to-magenta"}
+        title={"Gestão descomplicada para farmácias de manipulação"}
+        titleClassName={"text-fundo"}
+        text={"Manipulação, Frente de Caixa e Controles Administrativos em um só lugar!"}
+        textClassName={"text-fundo"}
+        buttonClassName={"bg-darker text-white hover:bg-fundo hover:text-darker hover:transition hover:duration-500"}
+        img={manipulacao} buttonName={'Solicite uma demonstração'}      /> 
       <Maximize />
       <Gestao />
       <Emuitomais />

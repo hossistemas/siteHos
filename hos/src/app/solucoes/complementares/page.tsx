@@ -19,14 +19,13 @@ export default function Administracao() {
       quarto={"Soluções complementares"}  hrefQuarto={"/solucoes/complementares"}
       />
       <HeroSection 
-      bgClassName={"bg-fundo"}
-      title={"Aprimore sua experiência e torne-a ainda mais completa"} 
-      titleClassName={"text-grafite"}
-      text={"Centralize e automatize as informações da sua farmácia de maneira fácil, e rápida."} 
-      textClassName={"text-grafite"}
-      buttonClassName={"bg-gradient-to-b from-laranja to-magenta text-white hover:bg-gradient-to-b hover:from-darker hover:to-darker hover:transition hover:duration-500"}
-      img={complementares}
-      /> 
+        bgClassName={"bg-fundo"}
+        title={"Aprimore sua experiência e torne-a ainda mais completa"}
+        titleClassName={"text-grafite"}
+        text={"Centralize e automatize as informações da sua farmácia de maneira fácil, e rápida."}
+        textClassName={"text-grafite"}
+        buttonClassName={"bg-gradient-to-b from-laranja to-magenta text-white hover:bg-gradient-to-b hover:from-darker hover:to-darker hover:transition hover:duration-500"}
+        img={complementares} buttonName={'Solicite uma demonstração'}      /> 
       <Conformidade />
       <Recursos />
       <Cta />

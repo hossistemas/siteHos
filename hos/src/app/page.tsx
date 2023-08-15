@@ -31,7 +31,7 @@ export default function Home() {
           text={"Temos a receita certa para o sucesso da sua drogaria ou farmácia de manipulação."}
           textClassName={"text-white"}
           buttonClassName={"bg-darker text-white hover:bg-white hover:text-darker hover:transition hover:duration-500"}
-          img={banner} buttonName={undefined}      />
+          img={banner} buttonName={'Solicite uma demonstração'}      />
     <Beneficios />
     <Sistema />
     <Solucoes />

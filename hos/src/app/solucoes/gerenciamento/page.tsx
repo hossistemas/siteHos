@@ -18,14 +18,13 @@ export default function Gerenciamento() {
       quarto={"Soluções complementares"}  hrefQuarto={"/solucoes/complementares"}
       />
       <HeroSection 
-      bgClassName={"bg-gradient-to-b from-laranja to-magenta"}
-      title={"Transforme sua farmácia em um sucesso lucrativo"} 
-      titleClassName={"text-fundo"}
-      text={"Agilize processos, amplie vendas e aumente as margens de lucro com eficiência"} 
-      textClassName={"text-fundo"}
-      buttonClassName={"bg-darker text-white hover:bg-fundo hover:text-darker hover:transition hover:duration-500"}
-      img={loja}
-      /> 
+        bgClassName={"bg-gradient-to-b from-laranja to-magenta"}
+        title={"Transforme sua farmácia em um sucesso lucrativo"}
+        titleClassName={"text-fundo"}
+        text={"Agilize processos, amplie vendas e aumente as margens de lucro com eficiência"}
+        textClassName={"text-fundo"}
+        buttonClassName={"bg-darker text-white hover:bg-fundo hover:text-darker hover:transition hover:duration-500"}
+        img={loja} buttonName={'Solicite uma demonstração'}      /> 
       <Potencialize />
       <Circulo /> 
     
