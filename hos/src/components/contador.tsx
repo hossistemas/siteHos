@@ -29,7 +29,7 @@ export  function Contador(props: ContadorProps)  {
   
           return () => clearInterval(interval);
         }
-      }, [isVisible, finalValue]);
+      }, [finalValue]);
   
       return (
         <p className="text-fundo text-[1.25rem] font-extrabold tablet:text-[3.12rem]">{count}</p>
