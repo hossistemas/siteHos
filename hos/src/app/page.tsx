@@ -40,7 +40,6 @@ export default function Home() {
     <Cta />
     <Contador initialValue={0} />
     <Feedback />
-    <Simplifique />
     <Marcas />
     <Footer />
     </NextUIProvider>

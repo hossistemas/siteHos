@@ -4,7 +4,7 @@ import pdv from '../../public/pdv.svg'
 import brasil from '../../public/brasil.svg'
 import rede from '../../public/rede.svg'
 import Image from 'next/image'
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 
 interface ContadorProps {
@@ -15,30 +15,47 @@ interface ContadorProps {
         
 
 export  function Contador(props: ContadorProps)  {
-
+    const [isVisible, setIsVisible] = useState(false);
+    const targetRef = useRef<HTMLDivElement | null>(null); // Definindo o tipo de referência
+  
     const Card = ({ initialValue, finalValue }: { initialValue: number; finalValue: number }) => {
-        const [count, setCount] = useState(initialValue);
-    
-        useEffect(() => {
+      const [count, setCount] = useState(initialValue);
+  
+      useEffect(() => {
+        if (isVisible) {
           const interval = setInterval(() => {
             setCount((prevCount) => (prevCount < finalValue ? prevCount + 1 : prevCount));
           }, 100);
-    
+  
           return () => clearInterval(interval);
-        }, [finalValue]);
-    
-        return (
-            <p className="text-fundo text-[1.25rem] font-extrabold tablet:text-[3.12rem]">{count}</p>
+        }
+      }, [isVisible, finalValue]);
+  
+      return (
+        <p className="text-fundo text-[1.25rem] font-extrabold tablet:text-[3.12rem]">{count}</p>
+      );
+    };
+  
+    useEffect(() => {
+      if (targetRef.current) {
+        const observer = new IntersectionObserver((entries) => {
+          if (entries[0].isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+  
+        observer.observe(targetRef.current);
+  
+        return () => observer.disconnect();
+      }
+    }, []);
 
-        );
-      };
-    
       return (
         <>
             <div className="bg-fundo max-w-auto pt-5 px-[1rem]  ">  
                 <div className='grid grid-cols-4 tablet:w-[1200px] tablet:flex tablet:mx-auto tablet:items-center tablet:justify-center tablet:mt-[5rem]'>
                     
-                    <div className="col-span-2 w-[9.8rem] h-[12.3rem] mr-[0.8rem] b-[1.5rem] rounded-lg bg-gradient-to-b from-degradeUm  to-degradeDois tablet:w-[20.8rem] tablet:h-[22.5rem] tablet:rounded-xl tablet:mr-[5rem]">               
+                    <div className="col-span-2 w-[9.8rem] h-[12.3rem] mr-[0.8rem] b-[1.5rem] rounded-lg bg-gradient-to-b from-degradeUm  to-degradeDois tablet:w-[20.8rem] tablet:h-[22.5rem] tablet:rounded-xl tablet:mr-[5rem]" ref={targetRef}>               
                             <Image src={pdv} alt='' className='mx-auto pt-[1.9rem] tablet:w-[7.8rem] tablet:h-auto tablet:mt-[2rem]'/>
                             <div className="text-fundo text-[1.25rem] font-extrabold flex justify-center mt-[1.5rem] tablet:text-[3.12rem]">
                                 <p>+</p>
