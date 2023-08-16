@@ -26,14 +26,24 @@ export function Footer(props: FooterProps){
                 Todos os direitos reservados.
                 <br/>
                 CNPJ 00.115.150/0001-40</p>
-                <h5 className="text-center text-[0.75rem] font-extrabold pt-[1.3rem] pb-[2.6rem] tablet:text-left">Balanço</h5>
+                <Link href='/balanco'>
+                    <h5 className="text-center text-[0.75rem] font-extrabold pt-[1.3rem] pb-[2.6rem] tablet:text-left">Balanço</h5>
+                </Link>
             </div>
 
             <div className="tablet:pt-[4.4rem] tablet:pl-[5rem]">
                 <h5  className="text-center text-[0.75rem] font-extrabold pb-[0.3rem] tablet:text-left">Soluções</h5>
-                <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Administração de Vendas</p>
-                <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Gerenciamento de Loja</p>
-                <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Processos de Manipulação</p>
+                <Link href="/solucoes/administracao">
+                    <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Administração de Vendas</p>
+                </Link>
+
+                <Link href="/solucoes/gerenciamento">
+                    <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Gerenciamento de Loja</p>
+                </Link>
+
+                <Link href='/solucoes/processos'>
+                    <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Processos de Manipulação</p>
+                </Link>
                 <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Soluções Complementares</p>
             </div>
 
