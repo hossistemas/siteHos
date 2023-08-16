@@ -44,20 +44,39 @@ export function Footer(props: FooterProps){
                 <Link href='/solucoes/processos'>
                     <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Processos de Manipulação</p>
                 </Link>
-                <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Soluções Complementares</p>
+
+                <Link href="/solucoes/complementares">
+                    <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Soluções Complementares</p>
+                </Link>
             </div>
 
             <div className="tablet:pt-[4.4rem] tablet:pl-[2.2rem]">
                 <h5 className="text-center text-[0.75rem] font-extrabold pt-[2.6rem] pb-[0.3rem] tablet:text-left tablet:pt-0">Sobre</h5>
-                <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Quem somos</p>
-                <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Perguntas frequentes</p>
-                <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Contato</p>
+                <Link href="/sobre/quemsomos">
+                    <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Quem somos</p>
+                </Link>
+
+                <Link href="/sobre/faq">
+                    <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Perguntas frequentes</p>
+                </Link>
+
+                <Link href="/sobre/contato">
+                    <p className="text-center text-[0.75rem] font-grafite leading-loose tablet:text-left">Contato</p>
+                </Link>
             </div>
 
             <div className="tablet:pt-[4.4rem] tablet:pl-[2.2rem]">
-                <h5 className="text-center text-[0.75rem] font-extrabold pb-[0.3rem] pt-[2.6rem] tablet:text-left tablet:pt-0">Suporte</h5>
-                <h5 className="text-center text-[0.75rem] font-extrabold pb-[0.3rem] tablet:text-left">Blog</h5>
-                <h5 className="text-center text-[0.75rem] font-extrabold  pb-[2.6rem] tablet:text-left">Universidade</h5>
+                <Link href="/suporte">
+                    <h5 className="text-center text-[0.75rem] font-extrabold pb-[0.3rem] pt-[2.6rem] tablet:text-left tablet:pt-0">Suporte</h5>
+                </Link>
+
+                <Link href='https://www.hos.com.br/nossoblog/' target='_blank'>
+                    <h5 className="text-center text-[0.75rem] font-extrabold pb-[0.3rem] tablet:text-left">Blog</h5>
+                </Link>
+
+                <Link href='/universidade'>
+                    <h5 className="text-center text-[0.75rem] font-extrabold  pb-[2.6rem] tablet:text-left">Universidade</h5>
+                </Link>
             </div>
 
             <div className="tablet:pt-[4.4rem] tablet:ml-[8rem] tablet:w-[15.8rem]">
@@ -66,11 +85,22 @@ export function Footer(props: FooterProps){
                 <label htmlFor="" className="w-[15.8rem] h-[2.3rem] flex items-center mx-auto bg-white rounded-lg justify-center pl-[0.5rem] ">Digite seu e-mail
                     <button className=" bg-gradient-to-b from-laranja to-magenta rounded-lg ml-[5.2rem] "> <Image src={flecha} alt='' className=" -rotate-90 w-[1.5rem] h-auto py-[0.8rem] mx-2"/></button>
                 </label>
-                <div className="flex justify-center pt-[1.5rem] gap-x-3 tablet:justify-end tablet:pb-[3rem]">
-                    <Image src={facebook} alt=""/>
-                    <Image src={instagram} alt=""/>
-                    <Image src={linkedin} alt=""/>
-                    <Image src={youtube} alt=""/>
+                <div className="flex justify-center pt-[1.5rem] gap-x-3 tablet:justify-end tablet:pb-[3rem] tablet:items-center">
+                    <Link href="https://www.facebook.com/softwarefarmaciahos" target='_blank'>
+                        <Image src={facebook} alt=""/>
+                    </Link>
+                    
+                    <Link href="https://www.instagram.com/hossistemas/" target='_blank'>
+                        <Image src={instagram} alt=""/>
+                    </Link>
+                    
+                    <Link href="https://www.linkedin.com/company/hossistemas/" target='_blank'>
+                        <Image src={linkedin} alt=""/>
+                    </Link>
+                    
+                    <Link href="https://www.youtube.com/@HosSistemas" target='_blank'>
+                        <Image src={youtube} alt=""/>
+                    </Link>
                 </div>
             </div>    
              
