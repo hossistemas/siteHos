@@ -2,6 +2,7 @@ import Acordeao from "./Acordeao";
 import Image from "next/image";
 import faq from '../../public/faq.svg'
 import flecha from '../../public/pequenaFlechaDireita.svg'
+import Link from "next/link";
 
 const perguntasRespostas = [
     {
@@ -60,10 +61,12 @@ export function Faq () {
 
                 <div className="pb-[3rem] tablet:pb-[6rem] tablet:pt-[9rem]">
                     <p className="text-[1rem] text-grafite font-semibold w-[13rem] flex mx-auto text-center tablet:text-[1.25rem] tablet:w-[25rem]">Não encontrou a resposta para sua dúvida?</p>
-                    <button className="flex justify-center items-center mx-auto mt-[1rem] pt-[1.2rem] w-[13.4rem] h-[0.9rem]  py-[1.3rem] px-[0.8rem] rounded-lg bg-gradient-to-b from-laranja to-magenta  tablet:pt-[1.5rem] tablet:w-[15rem] tablet:h-[3.5rem] tablet:rounded-lg tablet:hover:bg-gradient-to-b tablet:hover:from-darker tablet:hover:to-darker tablet:hover:duration-1000">
-                                <p className="text-fundo text-[0.87rem] font-normal text-center pr-[0.5rem]">Entre em contato conosco</p>
-                                <Image src={flecha} alt="" />
-                    </button>
+                    <Link href="/sobre/contato">       
+                        <button className="flex justify-center items-center mx-auto mt-[1rem] pt-[1.2rem] w-[13.4rem] h-[0.9rem]  py-[1.3rem] px-[0.8rem] rounded-lg bg-gradient-to-b from-laranja to-magenta  tablet:pt-[1.5rem] tablet:w-[15rem] tablet:h-[3.5rem] tablet:rounded-lg tablet:hover:bg-gradient-to-b tablet:hover:from-darker tablet:hover:to-darker tablet:hover:duration-1000">
+                                    <p className="text-fundo text-[0.87rem] font-normal text-center pr-[0.5rem]">Entre em contato conosco</p>
+                                    <Image src={flecha} alt="" />
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
