@@ -16,6 +16,8 @@ import { Footer } from "@/components/footer";
 import {NextUIProvider} from "@nextui-org/react";
 
 
+
+
 export default function Home() {
   
   return (
@@ -43,7 +45,6 @@ export default function Home() {
     <Marcas />
     <Footer />
     </NextUIProvider>
-   
       
 
     </>
