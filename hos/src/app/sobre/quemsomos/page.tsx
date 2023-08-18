@@ -14,7 +14,7 @@ export default function Administracao() {
       segundo={"Perguntas frequentes"}  hrefSegundo={"/sobre/faq"}
       terceiro={"Contato"} hrefTerceiro={"/sobre/contato"}
       quarto={"Revendas"}  hrefQuarto={"/sobre/revendas"}
-      />
+      urlUm={"/quemsomos"} urlDois={"/faq"} urlTres={"/contato"} urlQuatro={"/revendas"}/>
       <Heroquemsomos />
       <Tres />
       <Footer />

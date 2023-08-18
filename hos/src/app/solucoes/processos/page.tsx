@@ -17,6 +17,7 @@ export default function Processos() {
       segundo={"Gerenciamento de Loja"}  hrefSegundo={"/solucoes/gerenciamento"}
       terceiro={"Processos de Manipulação"} hrefTerceiro={"/solucoes/processos"}
       quarto={"Soluções complementares"}  hrefQuarto={"/solucoes/complementares"}
+      urlUm={"/administracao"} urlDois={"/gerenciamento"} urlTres={"/processos"} urlQuatro={"/complementares"} 
       />
       <HeroSection 
         bgClassName={"bg-gradient-to-b from-laranja to-magenta"}

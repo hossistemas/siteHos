@@ -11,11 +11,10 @@ export default function Administracao() {
       <>
       <Header />
       <Subheader
-      primeiro={"Quem Somos"} hrefPrimeiro={"/sobre/quemsomos"}
-      segundo={"Perguntas frequentes"}  hrefSegundo={"/sobre/faq"}
-      terceiro={"Contato"} hrefTerceiro={"/sobre/contato"}
-      quarto={"Revendas"}  hrefQuarto={"/sobre/revendas"}
-      />
+        primeiro={"Quem Somos"} hrefPrimeiro={"/sobre/quemsomos"}
+        segundo={"Perguntas frequentes"} hrefSegundo={"/sobre/faq"}
+        terceiro={"Contato"} hrefTerceiro={"/sobre/contato"}
+        quarto={"Revendas"} hrefQuarto={"/sobre/revendas"} urlUm={"/quemsomos"} urlDois={"/faq"} urlTres={"/contato"} urlQuatro={"/revendas"}      />
       <Faq />
       <Footer />
   

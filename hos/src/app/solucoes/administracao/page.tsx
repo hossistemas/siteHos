@@ -12,11 +12,10 @@ export default function Administracao() {
       <>
       <Header />
       <Subheader
-      primeiro={"Administração"} hrefPrimeiro={"/solucoes/administracao"}
-      segundo={"Gerenciamento de Loja"}  hrefSegundo={"/solucoes/gerenciamento"}
-      terceiro={"Processos de Manipulação"} hrefTerceiro={"/solucoes/processos"}
-      quarto={"Soluções complementares"}  hrefQuarto={"/solucoes/complementares"}
-      />
+        primeiro={"Administração"} hrefPrimeiro={"/solucoes/administracao"}
+        segundo={"Gerenciamento de Loja"} hrefSegundo={"/solucoes/gerenciamento"}
+        terceiro={"Processos de Manipulação"} hrefTerceiro={"/solucoes/processos"}
+        quarto={"Soluções complementares"} hrefQuarto={"/solucoes/complementares"} urlUm={"/administracao"} urlDois={"/gerenciamento"} urlTres={"/processos"} urlQuatro={"/complementares"}      />
       <HeroSection 
         bgClassName={"bg-fundo"}
         title={"Melhore sua margem de lucro em cada oportunidade de venda"}

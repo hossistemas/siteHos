@@ -1,6 +1,7 @@
 import { Header } from "@/components/header";
 import { Revendedor } from '@/components/revendedor'
 import { Footer } from "@/components/footer";
+import { Subheader } from "@/components/subheader";
 
 
 
@@ -8,6 +9,12 @@ export default function Revendas() {
   return(
       <>
       <Header />
+      <Subheader
+      primeiro={"Quem Somos"} hrefPrimeiro={"/sobre/quemsomos"}
+      segundo={"Perguntas frequentes"}  hrefSegundo={"/sobre/faq"}
+      terceiro={"Contato"} hrefTerceiro={"/sobre/contato"}
+      quarto={"Revendas"}  hrefQuarto={"/sobre/revendas"}
+      urlUm={"/quemsomos"} urlDois={"/faq"} urlTres={"/contato"} urlQuatro={"/revendas"}/>
       <Revendedor />
       <Footer />
   
