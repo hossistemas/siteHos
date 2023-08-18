@@ -40,17 +40,21 @@ export function Formulario () {
       
         if (missingFields.length > 0) {
           alert(`Os seguintes campos são obrigatórios: ${missingFields.join(', ')}`);
+          setIsModalOpen(false);
         } else {
           try {
-            // Substitua o código abaixo pela lógica de envio real para o servidor
+            
             await fetch('https://sheetdb.io/api/v1/x8pbw34iytlna', {
-              method: 'POST',
-              body: new FormData(event.currentTarget), // Aqui você está usando o FormData do formulário
+            method: 'POST',
+            body: new FormData(event.currentTarget),
+                
             });
-      
-            setIsModalOpen(true); // Modal só aparecerá se o envio for bem-sucedido
-          } catch (error) {
+            setIsModalOpen(true);
+
+          } catch (error) {      
             console.error('Erro ao enviar o formulário:', error);
+            setIsModalOpen(false);
+           
           }
         }
       };
@@ -109,10 +113,10 @@ export function Formulario () {
                     </label>
                     
                     <label className="assunto text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem]"> Assunto*
-                        <select name="data[assunto]" id=""  className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1rem]">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <select name="data[assunto]" id=""  className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[0rem]">
+                            <option value="financeiro">Financeiro</option>
+                            <option value="suporte">Suporte</option>
+                            <option value="nao-listado">Não listado</option>
                         </select>
                     </label>
 
@@ -130,15 +134,16 @@ export function Formulario () {
 
                     <p className="text-[0.6rem] text-grafite flex items-end justify-end col-start-2 tablet:text-[0.8rem]">*Campos obrigatórios</p>
 
+                    <Modal isOpen={isModalOpen} onClose={closeModal}>
+                    <p>Formulário enviado com sucesso!</p>
+                    </Modal>
 
 
                     <button type="submit" className="col-start-2 w-[9rem] h-[2.5rem] mt-[1.4rem] ml-[1.2rem] tablet:w-[12.5rem] tablet:h-[3rem] rounded-lg bg-gradient-to-b from-laranja to-magenta" onClick={openModal}>
                         <p className="text-white text-[0.7rem] font-semibold">Enviar</p>
                         </button>
 
-                        <Modal isOpen={isModalOpen} onClose={closeModal}>
-                            <p>Formulário enviado com sucesso!</p>
-                        </Modal>
+
                 </div>
             </form>
         
