@@ -5,6 +5,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import lucro from '../../public/Lucro.svg'
 import vendas from '../../public/Vendas.svg'
+import SNGPC from '../../public/SNGPC.svg'
+import inteligente from '../../public/Inteligente.svg'
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -105,30 +107,30 @@ export function Melhorsistema(props: MelhorsistemaProps) {
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
                         <Image src={vendas} alt='' className='flex mx-auto pt-[2rem]  tablet:w-[6rem] tablet:pt-[5rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Prioridade de Vendas</h2>
-                        <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.</p>
+                        <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Cadastre seus produtos e estabeleça cores para indicar as prioridades de vendas (verde, amarelo e vermelho), de acordo com a margem de lucro, vencimento e promoções.</p>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={lucro} alt=''/>
-                        <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Maximize sua margem de lucro</h2>
-                        <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.</p>
+                        <Image src={SNGPC} alt='' className='flex mx-auto pt-[2rem]  tablet:w-[5rem] tablet:pt-[4.3rem] tablet:pb-[2rem]'/>
+                        <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Integração com SNGPC</h2>
+                        <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Aprimore a gestão de medicamentos controlados. Agilize a movimentação, acompanhe envios e entregas e mantenha o controle de inventário atualizado.</p>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={lucro} alt=''/>
-                        <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Maximize sua margem de lucro</h2>
-                        <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.</p>
+                        <Image src={inteligente} alt='' className='flex mx-auto pt-[2rem]  tablet:w-[5rem] tablet:pt-[2.8rem] tablet:pb-[2rem]'/>
+                        <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Associação Inteligente</h2>
+                        <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Utiliza o histórico de vendas para identificar tendências e oferece produtos complementares mais adequados para cada atendimento, maximizando suas vendas.</p>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={lucro} alt=''/>
-                        <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Maximize sua margem de lucro</h2>
+                        <Image src={inteligente} alt=''/>
+                        <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Associação Inteligente</h2>
                         <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.</p>
                     </div>
                 </SwiperSlide>
