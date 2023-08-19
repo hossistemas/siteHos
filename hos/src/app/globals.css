@@ -11,14 +11,16 @@
 .mySwiper .swiper-button-prev {
   color: #727070;
   display: absolute;
-  top: 27rem;
+  top: 28rem;
+  left: 32rem;
   
 }
 
 
 .mySwiper .swiper-button-next {
-
   color: #727070; 
-
+  display: absolute;
+  top: 28rem;
+  right: 32rem;
 }
 

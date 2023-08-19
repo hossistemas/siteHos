@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import lucro from '../../public/Lucro.svg'
+import vendas from '../../public/Vendas.svg'
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -91,17 +92,19 @@ export function Melhorsistema(props: MelhorsistemaProps) {
                     navigation={isScreenWideEnough}
                     pagination={{ clickable: true }}      
                     className="mySwiper bg-fundo w-[300px] flex justify-center items-center mx-auto tablet:w-[1110px] ">
+                
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={lucro} alt=''/>
+                        <Image src={lucro} alt='' className='flex mx-auto pt-[2rem]  tablet:w-[6rem] tablet:pt-[4rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Maximize sua margem de lucro</h2>
                         <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.</p>
                     </div>
-                    </SwiperSlide>
+                </SwiperSlide>
+
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={lucro} alt=''/>
-                        <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Maximize sua margem de lucro</h2>
+                        <Image src={vendas} alt='' className='flex mx-auto pt-[2rem]  tablet:w-[6rem] tablet:pt-[5rem] tablet:pb-[2rem]'/>
+                        <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Prioridade de Vendas</h2>
                         <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Venda com inteligência e rentabilidade. Encontre alternativas mais rentáveis ao consultar um produto e aumente sua margem de lucro.</p>
                     </div>
                 </SwiperSlide>
