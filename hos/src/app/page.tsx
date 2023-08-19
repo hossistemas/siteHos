@@ -14,6 +14,7 @@ import { Simplifique } from "@/components/simplifique";
 import { Marcas } from "@/components/marcas";
 import { Footer } from "@/components/footer";
 import {NextUIProvider} from "@nextui-org/react";
+import { Melhorsistema } from "@/components/melhorsistema";
 
 
 
@@ -35,6 +36,7 @@ export default function Home() {
           buttonClassName={"bg-darker text-white hover:bg-white hover:text-darker hover:transition hover:duration-500"}
           img={banner} buttonName={'Solicite uma demonstração'}      />
     <Beneficios />
+    <Melhorsistema />
     <Sistema />
     <Solucoes />
     <FinanceiroWeb />
