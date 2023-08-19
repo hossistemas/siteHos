@@ -69,13 +69,17 @@ export function Revendedor () {
     return (
         <div className="bg-fundo">   
 
-            <div className="tablet:grid tablet:grid-cols-2">
+            <div className="pt-6 tablet:grid tablet:grid-cols-2">
+            <div className="py-[2rem] tablet:col-start-2 tablet:py-0">
+                    <h3 className="text-grafite flex text-center justify-center text-[1.4rem] font-bold pb-[1.5rem] mx-auto tablet:pb-0 tablet:mt-[-73rem] tablet:text-[2.25rem] tablet:justify-end tablet:mr-8">Seja um revendedor!</h3>
+        
+                </div>
                     <form 
                     method="post"
                     action="https://sheetdb.io/api/v1/x8pbw34iytlna"
                     id="sheetdb-form" 
                     onSubmit={handleSubmit} 
-                    className="bg-white mx-auto w-[22rem] h-[43rem] rounded-lg drop-shadow-botao mt-[-2rem] tablet:col-start-2 tablet:w-[35rem] tablet:h-[60rem] tablet:mt-[-12rem]">
+                    className="bg-white mx-auto w-[22rem] h-[43rem] rounded-lg drop-shadow-botao mt-[-2rem] tablet:col-start-2 tablet:w-[35rem] tablet:h-[50rem] tablet:mt-[-68rem]">
                         <div className="mx-[1rem] py-[2rem] grid grid-cols-2 tablet:mx-[4rem] tablet:py-[3.5rem]" >
                             <label className="nome text-[0.875rem] text-cinza font-bold col-span-2  tablet:text-[1.125rem]" >Nome completo*
                                 <input name="data[nome]" type="text" placeholder="Digite aqui seu nome completo" className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1rem]" />

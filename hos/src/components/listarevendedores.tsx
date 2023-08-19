@@ -191,15 +191,15 @@ export function Lista(props: ListaProps) {
 
     const breakpoints = {
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 5,
         },
         0: {
-          slidesPerView: 1,  
+          slidesPerView: 2,  
         },
       };
         return(
 
-           <div className='bg-fundo'>
+           <div className='bg-fundo tablet:grid-cols-2 tablet:grid'>
                 <div className="py-[2rem]">
                     <h3 className="text-grafite w-[15.5rem] text-[1.4rem] font-bold pb-[1.5rem] mx-auto">Encontre uma revenda próxima a você!</h3>
                     <input
@@ -222,7 +222,7 @@ export function Lista(props: ListaProps) {
                         clickable: true,
                     }}
                     modules={[Scrollbar]}
-                    className="mySwiper h-[180px] tablet:w-[500px] tablet:h-[1000px] bg-fundo"
+                    className="mySwiper h-[360px] tablet:w-[500px] tablet:h-[1000px] bg-fundo tablet:col-start-1"
                     >
                            {filteredData.map((item, index) => (
           <SwiperSlide key={index}>
