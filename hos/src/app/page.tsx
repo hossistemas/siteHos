@@ -37,7 +37,6 @@ export default function Home() {
           img={banner} buttonName={'Solicite uma demonstração'}      />
     <Beneficios />
     <Melhorsistema />
-    <Sistema />
     <Solucoes />
     <FinanceiroWeb />
     <Painel />
