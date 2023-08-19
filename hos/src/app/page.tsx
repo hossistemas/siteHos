@@ -15,6 +15,7 @@ import { Marcas } from "@/components/marcas";
 import { Footer } from "@/components/footer";
 import {NextUIProvider} from "@nextui-org/react";
 import { Melhorsistema } from "@/components/melhorsistema";
+import { Depoimentos } from "@/components/depoimentos";
 
 
 
@@ -36,12 +37,13 @@ export default function Home() {
           buttonClassName={"bg-darker text-white hover:bg-white hover:text-darker hover:transition hover:duration-500"}
           img={banner} buttonName={'Solicite uma demonstração'}      />
     <Beneficios />
-    <Melhorsistema />
+    <Melhorsistema /> 
     <Solucoes />
     <FinanceiroWeb />
     <Painel />
     <Cta />
     <Contador initialValue={0} />
+    <Depoimentos />
     <Feedback />
     <Marcas />
     <Footer />
