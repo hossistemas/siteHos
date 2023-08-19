@@ -22,7 +22,7 @@ export function Revendedor () {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
       
-        const requiredFields = ['nome', 'email', 'empresa', 'estado', 'cidade', 'assunto', 'telefone', 'horario', 'mensagem'];
+        const requiredFields = ['nome', 'email', 'empresa', 'estado', 'cidade', 'cnpj', 'telefone', 'horario', 'LGPD'];
         let missingFields: string[] = [];
       
         requiredFields.forEach((field) => {
@@ -287,11 +287,11 @@ export function Revendedor () {
 
                             <p className="text-[0.6rem] text-grafite flex items-end justify-end col-start-2 tablet:text-[0.8rem]">*Campos obrigatórios</p>
                            
-                            <label>
-                                <input type="checkbox" name="concordoLGPD" id="concordoLGPD" required />
-                                Eu li e concordo com a coleta e processamento dos meus dados pessoais de acordo com a <a href="link_para_politica_de_privacidade" target="_blank">Política de Privacidade</a>.
+                            <label className="text-[0.6rem] text-grafite flex items-start justify-start mt-[-1rem]">
+                                <input type="checkbox" name="data[LGPD]" id="concordoLGPD" required  className="mr-1"/>
+                                Eu li e concordo com a coleta e processamento dos meus dados pessoais de acordo com a Política de Privacidade.
                             </label>
-
+                            
                             <Modal isOpen={isModalOpen} onClose={closeModal}>
                                 <p>Formulário enviado com sucesso!</p>
                             </Modal>
