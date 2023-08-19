@@ -44,7 +44,6 @@ export default function Home() {
     <Cta />
     <Contador initialValue={0} />
     <Depoimentos />
-    <Feedback />
     <Marcas />
     <Footer />
     </NextUIProvider>

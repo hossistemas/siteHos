@@ -56,45 +56,45 @@ export function Depoimentos(props: DepoimentosProps) {
                 <SwiperSlide>
                     <div  className=' w-[17.7rem] h-[14rem] mb-[4rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[22rem] tablet:h-[15rem]'>
                         <Image src={estrelas} alt='' className='flex ml-[10rem] pt-[3rem] w-[4.3rem] tablet:w-[6rem]  tablet:ml-[14rem]'/>
-                        <h2 className='text-left text-[1.2rem]  text-grafite ml-[2rem] mt-[-1.2rem] font-bold tablet:text-[1.5rem] tablet:mt-[-1.5rem] '>Valfarma</h2>
+                        <h2 className='text-left text-[1.2rem]  text-grafite ml-[2rem] mt-[-1.2rem] font-bold tablet:text-[1.5rem] tablet:mt-[-1.5rem] '>Roberto</h2>
                         <Image src={aspas} alt='' className='flex w-[2rem] ml-[2rem] mt-2 tablet:w-[2.6rem]'/>
-                        <p className='text-left w-[12rem]  text-[0.8rem] font-medium text-grafite ml-[4rem] mt-[-1rem] tablet:text-[1rem] tablet:w-[15rem] tablet:flex tablet:ml-[5rem]'>Simplesmente o melhor sistema de gestão que ja trabalhei. Atende todas as demandas das minhas drogarias.</p>
+                        <p className='text-left w-[12rem]  text-[0.8rem] font-medium text-grafite ml-[4rem] mt-[-1rem] tablet:text-[1rem] tablet:w-[15rem] tablet:flex tablet:ml-[5rem]'>Sistema top, só tive controle e gestão depois q mudei para a HOS sistemas, um sistema completo, bacana pois tem tudo que existe de inovador!</p>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div  className=' w-[17.7rem] h-[14rem] mb-[4rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[22rem] tablet:h-[15rem]'>
                         <Image src={estrelas} alt='' className='flex ml-[10rem] pt-[3rem] w-[4.3rem] tablet:w-[6rem]  tablet:ml-[14rem]'/>
-                        <h2 className='text-left text-[1.2rem]  text-grafite ml-[2rem] mt-[-1.2rem] font-bold tablet:text-[1.5rem] tablet:mt-[-1.5rem] '>Valfarma</h2>
+                        <h2 className='text-left text-[1.2rem]  text-grafite ml-[2rem] mt-[-1.2rem] font-bold tablet:text-[1.5rem] tablet:mt-[-1.5rem] '>Luciana</h2>
                         <Image src={aspas} alt='' className='flex w-[2rem] ml-[2rem] mt-2 tablet:w-[2.6rem]'/>
-                        <p className='text-left w-[12rem]  text-[0.8rem] font-medium text-grafite ml-[4rem] mt-[-1rem] tablet:text-[1rem] tablet:w-[15rem] tablet:flex tablet:ml-[5rem]'>Simplesmente o melhor sistema de gestão que ja trabalhei. Atende todas as demandas das minhas drogarias.</p>
+                        <p className='text-left w-[12rem]  text-[0.8rem] font-medium text-grafite ml-[4rem] mt-[-1rem] tablet:text-[1rem] tablet:w-[15rem] tablet:flex tablet:ml-[5rem]'>Minha experiência tem sido ótima, troquei a 3 anos o antigo pela HOS e estou muito satisfeita.</p>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div  className=' w-[17.7rem] h-[14rem] mb-[4rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[22rem] tablet:h-[15rem]'>
                         <Image src={estrelas} alt='' className='flex ml-[10rem] pt-[3rem] w-[4.3rem] tablet:w-[6rem]  tablet:ml-[14rem]'/>
-                        <h2 className='text-left text-[1.2rem]  text-grafite ml-[2rem] mt-[-1.2rem] font-bold tablet:text-[1.5rem] tablet:mt-[-1.5rem] '>Valfarma</h2>
+                        <h2 className='text-left text-[1.2rem]  text-grafite ml-[2rem] mt-[-1.2rem] font-bold tablet:text-[1.5rem] tablet:mt-[-1.5rem] '>Marilva</h2>
                         <Image src={aspas} alt='' className='flex w-[2rem] ml-[2rem] mt-2 tablet:w-[2.6rem]'/>
-                        <p className='text-left w-[12rem]  text-[0.8rem] font-medium text-grafite ml-[4rem] mt-[-1rem] tablet:text-[1rem] tablet:w-[15rem] tablet:flex tablet:ml-[5rem]'>Simplesmente o melhor sistema de gestão que ja trabalhei. Atende todas as demandas das minhas drogarias.</p>
+                        <p className='text-left w-[12rem]  text-[0.8rem] font-medium text-grafite ml-[4rem] mt-[-1rem] tablet:text-[1rem] tablet:w-[15rem] tablet:flex tablet:ml-[5rem]'>Sempre muito bem atendida, soluções das solicitações rápidas. Cliente desde 1999. Satisfeita, super indico.</p>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div  className=' w-[17.7rem] h-[14rem] mb-[4rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[22rem] tablet:h-[15rem]'>
                         <Image src={estrelas} alt='' className='flex ml-[10rem] pt-[3rem] w-[4.3rem] tablet:w-[6rem]  tablet:ml-[14rem]'/>
-                        <h2 className='text-left text-[1.2rem]  text-grafite ml-[2rem] mt-[-1.2rem] font-bold tablet:text-[1.5rem] tablet:mt-[-1.5rem] '>Valfarma</h2>
+                        <h2 className='text-left text-[1.2rem]  text-grafite ml-[2rem] mt-[-1.2rem] font-bold tablet:text-[1.5rem] tablet:mt-[-1.5rem] '>Rodrigo</h2>
                         <Image src={aspas} alt='' className='flex w-[2rem] ml-[2rem] mt-2 tablet:w-[2.6rem]'/>
-                        <p className='text-left w-[12rem]  text-[0.8rem] font-medium text-grafite ml-[4rem] mt-[-1rem] tablet:text-[1rem] tablet:w-[15rem] tablet:flex tablet:ml-[5rem]'>Simplesmente o melhor sistema de gestão que ja trabalhei. Atende todas as demandas das minhas drogarias.</p>
+                        <p className='text-left w-[12rem]  text-[0.8rem] font-medium text-grafite ml-[4rem] mt-[-1rem] tablet:text-[1rem] tablet:w-[15rem] tablet:leading-tight tablet:flex tablet:ml-[5rem]'>Trabalhamos com o sistema da Hos há pelo menos 25 anos, somos fãs! Principalmente pelo atendimento! Equipe sempre comprometida em entregar a melhor solução para os clientes!</p>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div  className=' w-[17.7rem] h-[14rem] mb-[4rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[22rem] tablet:h-[15rem]'>
                         <Image src={estrelas} alt='' className='flex ml-[10rem] pt-[3rem] w-[4.3rem] tablet:w-[6rem]  tablet:ml-[14rem]'/>
-                        <h2 className='text-left text-[1.2rem]  text-grafite ml-[2rem] mt-[-1.2rem] font-bold tablet:text-[1.5rem] tablet:mt-[-1.5rem] '>Valfarma</h2>
+                        <h2 className='text-left text-[1.2rem]  text-grafite ml-[2rem] mt-[-1.2rem] font-bold tablet:text-[1.5rem] tablet:mt-[-1.5rem] '>Geraldo</h2>
                         <Image src={aspas} alt='' className='flex w-[2rem] ml-[2rem] mt-2 tablet:w-[2.6rem]'/>
-                        <p className='text-left w-[12rem]  text-[0.8rem] font-medium text-grafite ml-[4rem] mt-[-1rem] tablet:text-[1rem] tablet:w-[15rem] tablet:flex tablet:ml-[5rem]'>Simplesmente o melhor sistema de gestão que ja trabalhei. Atende todas as demandas das minhas drogarias.</p>
+                        <p className='text-left w-[12rem]  text-[0.8rem] font-medium text-grafite ml-[4rem] mt-[-1rem] tablet:text-[1rem] tablet:w-[15rem] tablet:flex tablet:ml-[5rem]'>Sistema muito bom, interativo, muitos relatórios. Já trabalho com ele a mais de 10 anos.</p>
                     </div>
                 </SwiperSlide>          
             </Swiper>
