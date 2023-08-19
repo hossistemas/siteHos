@@ -71,7 +71,7 @@ export function Revendedor () {
 
             <div className="pt-6 tablet:grid tablet:grid-cols-2">
             <div className="py-[2rem] tablet:col-start-2 tablet:py-0">
-                    <h3 className="text-grafite flex text-center justify-center text-[1.4rem] font-bold pb-[1.5rem] mx-auto tablet:pb-0 tablet:mt-[-73rem] tablet:text-[2.25rem] tablet:justify-end tablet:mr-8">Seja um revendedor!</h3>
+                    <h3 className="text-grafite flex text-center justify-center text-[1.4rem] font-bold pb-[1.5rem] mx-auto tablet:pb-0 tablet:mt-[-75rem] tablet:text-[2.25rem] tablet:justify-end tablet:mr-8">Seja um revendedor!</h3>
         
                 </div>
                     <form 

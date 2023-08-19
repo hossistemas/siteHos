@@ -200,13 +200,13 @@ export function Lista(props: ListaProps) {
         return(
 
            <div className='bg-fundo tablet:grid-cols-2 tablet:grid'>
-                <div className="py-[2rem]">
-                    <h3 className="text-grafite w-[15.5rem] text-[1.4rem] font-bold pb-[1.5rem] mx-auto">Encontre uma revenda próxima a você!</h3>
+                <div className="py-[2rem] tablet:mt-[2rem]">
+                    <h3 className="text-grafite w-[15.5rem] text-[1.4rem] font-bold pb-[1.5rem] mx-auto tablet:text-[2.25rem] tablet:w-[24.3rem] ">Encontre uma revenda próxima a você!</h3>
                     <input
                     type="text"
                     value={filterValue}
                     placeholder="Local ou revendedor"
-                    className="w-[15rem] h-[2.3rem] flex justify-center mx-auto drop-shadow-lg pl-[1rem] rounded-xl text-[0.7rem] text-cinza"
+                    className="w-[15rem] h-[2.3rem] flex justify-center mx-auto drop-shadow-lg pl-[1rem] rounded-xl text-[0.7rem] text-cinza tablet:w-[24rem] tablet:h-[3.6rem] tablet:text-[1rem] "
                     onChange={e => setFilterValue(e.target.value)}
                     />
         
@@ -226,27 +226,27 @@ export function Lista(props: ListaProps) {
                     >
                            {filteredData.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="pb-[5rem] w-[15.5rem] h-[8.5rem] my-[0.7rem] mx-auto bg-white drop-shadow-xl rounded-lg">
+            <div className="pb-[5rem] w-[15.5rem] h-[8.5rem] my-[0.7rem] mx-auto bg-white drop-shadow-xl rounded-lg tablet:w-[24rem] tablet:h-[11rem]">
               <Image
                 src={maletinha}
                 alt=""
-                className="flex w-[1rem] h-[2rem] ml-[1.35rem] pt-[1rem]"
+                className="flex w-[1rem] h-[2rem] ml-[1.35rem] pt-[1rem] tablet:w-[1.5rem] tablet:h-[2.5rem]"
               />
-              <h2 className="text-[0.87rem] text-grafite font-semibold py-[0.8rem] ml-[1.35rem]">
+              <h2 className="text-[0.87rem] text-grafite font-semibold py-[0.8rem] ml-[1.35rem] tablet:text-[1.5rem]">
                 {item.title}
               </h2>
-              <p className="text-[0.6rem] text-cinza ml-[1.35rem]">
+              <p className="text-[0.6rem] text-cinza ml-[1.35rem] tablet:text-[0.8rem]">
                 <span className="text-grafite font-medium">Cidade:</span>{' '}
                 {item.cidade}
               </p>
               {item.email && (
-                <p className="text-[0.6rem] text-cinza ml-[1.35rem]">
+                <p className="text-[0.6rem] text-cinza ml-[1.35rem] tablet:text-[0.8rem]">
                   <span className="text-grafite font-medium">E-mail:</span>{' '}
                   {item.email}
                 </p>
               )}
               {item.telefone && (
-                <p className="text-[0.6rem] text-cinza ml-[1.35rem]">
+                <p className="text-[0.6rem] text-cinza ml-[1.35rem] tablet:text-[0.8rem]">
                   <span className="text-grafite font-medium">Telefone:</span>{' '}
                   {item.telefone}
                 </p>
@@ -255,6 +255,8 @@ export function Lista(props: ListaProps) {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <div className='bg-cinza tablet:w-1 tablet:h-[70rem] tablet:ml-[-3rem] tablet:mt-[-13rem] tablet:rounded-full'></div>
     </div>
             
         )
