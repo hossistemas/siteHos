@@ -28,7 +28,7 @@ export function Formulario () {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
       
-        const requiredFields = ['nome', 'email', 'empresa', 'estado', 'cidade', 'assunto', 'telefone', 'horario', 'mensagem'];
+        const requiredFields = ['nome', 'email', 'empresa', 'estado', 'cidade', 'assunto', 'telefone', 'horario', 'mensagem', 'LGPD'];
         let missingFields: string[] = [];
       
         requiredFields.forEach((field) => {
@@ -138,6 +138,12 @@ export function Formulario () {
                     <p>Formulário enviado com sucesso!</p>
                     </Modal>
 
+
+
+                    <label className="text-[0.6rem] text-grafite flex items-start justify-start mt-[-1rem]">
+                        <input type="checkbox" name="data[LGPD]" id="concordoLGPD" required  className="mr-1"/>
+                        Eu li e concordo com a coleta e processamento dos meus dados pessoais de acordo com a Política de Privacidade.
+                    </label>
 
                     <button type="submit" className="col-start-2 w-[9rem] h-[2.5rem] mt-[1.4rem] ml-[1.2rem] tablet:w-[12.5rem] tablet:h-[3rem] rounded-lg bg-gradient-to-b from-laranja to-magenta" onClick={openModal}>
                         <p className="text-white text-[0.7rem] font-semibold">Enviar</p>
