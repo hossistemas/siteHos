@@ -7,3 +7,18 @@
     @apply bg-yellow-400;
   }
 }
+
+.mySwiper .swiper-button-prev {
+  color: #727070;
+  display: absolute;
+  top: 27rem;
+  
+}
+
+
+.mySwiper .swiper-button-next {
+
+  color: #727070; 
+
+}
+
