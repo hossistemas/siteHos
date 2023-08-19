@@ -189,10 +189,18 @@ export function Lista(props: ListaProps) {
         return itemTitle.includes(filterText) || itemCidade.includes(filterText);
     });
 
+    const breakpoints = {
+        1024: {
+          slidesPerView: 3,
+        },
+        0: {
+          slidesPerView: 1,  
+        },
+      };
         return(
 
            <div className='bg-fundo'>
-                <div className="pb-[2rem]">
+                <div className="py-[2rem]">
                     <h3 className="text-grafite w-[15.5rem] text-[1.4rem] font-bold pb-[1.5rem] mx-auto">Encontre uma revenda próxima a você!</h3>
                     <input
                     type="text"
@@ -205,7 +213,7 @@ export function Lista(props: ListaProps) {
                 </div>
             <Swiper
                     direction={'vertical'}
-                    slidesPerView={5}
+                    breakpoints={breakpoints}
                     scrollbar={{
                         hide: true,
                     }}
@@ -214,7 +222,7 @@ export function Lista(props: ListaProps) {
                         clickable: true,
                     }}
                     modules={[Scrollbar]}
-                    className="mySwiper w-[500px] h-[1000px] bg-red-500"
+                    className="mySwiper h-[180px] tablet:w-[500px] tablet:h-[1000px] bg-fundo"
                     >
                            {filteredData.map((item, index) => (
           <SwiperSlide key={index}>
