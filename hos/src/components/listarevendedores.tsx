@@ -183,10 +183,10 @@ export function Lista(props: ListaProps) {
                         <SwiperSlide>
                             <div className="pb-[5rem] w-[15.5rem] h-[8.5rem] my-[0.7rem] mx-auto bg-white drop-shadow-xl rounded-lg">
                                 <Image src={maletinha} alt='' className="flex w-[1rem] h-[2rem] ml-[1.35rem] pt-[1rem]" />
-                                <h2 className="text-[0.87rem] text-grafite font-semibold py-[0.8rem] ml-[1.35rem]">Laz Digital</h2>
-                                <p className="text-[0.6rem] text-cinza ml-[1.35rem]"> <span className="text-grafite font-medium">Cidade:</span> Sertânia - Pernambucoa</p>
-                                <p className="text-[0.6rem] text-cinza ml-[1.35rem]"> <span className="text-grafite font-medium">E-mail:</span> zuleilson@hotmail.com </p>
-                                <p className="text-[0.6rem] text-cinza ml-[1.35rem]"> <span className="text-grafite font-medium">Telefone:</span> (87) 9.9647-8780</p>
+                                <h2 className="text-[0.87rem] text-grafite font-semibold py-[0.8rem] ml-[1.35rem]">Sysfarma</h2>
+                                <p className="text-[0.6rem] text-cinza ml-[1.35rem]"> <span className="text-grafite font-medium">Cidade:</span> Belford Roxo - Rio de Janeiro</p>
+                                <p className="text-[0.6rem] text-cinza ml-[1.35rem]"> <span className="text-grafite font-medium">E-mail:</span> alessandro.lucc@gmail.com </p>
+                                <p className="text-[0.6rem] text-cinza ml-[1.35rem]"> <span className="text-grafite font-medium">Telefone:</span> (21) 2761-1494</p>
                             </div>
                         </SwiperSlide>
                     </Swiper>
