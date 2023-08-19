@@ -39,7 +39,7 @@ export function Recurso(props: RecursoProps) {
       };
 
       return(
-        <div className='bg-fundo'>
+        <div className='bg-fundo tablet:pb-[3rem]'>
            <div className='text-[1.25rem] pt-[3rem] text-left font-extrabold text-grafite leading-tight w-[16rem] flex mx-auto pb-[2rem] tablet:text-center tablet:w-[42.4rem] tablet:text-[2rem]'>
                 <h2>Recursos integrados que simplificam suas tarefas diárias. </h2>
             </div>

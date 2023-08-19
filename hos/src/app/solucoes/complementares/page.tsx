@@ -30,7 +30,6 @@ export default function Administracao() {
         img={complementares} buttonName={'Solicite uma demonstração'}      /> 
       <Conformidade />
       <Recurso />
-      <Recursos />
       <Cta />
       <Footer />
       </>
