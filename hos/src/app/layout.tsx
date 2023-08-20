@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      
+      <link rel="icon" href="/logo.svg" sizes="any" />
       <body className={red.className}>
       {children}
         </body>
