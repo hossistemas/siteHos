@@ -4,7 +4,8 @@
 
 @layer components {
   .activemenu {
-    @apply bg-yellow-400;
+    @apply bg-sub border-b-8 border-subdark ;
+
   }
 }
 

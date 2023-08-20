@@ -24,7 +24,7 @@ export function Header(props: HeaderProps){
 
     return(
         <>
-        <header className='py-[5rem] px-[3rem] flex justify-between tablet: tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:max-h-[82px] tablet:w-auto'>
+        <header className='py-[5rem] px-[3rem] flex justify-between tablet: tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:w-auto tablet:py-4'>
             <div  className='tablet:flex tablet:justify-center tablet:mx-auto tablet:max-w-[1200px]'>
                 
               <Link href='/'> 

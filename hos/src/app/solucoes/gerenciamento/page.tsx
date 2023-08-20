@@ -12,11 +12,10 @@ export default function Gerenciamento() {
       <>
       <Header />
       <Subheader
-      primeiro={"Administração"} hrefPrimeiro={"/solucoes/administracao"}
-      segundo={"Gerenciamento de Loja"}  hrefSegundo={"/solucoes/gerenciamento"}
-      terceiro={"Processos de Manipulação"} hrefTerceiro={"/solucoes/processos"}
-      quarto={"Soluções complementares"}  hrefQuarto={"/solucoes/complementares"}
-      />
+        primeiro={"Administração"} hrefPrimeiro={"/solucoes/administracao"}
+        segundo={"Gerenciamento de Loja"} hrefSegundo={"/solucoes/gerenciamento"}
+        terceiro={"Processos de Manipulação"} hrefTerceiro={"/solucoes/processos"}
+        quarto={"Soluções complementares"} hrefQuarto={"/solucoes/complementares"}urlUm={"/administracao"} urlDois={"/gerenciamento"} urlTres={"/processos"} urlQuatro={"/complementares"}      />
       <HeroSection 
         bgClassName={"bg-gradient-to-b from-laranja to-magenta"}
         title={"Transforme sua farmácia em um sucesso lucrativo"}
