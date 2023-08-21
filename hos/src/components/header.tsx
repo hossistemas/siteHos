@@ -33,13 +33,13 @@ export function Header(props: HeaderProps){
             <div>
             {botao1Visivel && (
                 <button onClick={visibilidadeBotao} 
-                className="absolute right-[85px] mr-[-4rem] top-[13px] w-[3rem] h-auto flex border-2 border-vermelho rounded-md   bg-white px-0 cursor-pointer tablet:hidden ">
+                className="absolute right-[85px] mr-[-4rem] top-[15px] w-[2.6rem] h-auto flex border-1 border-vermelho rounded-md   bg-white px-0 cursor-pointer tablet:hidden ">
                     <Image src={hamburguer} alt='menu hamburguer'/>
                 </button>
             )}
             {botao2Visivel && (
                 <button onClick={visibilidadeBotao} 
-                className='absolute   right-[85px] mr-[-4rem] top-[13px] w-[3rem] h-auto flex border-2 border-vermelho rounded-md   bg-white cursor-pointer tablet:hidden '>
+                className='absolute   right-[85px] mr-[-4rem] top-[15px] w-[2.6rem] h-auto flex border-1 border-vermelho rounded-md   bg-white cursor-pointer tablet:hidden '>
                     <Image src={xis} alt='menu hamburguer' className='w-[4rem] '/>
                 </button>
             )}
