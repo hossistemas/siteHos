@@ -24,22 +24,22 @@ export function Header(props: HeaderProps){
 
     return(
         <>
-        <header className='py-[5rem] px-[3rem] flex justify-between tablet: tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:w-auto tablet:py-4'>
-            <div  className='tablet:flex tablet:justify-center tablet:mx-auto tablet:max-w-[1200px]'>
+        <header className='py-[1rem] px-[1rem] w-[360px] flex justify-between tablet: tablet:flex tablet:items-center tablet:mx-auto tablet:px-[3rem] tablet:w-auto tablet:py-4'>
+            <div  className=' tablet:flex tablet:justify-center tablet:mx-auto tablet:max-w-[1200px]'>
                 
               <Link href='/'> 
-              <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto cursor-pointer tablet:h-[49px] tablet:mr-[8rem] tablet:max-w-[1200px]' />
+              <Image src={logo} alt={'logo-hos'} className='w-[4rem] h-auto cursor-pointer flex justify-start item-start tablet:h-[49px] tablet:mr-[8rem] tablet:max-w-[1200px]' />
               </Link>
             <div>
             {botao1Visivel && (
                 <button onClick={visibilidadeBotao} 
-                className="absolute right-[135px] -mr-[4rem] top-[90px] w-[4rem] h-auto flex border-2 border-vermelho rounded-md   bg-white px-0 cursor-pointer tablet:hidden ">
+                className="absolute right-[85px] mr-[-4rem] top-[13px] w-[3rem] h-auto flex border-2 border-vermelho rounded-md   bg-white px-0 cursor-pointer tablet:hidden ">
                     <Image src={hamburguer} alt='menu hamburguer'/>
                 </button>
             )}
             {botao2Visivel && (
                 <button onClick={visibilidadeBotao} 
-                className='absolute   right-[138px] -mr-[4rem] top-[90px] w-[4rem] h-auto flex border-2 border-vermelho rounded-md   bg-white cursor-pointer tablet:hidden '>
+                className='absolute   right-[85px] mr-[-4rem] top-[13px] w-[3rem] h-auto flex border-2 border-vermelho rounded-md   bg-white cursor-pointer tablet:hidden '>
                     <Image src={xis} alt='menu hamburguer' className='w-[4rem] '/>
                 </button>
             )}
