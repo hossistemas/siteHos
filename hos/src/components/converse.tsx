@@ -86,46 +86,46 @@ export function Formulario () {
             id="sheetdb-form" 
             onSubmit={handleSubmit}
             
-            className="bg-white mx-auto w-[22rem] h-[48rem] rounded-lg drop-shadow-formulario mt-[-2rem] tablet:col-start-2 tablet:w-[35rem] tablet:h-[60rem] tablet:mt-[-12rem]">
+            className="bg-white mx-auto w-[22rem] h-[48rem] rounded-lg drop-shadow-formulario mt-[-2rem] tablet:col-start-2 tablet:w-[35rem] tablet:h-[63rem] tablet:mt-[-12rem]">
                 <div className="mx-[1rem] py-[2rem] grid grid-cols-2 tablet:mx-[4rem] tablet:py-[3.5rem]" >
                     <label className="nome text-[0.875rem] text-cinza font-bold col-span-2  tablet:text-[1.125rem]" >Nome completo*
-                        <input type="text" name='data[nome]' placeholder="Digite aqui seu nome completo" className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1rem]" />
+                        <input type="text" name='data[nome]' placeholder="Digite aqui seu nome completo" className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:h-[3rem] tablet:text-[1rem] tablet:py-[1rem]" />
                     </label>
 
                     <label className="email text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem]" >E-mail*
-                        <input type="text" name='data[email]' placeholder="seu-email@gmail.com" className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1rem]"/>
+                        <input type="text" name='data[email]' placeholder="seu-email@gmail.com" className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:h-[3rem]  tablet:py-[1rem]"/>
                     </label>
 
                     <label className="empresa text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem]">Nome da Empresa*
-                        <input type="text" name='data[empresa]' placeholder="Digite aqui o nome da empresa" className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1rem]"/>
+                        <input type="text" name='data[empresa]' placeholder="Digite aqui o nome da empresa" className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:h-[3rem] tablet:py-[1rem]"/>
                     </label>   
 
                     <label className="estado text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem]"> Estado*
-                        <select name="data[estado]" id="" value={selectedEstado} onChange={handleEstadoUpdate} className="w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-1 tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]"> 
+                        <select name="data[estado]" id="" value={selectedEstado} onChange={handleEstadoUpdate} className="w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-1 tablet:text-[1rem] tablet:py-[0.3rem] tablet:h-[3rem] tablet:w-[13rem]"> 
                             {estados.map((estado) => <option key={estado.id} value={estado.sigla} >{estado.nome}</option>)}
                         </select>
                     </label>
 
                     <label className="cidades text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2"> Cidades*
-                        <select name="data[cidade]" id="" className="w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.2rem] mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]">
+                        <select name="data[cidade]" id="" className="w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.2rem] mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:h-[3rem]  tablet:w-[13rem]">
                             {cidades.map((cidade) => <option key={cidade.nome}> {cidade.nome} </option>)}
                         </select>
                     </label>
                     
                     <label className="assunto text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem]"> Assunto*
-                        <select name="data[assunto]" id=""  className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[0rem]">
-                            <option value="financeiro">Financeiro</option>
-                            <option value="suporte">Suporte</option>
-                            <option value="nao-listado">Não listado</option>
+                        <select name="data[assunto]" id=""  className="w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:h-[3rem]  tablet:text-[1rem] tablet:py-[0rem]">
+                            <option value="financeiro">Quero o HOS para minha farmácia</option>
+                            <option value="suporte">Dúvidas</option>
+                            <option value="nao-listado">Solicitar demonstração</option>
                         </select>
                     </label>
 
                     <label className="telefone text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem]">Telefone*
-                     <InputMask  name="data[telefone]" mask="(99) 99999-9999"  maskChar=""  placeholder="(DD) _____-____" className='w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-1 tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' required />
+                     <InputMask  name="data[telefone]" mask="(99) 99999-9999"  maskChar=""  placeholder="(DD) _____-____" className='w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] tablet:h-[3rem]  pl-[0.7rem] mt-[0.3rem] py-1 tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' required />
                     </label>  
 
                     <label className="horário text-[0.875rem]  text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2">Horário para contato*
-                        <input type="time" name="data[horario]" placeholder="00:00" className='w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.18rem] mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' />
+                        <input type="time" name="data[horario]" placeholder="00:00" className='w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.18rem] tablet:h-[3rem]   mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' />
                     </label>  
 
                     <label className="mensagem text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem]">Deixe uma mensagem
