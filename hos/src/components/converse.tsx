@@ -28,7 +28,7 @@ export function Formulario () {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
       
-        const requiredFields = ['nome', 'email', 'empresa', 'estado', 'cidade', 'assunto', 'telefone', 'horario', 'mensagem', 'LGPD'];
+        const requiredFields = ['nome', 'email', 'empresa', 'estado', 'cidade', 'assunto', 'telefone', 'horario', 'LGPD'];
         let missingFields: string[] = [];
       
         requiredFields.forEach((field) => {
@@ -128,14 +128,14 @@ export function Formulario () {
                         <input type="time" name="data[horario]" placeholder="00:00" className='w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.18rem] mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' />
                     </label>  
 
-                    <label className="mensagem text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem]">Deixe uma mensagem*
+                    <label className="mensagem text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem]">Deixe uma mensagem
                         <textarea name="data[mensagem]" placeholder="Digite sua mensagem" className="w-[20rem] h-[6rem] border-2 rounded-lg  font-normal text-[0.7rem] pl-[0.7rem] pt-[0.3rem] mt-[0.3rem] mb-[0.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1rem] tablet:h-[10rem]"/>
                     </label>  
 
                     <p className="text-[0.6rem] text-grafite flex items-end justify-end col-start-2 tablet:text-[0.8rem]">*Campos obrigatórios</p>
 
                     <Modal isOpen={isModalOpen} onClose={closeModal}>
-                    <p>Formulário enviado com sucesso!</p>
+                    <p className="flex mx-auto text-center font-bold ">Formulário enviado com sucesso!</p>
                     </Modal>
 
 
