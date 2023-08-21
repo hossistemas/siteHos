@@ -22,7 +22,7 @@ export function Formulario () {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => {
-      setIsModalOpen(true);
+      setIsModalOpen(false);
     };
   
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
