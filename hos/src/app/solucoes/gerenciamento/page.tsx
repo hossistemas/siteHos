@@ -12,7 +12,7 @@ export default function Gerenciamento() {
       <>
       <Header />
       <Subheader
-        primeiro={"Administração"} hrefPrimeiro={"/solucoes/administracao"}
+        primeiro={"Administração de Vendas"} hrefPrimeiro={"/solucoes/administracao"}
         segundo={"Gerenciamento de Loja"} hrefSegundo={"/solucoes/gerenciamento"}
         terceiro={"Processos de Manipulação"} hrefTerceiro={"/solucoes/processos"}
         quarto={"Soluções complementares"} hrefQuarto={"/solucoes/complementares"}urlUm={"/administracao"} urlDois={"/gerenciamento"} urlTres={"/processos"} urlQuatro={"/complementares"}      />
@@ -23,7 +23,7 @@ export default function Gerenciamento() {
         text={"Agilize processos, amplie vendas e aumente as margens de lucro com eficiência"}
         textClassName={"text-fundo"}
         buttonClassName={"bg-darker text-white hover:bg-fundo hover:text-darker hover:transition hover:duration-500"}
-        img={loja} buttonName={'Solicite uma demonstração'}      /> 
+        img={loja} buttonName={'Solicite uma demonstração'} imageClassName={undefined}      /> 
       <Potencialize />
       <Circulo /> 
     

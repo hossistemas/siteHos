@@ -28,7 +28,7 @@ export function Header(props: HeaderProps){
             <div  className='tablet:flex tablet:justify-center tablet:mx-auto tablet:max-w-[1200px]'>
                 
               <Link href='/'> 
-              <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto cursor-pointer tablet:h-[4.3rem] tablet:mr-[8rem] tablet:max-w-[1200px]' />
+              <Image src={logo} alt={'logo-hos'} className='w-[7rem] h-auto cursor-pointer tablet:h-[49px] tablet:mr-[8rem] tablet:max-w-[1200px]' />
               </Link>
             <div>
             {botao1Visivel && (

@@ -13,7 +13,7 @@ export default function Processos() {
       <>
       <Header />
       <Subheader
-      primeiro={"Administração"} hrefPrimeiro={"/solucoes/administracao"}
+      primeiro={"Administração de Vendas"} hrefPrimeiro={"/solucoes/administracao"}
       segundo={"Gerenciamento de Loja"}  hrefSegundo={"/solucoes/gerenciamento"}
       terceiro={"Processos de Manipulação"} hrefTerceiro={"/solucoes/processos"}
       quarto={"Soluções complementares"}  hrefQuarto={"/solucoes/complementares"}

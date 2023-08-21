@@ -14,7 +14,7 @@ export default function Administracao() {
       <>
       <Header />
       <Subheader
-      primeiro={"Administração"} hrefPrimeiro={"/solucoes/administracao"}
+      primeiro={"Administração de Vendas"} hrefPrimeiro={"/solucoes/administracao"}
       segundo={"Gerenciamento de Loja"}  hrefSegundo={"/solucoes/gerenciamento"}
       terceiro={"Processos de Manipulação"} hrefTerceiro={"/solucoes/processos"}
       quarto={"Soluções complementares"}  hrefQuarto={"/solucoes/complementares"}
@@ -27,7 +27,7 @@ export default function Administracao() {
         text={"Centralize e automatize as informações da sua farmácia de maneira fácil, e rápida."}
         textClassName={"text-grafite"}
         buttonClassName={"bg-gradient-to-b from-laranja to-magenta text-white hover:bg-gradient-to-b hover:from-darker hover:to-darker hover:transition hover:duration-500"}
-        img={complementares} buttonName={'Solicite uma demonstração'}      /> 
+        img={complementares} buttonName={'Solicite uma demonstração'} imageClassName={undefined}      /> 
       <Conformidade />
       <Recurso />
       <Cta />

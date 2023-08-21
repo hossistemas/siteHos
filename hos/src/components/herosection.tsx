@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link';
 
-
 interface HeroSectionProps {
     title: string;
     text: string;
@@ -18,9 +17,10 @@ export function HeroSection({title, text, img, bgClassName, titleClassName, text
     
     return(
         <>
-        
-        <div className={`drop-shadow-lg mb-[5rem] tablet:pb-[1rem] ${bgClassName}`}>
-            <div className="mx-auto max-w-[460px] tablet:flex tablet:justify-center tablet:items-center  tablet:max-w-[1200px] tablet:h-[570px]">
+
+        <div className={`drop-shadow-md mb-[5rem] tablet:pb-[1rem] ${bgClassName}`}>
+          
+            <div className=" mx-auto max-w-[460px] tablet:flex tablet:justify-center tablet:items-center  tablet:max-w-[1200px] tablet:h-[570px]">
 
                 <div className='pt-[3rem] px-[3rem] max-w-[500px] tablet:pl-[2rem] tablet: tablet:max-w-[590px]  '>
                     <h1 className={`text-[1.5rem] font-bold leading-none tablet:text-[2.25rem] ${titleClassName}`}>{title}</h1>
@@ -33,9 +33,8 @@ export function HeroSection({title, text, img, bgClassName, titleClassName, text
                 <div className=' tablet:flex  '>
                     <Image src={img} alt='' className={` tablet:w-auto tablet:h-[550px] tablet:mt-[3.32rem] ${imageClassName}`}/>
                 </div>
-            
             </div>
-            
+
         </div>
 
         </>
