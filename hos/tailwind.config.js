@@ -53,7 +53,11 @@ module.exports = {
         'botao': [
             '-3px -5px 8px rgba(255, 255, 255, 0.9)',
             '4px 8px 8px rgba(0, 0, 0, 0.3)'
-        ]
+        ],
+        'formulario': [
+          '-3px -5px 8px rgba(0, 0, 0, 0.1)',
+          '4px 8px 8px rgba(0, 0, 0, 0.2)'
+      ]
       },
       boxShadow: {
         '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',

@@ -10,7 +10,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="absolute top-[47rem] left-[-0.02rem]  w-[22rem]">
+    <div className="absolute top-[47rem] left-[-0.02rem]  w-[22rem] tablet:w-[30rem] tablet:left-[3rem]">
       <div className="bg-white flex p-6 rounded-lg shadow-md border-t-8 border-green-600">
         <button
           className=" text-gray-500 hover:text-gray-800"
