@@ -13,6 +13,7 @@ import facebook from '../../public/facebook.svg'
 import instagram from '../../public/instagram.svg'
 import linkedin from '../../public/linkedin.svg'
 import youtube from '../../public/youtube.svg'
+import Link from "next/link";
 
 
 export function Formulario () {
@@ -196,10 +197,21 @@ export function Formulario () {
 
             <p className="text-[0.9rem] text-grafite text-center mx-auto font-semibold tablet:text-left">Siga-nos nas redes sociais!</p>
             <div className="flex justify-center items-center pt-[1rem] pb-[3rem] gap-x-6 tablet:justify-start ">
-                    <Image src={facebook} alt=""/>
-                    <Image src={instagram} alt=""/>
-                    <Image src={linkedin} alt=""/>
-                    <Image src={youtube} alt=""/>
+                    <Link href="https://www.facebook.com/softwarefarmaciahos" target='_blank'>
+                        <Image src={facebook} alt=""/>
+                    </Link>
+                    
+                    <Link href="https://www.instagram.com/hossistemas/" target='_blank'>
+                        <Image src={instagram} alt=""/>
+                    </Link>
+                    
+                    <Link href="https://www.linkedin.com/company/hossistemas/" target='_blank'>
+                        <Image src={linkedin} alt=""/>
+                    </Link>
+                    
+                    <Link href="https://www.youtube.com/@HosSistemas" target='_blank'>
+                        <Image src={youtube} alt=""/>
+                    </Link>
             </div>
         </div>
 
