@@ -51,8 +51,8 @@ module.exports = {
       },
       dropShadow: {
         'botao': [
-            '-3px -5px 8px rgba(255, 255, 255, 0.9)',
-            '4px 8px 8px rgba(0, 0, 0, 0.3)'
+            '-3px -1px 4px rgba(255, 255, 255, 0.9)',
+            '4px 4px 4px rgba(0, 0, 0, 0.1)'
         ],
         'formulario': [
           '-3px -5px 8px rgba(0, 0, 0, 0.1)',
