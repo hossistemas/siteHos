@@ -13,6 +13,15 @@ module.exports = {
     screens:{
       'tablet':'1024px',
     },
+    borderRadius:{
+      'md': '6px',
+      'lg': '8px',
+      'xl': '12px',
+      '2xl': '16px',
+      '3xl': '24px',
+      'full': '9999px',
+      '4xl': '36px',
+    },
     extend: {
       display: ['group-focus'],
       opacity: ['group-focus'],

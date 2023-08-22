@@ -13,7 +13,7 @@ export function Cta(props: CtaProps){
             <div  className="bg-gradient-to-b from-laranja to-magenta w-auto flex justify-center items-center mx-auto h-[18.6rem] tablet:h-[30rem] tablet:w-auto">
                 <div className="w-[20rem] h-[13.9rem] bg-white rounded-lg tablet:w-[57.5rem] tablet:h-[24rem] tablet:drop-shadow-lg ">
 
-                        <div className="flex mx-auto bg-white justify-center w-[2.9rem] h-[2.9rem] mt-[-1rem] drop-shadow-botao rounded-2xl  tablet:w-[6.2rem] tablet:h-[6.2rem] tablet:rounded-3xl ">
+                        <div className="flex mx-auto bg-white justify-center w-[2.9rem] h-[2.9rem] mt-[-1rem] drop-shadow-botao rounded-2xl  tablet:w-[6.2rem] tablet:h-[6.2rem] tablet:rounded-4xl ">
                             <Image src={impulsionar} alt="" className="tablet:w-[3.9rem]  tablet:h-auto"/>
                         </div>
                         <h3 className="text-[0.68rem] flex mx-auto justify-center mt-[2rem] text-grafite tablet:text-[1.25rem] tablet:mt-[3rem]">Descubra como podemos impulsionar seus resultados</h3>
