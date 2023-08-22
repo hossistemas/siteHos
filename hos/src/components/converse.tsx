@@ -107,7 +107,7 @@ export function Formulario () {
                         </select>
                     </label>
 
-                    <label className="cidades text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2 group hover:text-magenta"> Cidades*
+                    <label className="cidades text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2 group hover:text-magenta"> Cidade*
                         <select name="data[cidade]" id="" className="hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.2rem] mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:h-[3rem]  tablet:w-[13rem]">
                             {cidades.map((cidade) => <option key={cidade.nome}> {cidade.nome} </option>)}
                         </select>

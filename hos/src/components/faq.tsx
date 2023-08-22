@@ -47,8 +47,8 @@ export function Faq () {
     return (
         <div>
             <div className="bg-gradient-to-b from-laranja to-magenta w-auto h-[12rem] pt-[3rem] tablet:h-[21rem]">
-                <div className="tablet:flex tablet:justify-center tablet:items-center tablet:pt-[4.5rem]">
-                    <div className="bg-white w-[2.75rem] h-[2.75rem] rounded-full flex mx-auto items-center justify-center drop-shadow-lg tablet:w-[3.5rem] tablet:h-[3.5rem] tablet:mx-0">
+                <div className="tablet:flex  tablet:items-center tablet:pt-[4.5rem] tablet:ml-[12rem]">
+                    <div className="bg-white w-[2.75rem] h-[2.75rem] rounded-full flex mx-auto items-center justify-center drop-shadow-lg  tablet:w-[3.5rem] tablet:h-[3.5rem] tablet:mx-0">
                         <Image src={faq} alt='' className=''/>
                     </div>
                     <h2 className="text-[1.5rem] text-white font-bold flex justify-center mx-auto pt-[0.8rem] tablet:mx-0 tablet:text-[2.75rem] tablet:ml-6 tablet:mb-3">Perguntas Frequentes</h2>
