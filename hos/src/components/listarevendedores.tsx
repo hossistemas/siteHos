@@ -206,7 +206,7 @@ export function Lista(props: ListaProps) {
                     type="text"
                     value={filterValue}
                     placeholder="Local ou revendedor"
-                    className="w-[15rem] h-[2.3rem] flex justify-center mx-auto drop-shadow-lg pl-[1rem] rounded-xl text-[0.7rem] text-cinza tablet:w-[24rem] tablet:h-[3.6rem] tablet:text-[1rem] "
+                    className="a w-[15rem] h-[2.3rem] flex justify-center mx-auto drop-shadow-lg pl-[1rem] rounded-xl text-[0.7rem] text-cinza tablet:w-[24rem] tablet:h-[3.6rem] tablet:text-[1rem] hover:border-magent "
                     onChange={e => setFilterValue(e.target.value)}
                     />
         
