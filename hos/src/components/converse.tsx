@@ -45,7 +45,7 @@ export function Formulario () {
         } else {
           try {
             
-            await fetch('https://sheetdb.io/api/v1/7prem1ppyj7e6', {
+            await fetch('https://sheetdb.io/api/v1/jm9ywj1uo51fb', {
             method: 'POST',
             body: new FormData(event.currentTarget),
                 
@@ -82,8 +82,8 @@ export function Formulario () {
             
     <div className="tablet:grid tablet:grid-cols-2">
             <form 
-            method="post"
-            action="https://sheetdb.io/api/v1/7prem1ppyj7e6"
+            method='POST'
+            action="https://sheetdb.io/api/v1/jm9ywj1uo51fb"
             id="sheetdb-form" 
             onSubmit={handleSubmit}
             

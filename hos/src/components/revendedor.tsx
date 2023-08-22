@@ -23,7 +23,7 @@ export function Revendedor () {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
       
-        const requiredFields = ['Nome', 'Email', 'Empresa', 'Estado', 'Cidade', 'CNPJ', 'Telefone', 'Horario', 'LGPD'];
+        const requiredFields = ['nome', 'email', 'empresa', 'estado', 'cidade', 'cnpj', 'telefone', 'horario', 'LGPD'];
         let missingFields: string[] = [];
       
         requiredFields.forEach((field) => {
@@ -82,19 +82,19 @@ export function Revendedor () {
                     className="bg-white mx-auto w-[22rem] h-[43rem] rounded-lg drop-shadow-formulario mt-[-2rem] tablet:col-start-2 tablet:w-[35rem] tablet:h-[50rem] tablet:mt-[-68rem]">
                         <div className="mx-[1rem] py-[2rem] grid grid-cols-2 tablet:mx-[4rem] tablet:py-[3.5rem]" >
                             <label className="nome text-[0.875rem] text-cinza font-bold col-span-2  tablet:text-[1.125rem] group hover:text-magenta" >Nome completo*
-                                <input name="data[Nome]" type="text" placeholder="Digite aqui seu nome completo" className="hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1.3rem]" />
+                                <input name="data[nome]" type="text" placeholder="Digite aqui seu nome completo" className="hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1.3rem]" />
                             </label>
 
                             <label className="email text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem] group hover:text-magenta" >E-mail*
-                                <input name="data[Email]" type="text" placeholder="seu-email@gmail.com" className="hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1.3rem]"/>
+                                <input name="data[email]" type="text" placeholder="seu-email@gmail.com" className="hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1.3rem]"/>
                             </label>
 
                             <label className="empresa text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem] group hover:text-magenta">Nome da Empresa*
-                                <input name="data[Eempresa]" type="text" placeholder="Digite aqui o nome da empresa" className="hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1.3rem]"/>
+                                <input name="data[empresa]" type="text" placeholder="Digite aqui o nome da empresa" className="hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1.3rem]"/>
                             </label>   
 
                             <label className="estado text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] group hover:text-magenta"> Estado*
-                                <select name="data[Estado]" id="" value={selectedEstado} onChange={handleEstadoUpdate} className="hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-1 tablet:text-[1rem] tablet:py-[0.5rem] tablet:w-[13rem] "> 
+                                <select name="data[estado]" id="" value={selectedEstado} onChange={handleEstadoUpdate} className="hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-1 tablet:text-[1rem] tablet:py-[0.5rem] tablet:w-[13rem] "> 
                                     {estados.map((estado) => <option key={estado.id} value={estado.sigla} >{estado.nome}</option>)}
                                 </select>
                             </label>
@@ -106,15 +106,15 @@ export function Revendedor () {
                             </label>
 
                             <label className="cnpj text-[0.875rem] text-cinza col-span-2 font-bold tablet:text-[1.125rem] group hover:text-magenta">CNPJ*
-                                <InputMask  name="data[CNPJ]" mask="99.999.999/9999-99"  maskChar=""  placeholder="00.000.000/0001-00" className='hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem]  tablet:py-[1.3rem]' required />
+                                <InputMask  name="data[cnpj]" mask="99.999.999/9999-99"  maskChar=""  placeholder="00.000.000/0001-00" className='hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem]  tablet:py-[1.3rem]' required />
                             </label>  
 
                             <label className="telefone text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] group hover:text-magenta">Telefone*
-                                <InputMask  name="data[Telefone]" mask="(99) 99999-9999"  maskChar=""  placeholder="(DD) _____-____" className='hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-1 tablet:text-[1rem] tablet:py-[0.5rem] tablet:w-[13rem]' required />
+                                <InputMask  name="data[telefone]" mask="(99) 99999-9999"  maskChar=""  placeholder="(DD) _____-____" className='hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-1 tablet:text-[1rem] tablet:py-[0.5rem] tablet:w-[13rem]' required />
                             </label>  
  
                             <label className="horário text-[0.875rem]  text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2 group hover:text-magenta">Horário para contato*
-                                <input name="data[Horario]" type="time" placeholder="00:00" className='hover:text-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.18rem] mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.5rem] tablet:w-[13rem]' />
+                                <input name="data[horario]" type="time" placeholder="00:00" className='hover:text-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.18rem] mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.5rem] tablet:w-[13rem]' />
                             </label> 
 
                             <p className="text-[0.6rem] text-grafite flex items-end justify-end col-start-2 tablet:text-[0.8rem]">*Campos obrigatórios</p>
