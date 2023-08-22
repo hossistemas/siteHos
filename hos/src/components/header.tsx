@@ -12,6 +12,7 @@ interface HeaderProps {
 
 }
 
+
 export function Header(props: HeaderProps){
     const [botao1Visivel, setbotao1Visivel] = useState(true)
     const [botao2Visivel, setbotao2Visivel] = useState(false)

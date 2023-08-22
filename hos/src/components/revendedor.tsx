@@ -70,7 +70,7 @@ export function Revendedor () {
         <div className="bg-fundo">   
 
             <div className="pt-6 tablet:grid tablet:grid-cols-2">
-            <div className="py-[2rem] tablet:col-start-2 tablet:py-0">
+            <div className="py-[2rem] tablet:col-start-2 tablet:py-0 tablet:mr-[3rem]">
                     <h3 className="text-grafite flex text-center justify-center text-[1.4rem] font-bold pb-[1.5rem] mx-auto tablet:pb-0 tablet:mt-[-75rem] tablet:text-[2.25rem] tablet:justify-end tablet:mr-8">Seja um revendedor!</h3>
         
                 </div>
