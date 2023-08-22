@@ -6,7 +6,6 @@ import complementares from '../../../../public/complementares.png'
 import { Cta } from "@/components/cta";
 import { Footer } from "@/components/footer";
 import { Conformidade } from "@/components/conformidade";
-import { Recursos } from "@/components/recursos";
 import { Recurso } from "@/components/recurso";
 
 export default function Administracao() {
@@ -27,7 +26,7 @@ export default function Administracao() {
         text={"Centralize e automatize as informações da sua farmácia de maneira fácil, e rápida."}
         textClassName={"text-grafite"}
         buttonClassName={"bg-gradient-to-b from-laranja to-magenta text-white hover:bg-gradient-to-b hover:from-darker hover:to-darker hover:transition hover:duration-500"}
-        img={complementares} buttonName={'Solicite uma demonstração'} imageClassName={undefined}      /> 
+        img={complementares} buttonName={'Solicite uma demonstração'} imageClassName={''}      /> 
       <Conformidade />
       <Recurso />
       <Cta />

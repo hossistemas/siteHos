@@ -27,7 +27,6 @@ interface RecursoProps {
 export function Recurso(props: RecursoProps) {
     
 
-      const isScreenWideEnough = window.innerWidth >= 1024;
       
       const breakpoints = {
         1024: {
@@ -47,7 +46,7 @@ export function Recurso(props: RecursoProps) {
                     modules={[Pagination, Navigation]}
                     breakpoints={breakpoints}
                     spaceBetween={20}
-                    navigation={isScreenWideEnough}
+                    navigation={true}
                     pagination={{ clickable: true }}      
                     className="mySwiper bg-fundo w-[300px] flex justify-center items-center mx-auto tablet:w-[1110px] ">
                 

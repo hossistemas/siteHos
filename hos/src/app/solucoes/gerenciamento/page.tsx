@@ -23,7 +23,7 @@ export default function Gerenciamento() {
         text={"Agilize processos, amplie vendas e aumente as margens de lucro com eficiência"}
         textClassName={"text-fundo tablet:w-[30.4rem] tablet:pb-[1rem]"}
         buttonClassName={"bg-darker text-white hover:bg-fundo hover:text-darker hover:transition hover:duration-500"}
-        img={loja} buttonName={'Solicite uma demonstração'} imageClassName={undefined}      /> 
+        img={loja} buttonName={'Solicite uma demonstração'} imageClassName={''}      /> 
       <Potencialize />
       <Circulo /> 
     

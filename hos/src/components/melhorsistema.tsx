@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import lucro from '../../public/Lucro.svg'
@@ -25,9 +25,6 @@ interface MelhorsistemaProps {
 
 
 export function Melhorsistema(props: MelhorsistemaProps) {
-    
-
-      const isScreenWideEnough = window.innerWidth >= 1024;
       
       const breakpoints = {
         1024: {
@@ -44,10 +41,9 @@ export function Melhorsistema(props: MelhorsistemaProps) {
                 <h2>Por que o <span className='text-vermelho'>HOS</span> é o melhor sistema para você? </h2>
             </div>
                 <Swiper
-                    modules={[Pagination, Navigation]}
+                    modules={[Pagination]}
                     breakpoints={breakpoints}
                     spaceBetween={20}
-                    navigation={isScreenWideEnough}
                     pagination={{ clickable: true }}      
                     className="mySwiper bg-fundo w-[300px] flex justify-center items-center mx-auto tablet:w-[69.2rem]  ">
                 

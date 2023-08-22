@@ -20,7 +20,6 @@ interface DepoimentosProps {
 export function Depoimentos(props: DepoimentosProps) {
     
 
-      const isScreenWideEnough = window.innerWidth >= 1024;
       
       const breakpoints = {
         1024: {
@@ -40,7 +39,6 @@ export function Depoimentos(props: DepoimentosProps) {
                     modules={[Pagination, Navigation]}
                     breakpoints={breakpoints}
                     spaceBetween={20}
-                    navigation={isScreenWideEnough}
                     pagination={{ clickable: true }}      
                     className="mySwiper bg-fundo w-[300px] flex justify-center items-center mx-auto tablet:w-[1160px] ">
                 
