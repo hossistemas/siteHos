@@ -41,7 +41,7 @@ export function Footer(props: FooterProps){
         } else {
           try {
             
-            await fetch('https://sheetdb.io/api/v1/pdyy83u5mxc8f', {
+            await fetch('https://sheetdb.io/api/v1/p67kgd4t5kfpn', {
             method: 'POST',
             body: new FormData(event.currentTarget),
                 
@@ -136,7 +136,7 @@ export function Footer(props: FooterProps){
                
                 <form 
                     method="post"
-                    action="https://sheetdb.io/api/v1/pdyy83u5mxc8f"
+                    action="https://sheetdb.io/api/v1/p67kgd4t5kfpn"
                     id="sheetdb-form"
                     onSubmit={handleSubmit}  >
                          
