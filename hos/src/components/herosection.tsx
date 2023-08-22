@@ -31,7 +31,7 @@ export function HeroSection({title, text, img, bgClassName, titleClassName, text
                 </div>
 
                 <div className=' tablet:flex  '>
-                    <Image src={img} alt='' className={` tablet:w-auto tablet:h-[550px] tablet:mt-[3.32rem] ${imageClassName}`}/>
+                    <Image src={img} alt='' className={` tablet:w-auto tablet:h-[580px] tablet:mt-[1.4rem] ${imageClassName}`}/>
                 </div>
             </div>
 
