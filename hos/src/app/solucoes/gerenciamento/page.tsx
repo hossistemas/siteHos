@@ -19,9 +19,9 @@ export default function Gerenciamento() {
       <HeroSection 
         bgClassName={"bg-gradient-to-b from-laranja to-magenta"}
         title={"Transforme sua farmácia em um sucesso lucrativo"}
-        titleClassName={"text-fundo "}
+        titleClassName={"text-fundo tablet:w-[30.2rem]"}
         text={"Agilize processos, amplie vendas e aumente as margens de lucro com eficiência"}
-        textClassName={"text-fundo tablet:w-[30.4rem]"}
+        textClassName={"text-fundo tablet:w-[30.4rem] tablet:pb-[1rem]"}
         buttonClassName={"bg-darker text-white hover:bg-fundo hover:text-darker hover:transition hover:duration-500"}
         img={loja} buttonName={'Solicite uma demonstração'} imageClassName={undefined}      /> 
       <Potencialize />
