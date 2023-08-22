@@ -39,7 +39,7 @@ export function Revendedor () {
         } else {
           try {
             
-            await fetch('https://sheetdb.io/api/v1/r5wfauwytn85x', {
+            await fetch('https://sheetdb.io/api/v1/zz4gmvta6q0gc', {
             method: 'POST',
             body: new FormData(event.currentTarget),
                 
@@ -76,7 +76,7 @@ export function Revendedor () {
                 </div>
                     <form 
                     method="post"
-                    action="https://sheetdb.io/api/v1/r5wfauwytn85x"
+                    action="https://sheetdb.io/api/v1/zz4gmvta6q0gc"
                     id="sheetdb-form" 
                     onSubmit={handleSubmit} 
                     className="bg-white mx-auto w-[22rem] h-[43rem] rounded-lg drop-shadow-formulario mt-[-2rem] tablet:col-start-2 tablet:w-[35rem] tablet:h-[50rem] tablet:mt-[-68rem]">
