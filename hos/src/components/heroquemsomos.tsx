@@ -14,8 +14,8 @@ export function Heroquemsomos(props : HeroquemsomosProps){
                 <div className='tablet:flex'>                
                     <Image src={quemsomos} alt='' className='w-full h-[9rem] tablet:max-w-full tablet:h-auto'/>
                 </div>
-                <div className=''>
-                    <h1 className='-mt-[7rem] ml-[3rem] mb-5 w-[17rem] text-white text-[1.5rem] font-bold leading-none tablet:text-[2.25rem] tablet:w-[44rem] tablet:ml-[10rem] tablet:-mt-[22rem] tablet:pb-[4rem]'>Somos soluções para automação de farmácias e drogarias</h1>
+                <div className='tablet:max-w-[1200px] tablet:mx-auto'>
+                        <h1 className='-mt-[7rem] ml-[3rem] mb-5 w-[17rem] text-white text-[1.5rem] font-bold leading-none tablet:text-[2.25rem] tablet:w-[44rem] tablet:ml-[7rem] tablet:-mt-[22rem] tablet:pb-[4rem]'>Somos soluções para automação de farmácias e drogarias</h1> 
                     <div className='bg-white w-[20.5rem] mx-auto  h-[56rem] rounded-lg drop-shadow-xl tablet:w-[61.3rem] tablet:h-[53rem]'>
                         <h2 className=' flex justify-center text-[1.25rem] pt-[2.5rem] pb-[0.5rem] text-grafite font-extrabold tablet:text-[2rem] tablet:pt-[4rem]'>Um pouco sobre nós</h2>
                         <div className='bg-vermelho w-[6.9rem] h-[0.2rem] mx-auto rounded-xl'></div>
