@@ -18,13 +18,13 @@ export function Emuitomais(props: EmuitomaisProps){
 
                 <div className="max-w-[17rem] mx-auto tablet:max-w-[27rem]">
                     
-                    <ul className="list-disc text-[0.8rem]  text-grafite  font-medium ml-[1rem] leading-6 tablet:-mt-[4rem] tablet:text-[1.25rem] tablet:leading-normal">
+                    <ul className="list-disc text-[0.8rem]  text-grafite  font-medium ml-[1rem] leading-6 tablet:-mt-[4rem] tablet:leading-loose">
                         <h2 className="text-[1.5rem] font-bold text-grafite leading-tight mb-[1.5rem] tablet:text-[2rem] ">E muito mais...</h2>
-                        <li>Tela inicial de alerta da validade dos lotes</li>
-                        <li>Emissão de orçamentos com impressão de documentos relacionados</li>
-                        <li>Formação de preço de medicamentos homeopáticos considerando insumos internos e/ou industrializados</li>
-                        <li>Definição automática da embalagem</li>
-                        <li>Controle de estoque e laudos por lote, com geração automática do fator de correção</li>
+                        <li className="tablet:text-[1.25rem] font-normal">Tela inicial de alerta da validade dos lotes</li>
+                        <li className="tablet:text-[1.25rem] font-normal">Emissão de orçamentos com impressão de documentos relacionados</li>
+                        <li className="tablet:text-[1.25rem] font-normal">Formação de preço de medicamentos homeopáticos considerando insumos internos e/ou industrializados</li>
+                        <li className="tablet:text-[1.25rem] font-normal">Definição automática da embalagem</li>
+                        <li className="tablet:text-[1.25rem] font-normal">Controle de estoque e laudos por lote, com geração automática do fator de correção</li>
                     </ul>
                 </div>
 
