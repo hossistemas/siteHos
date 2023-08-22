@@ -13,7 +13,8 @@ export function Maximize(props: MaximizeProps){
         <div className="bg-fundo -mt-[5.5rem] pb-[5rem]">
             <div className="pt-[6rem] tablet:mx-auto tablet:max-w-[1000px] tablet:pt-[4rem] tablet:justify-center tablet:items-center">
                 <h2 className="text-[1.25rem] pb-[2rem] w-[18rem] mx-auto text-grafite font-extrabold leading-tight text-center tablet:w-[35rem] tablet:flextablet:justify-center tablet:text-center tablet:text-[2rem]">Maximize o Desempenho de sua Farmácia de Manipulação</h2>  
-                <div className="pt-[3rem] tablet:mx-auto tablet:flex tablet:py-[6.5rem] tablet:gap-x-6">
+                
+                <div className="pt-[3rem] tablet:mx-auto tablet:flex tablet:pb-[2rem] tablet:pt-[6rem] tablet:gap-x-6">
 
                        
                    <div className="bg-white w-[17.25rem] h-[11.875rem] rounded-xl drop-shadow-lg mx-auto tablet:w-[23.3rem] tablet:h-[17.9rem] ">
