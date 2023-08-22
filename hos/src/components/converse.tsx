@@ -29,7 +29,7 @@ export function Formulario () {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
       
-        const requiredFields = ['Nome completo', 'E-mail', 'Nome da empresa', 'Estado', 'Cidade', 'Assunto', 'Telefone', 'Horario', 'LGPD'];
+        const requiredFields = ['Nome completo', 'E-mail', 'Nome da empresa', 'Estado', 'Cidade', 'Assunto', 'Telefone', 'Horário', 'LGPD'];
         let missingFields: string[] = [];
       
         requiredFields.forEach((field) => {
@@ -45,7 +45,7 @@ export function Formulario () {
         } else {
           try {
             
-            await fetch('https://sheetdb.io/api/v1/x8pbw34iytlna', {
+            await fetch('https://sheetdb.io/api/v1/d4fefuln24cku', {
             method: 'POST',
             body: new FormData(event.currentTarget),
                 
@@ -126,7 +126,7 @@ export function Formulario () {
                     </label>  
 
                     <label className="horário text-[0.875rem]  text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2 group hover:text-magenta">Horário para contato*
-                        <input type="time" name="data[Horario]" placeholder="00:00" className='hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.18rem] tablet:h-[3rem]   mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' />
+                        <input type="time" name="data[Horário]" placeholder="00:00" className='hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-[0.18rem] tablet:h-[3rem]   mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' />
                     </label>  
 
                     <label className="mensagem text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem] group hover:text-magenta">Deixe uma mensagem

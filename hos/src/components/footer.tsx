@@ -82,10 +82,17 @@ export function Footer(props: FooterProps){
             <div className="tablet:pt-[4.4rem] tablet:ml-[8rem] tablet:w-[15.8rem]">
                 <p className="mx-auto text-center text-[0.75rem] w-[14.8rem] font-grafite leading-normal tablet:text-left tablet:w-auto">Receba as principais novidades e tendências do mercado e varejo farmacêutico.</p>
                 <p className="mx-auto text-center text-[0.75rem] font-grafite font-semibold pt-[1.5rem] pb-[0.5rem] tablet:text-left">Assine agora mesmo a nossa newsletter!</p>
-                <label htmlFor=""  className="w-[15.8rem] h-[2.3rem] flex items-center mx-auto bg-white rounded-lg justify-center pl-[0.5rem] ">
-                    <input type="text" placeholder="Digite seu e-mail" className=" tablet:w-[10.8rem]"/>
-                    <button className=" bg-gradient-to-b from-laranja to-magenta rounded-lg ml-[1.98rem] "> <Image src={flecha} alt='' className=" -rotate-90 w-[1.5rem] h-auto py-[0.8rem] mx-2"/></button>
-                </label>
+                <form 
+                    method="post"
+                    action="https://sheetdb.io/api/v1/pdyy83u5mxc8f"
+                    id="sheetdb-form" >
+
+                        <label htmlFor=""  className="w-[15.8rem] h-[2.3rem] flex items-center mx-auto bg-white rounded-lg justify-center pl-[0.5rem] ">
+                            <input type="text" placeholder="Digite seu e-mail" className=" tablet:w-[10.8rem]"/>
+                            <button className=" bg-gradient-to-b from-laranja to-magenta rounded-lg ml-[1.98rem] "> <Image src={flecha} alt='' className=" -rotate-90 w-[1.5rem] h-auto py-[0.8rem] mx-2"/></button>
+                        </label>
+                    </form>
+                
                 <div className="flex justify-center pt-[1.5rem] gap-x-3 tablet:justify-end tablet:pb-[3rem] tablet:items-center">
                     <Link href="https://www.facebook.com/softwarefarmaciahos" target='_blank'>
                         <Image src={facebook} alt=""/>
