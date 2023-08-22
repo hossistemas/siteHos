@@ -1,7 +1,7 @@
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/herosection";
 import { Subheader } from "@/components/subheader";
-import loja from '../../../../public/loja.png'
+import loja from '../../../../public/banner-gerenciamento-de-vendas.png'
 import { Cta } from "@/components/cta";
 import { Footer } from "@/components/footer";
 import { Potencialize } from "@/components/potencialize";

@@ -1,7 +1,7 @@
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/herosection";
 import { Subheader } from "@/components/subheader";
-import gerenciamento from '../../../../public/gerenciamento.png'
+import gerenciamento from '../../../../public/Administração-de-Vendas.png'
 import { Otimize } from "@/components/otimize";
 import { Render } from "@/components/carrosselsolucoes";
 import { Cta } from "@/components/cta";

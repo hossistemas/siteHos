@@ -1,7 +1,7 @@
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/herosection";
 import { Subheader } from "@/components/subheader";
-import complementares from '../../../../public/complementares.png'
+import complementares from '../../../../public/Soluções-Complementares.png'
  
 import { Cta } from "@/components/cta";
 import { Footer } from "@/components/footer";
