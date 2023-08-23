@@ -1,15 +1,13 @@
 'use client'
 
 import React from 'react';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import estrelas from '../../public/estrelas.svg'
 import aspas from '../../public/aspas.svg'
-
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
 
 interface DepoimentosProps {
     
@@ -39,12 +37,15 @@ export function Depoimentos(props: DepoimentosProps) {
                     
                     breakpoints={breakpoints}
                     spaceBetween={20}
+                    freeMode={true}
+                    scrollbar={true}
+                    mousewheel={true}
                     pagination={{
                         type: 'progressbar',
                       }}
                       navigation={true}
-                      modules={[Pagination, Navigation]}       
-                    className="mySwiper bg-fundo w-[300px] flex justify-center items-center mx-auto tablet:w-[1160px] ">
+                      modules={[FreeMode, Scrollbar, Mousewheel,Pagination, Navigation]}       
+                    className="mySwiper bg-fundo w-[300px] flex justify-center items-center mx-auto tablet:w-[1160px]  ">
                 
                 <SwiperSlide>
                     <div  className=' w-[17.7rem] h-[14rem] mb-[4rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[22rem] tablet:h-[15rem]'>

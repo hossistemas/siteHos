@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import lucro from '../../public/Lucro.svg'
 import vendas from '../../public/Vendas.svg'
@@ -12,7 +11,6 @@ import fidelizacao from '../../public/Fidelização.svg'
 import atualizacao from '../../public/Atualização.svg'
 import suporte from '../../public/Suporte.svg'
 import anos from '../../public/anos.svg'
-
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
