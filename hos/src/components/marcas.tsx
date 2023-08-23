@@ -93,7 +93,7 @@ export function Marcas(props: MarcasProps) {
 
   return (
     <div className="relative bg-fundo tablet:pb-[4rem]">
-     <div className='text-[1.25rem] pt-[3rem] text-center  font-extrabold text-grafite leading-tight flex mx-auto pb-[2rem] tablet:text-[2rem] tablet:pt-[2rem]  tablet:flex tablet:mx-auto tablet:text-center tablet:justify-center tablet:items-center'>
+     <div className='text-[1.25rem] pt-[3rem] text-center font-extrabold text-grafite leading-tight flex justify-center mx-auto pb-[2rem] tablet:text-[2rem] tablet:pt-[2rem]  tablet:flex tablet:mx-auto tablet:text-center tablet:justify-center tablet:items-center'>
                 <h2>Marcas que crescem com a HOS</h2>
         </div>
 
