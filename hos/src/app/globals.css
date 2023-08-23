@@ -8,7 +8,6 @@
 
   }
 }
-
 .mySwiper .swiper-button-prev {
   color: #727070;
   display: absolute;
@@ -24,10 +23,10 @@
   right: 32rem;
 }
 
+
 .expanded {
-  max-height: 500px; /* Defina uma altura máxima maior do que a altura real da seção */
+  max-height: 500px;
   opacity: 1;
- /* Ajuste o padding conforme necessário */
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 
@@ -39,16 +38,3 @@
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 
-
-  .my-custom-scrollbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 10px; /* Ajuste a largura conforme necessário */
-    height: 100%;
-  }
-
-  .swiper-scrollbar-vertical {
-    background-color: rgba(0, 0, 0, 0.3); /* Cor da scrollbar */
-    border-radius: 5px; /* Borda arredondada */
-  }

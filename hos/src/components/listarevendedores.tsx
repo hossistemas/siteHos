@@ -7,7 +7,7 @@ import maletinha from '../../public/maletinha.svg'
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Pagination, Scrollbar } from 'swiper/modules';
+import { FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
 
 interface ListaProps {
     
@@ -214,14 +214,14 @@ export function Lista(props: ListaProps) {
             <Swiper
                     direction={'vertical'}
                     breakpoints={breakpoints}
-                    scrollbar={{
-                        hide: true,
-                    }}
+                    scrollbar={true}
+                    freeMode={true}
+                    mousewheel={true}
                     spaceBetween={1}
                     pagination={{
                         clickable: true,
                     }}
-                    modules={[Scrollbar]}
+                    modules={[FreeMode, Scrollbar, Mousewheel]}
                     className="mySwiper h-[360px] tablet:w-[500px] tablet:h-[1000px] bg-fundo tablet:col-start-1"
                     >
                            {filteredData.map((item, index) => (

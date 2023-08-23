@@ -18,6 +18,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 
+
 interface MelhorsistemaProps {
     
 }
@@ -41,10 +42,14 @@ export function Melhorsistema(props: MelhorsistemaProps) {
                 <h2>Por que o <span className='text-vermelho'>HOS</span> é o melhor sistema para você? </h2>
             </div>
                 <Swiper
-                    modules={[Pagination]}
                     breakpoints={breakpoints}
+            
                     spaceBetween={20}
-                    pagination={{ clickable: true }}      
+                    pagination={{
+                        type: 'progressbar',
+                      }}
+                      navigation={true}
+                      modules={[Pagination, Navigation]}       
                     className="mySwiper bg-fundo w-[300px] flex justify-center items-center mx-auto tablet:w-[69.2rem]  ">
                 
                 <SwiperSlide>
