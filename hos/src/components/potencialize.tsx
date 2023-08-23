@@ -24,7 +24,7 @@ export function Potencialize(props: PotencializeProps) {
     {
       image: '/promocoes.svg',
       title: 'Gerenciador de Promoções',
-      text: 'Programe promoções automaticamente, acompanhe a performance,  gerencie e aumente suas vendas.',
+      text: 'Automatize promoções, monitore desempenho, administre operações e impulsione suas vendas.',
     },
     {
       image: '/integrado.svg',

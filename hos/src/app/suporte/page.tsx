@@ -9,7 +9,7 @@ import { Atendimento } from "@/components/atendimento";
 
 export default function Suporte() {
   return(
-      <>
+    <div className="overflow-x-hidden tablet:w-full">
       <Header solucoesClassName={''} sobreClassName={''} suporteClassName={'tablet:font-extrabold tablet:text-vermelho'} universidadeClassName={''} />
       <HeroSection 
                           bgClassName={"bg-white"}
@@ -22,6 +22,6 @@ export default function Suporte() {
       <Atendimento /> 
       <Footer />
   
-      </>
+      </div>
    )
   }

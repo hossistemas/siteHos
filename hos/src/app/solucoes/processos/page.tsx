@@ -10,7 +10,7 @@ import { Emuitomais } from "@/components/emuitomais";
 
 export default function Processos() {
   return(
-      <>
+      <div className="overflow-x-hidden tablet:w-full">
       <Header solucoesClassName={'tablet:font-extrabold tablet:text-vermelho'} sobreClassName={''} suporteClassName={''} universidadeClassName={''}/>
       <Subheader
       primeiro={"Administração de Vendas"} hrefPrimeiro={"/solucoes/administracao"}
@@ -34,6 +34,6 @@ export default function Processos() {
       <Cta />
       <Footer />
   
-      </>
+      </div>
    )
   }

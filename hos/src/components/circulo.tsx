@@ -17,11 +17,11 @@ export function Circulo(props: CirculoProps){
                 <Image src={circulo} alt='' className="mx-auto w-[20rem] h-auto flex justify-center items-center self-center tablet:col-start-2 tablet:w-[38rem]  tablet:h-auto "/>
                 
                 <div className="mx-auto pb-[4rem] tablet:col-start-1 tablet:-mt-[32rem] tablet:ml-[-10rem]">
-                    <h2 className="text-[1.5rem] pt-[1.8rem] text-grafite font-extrabold leading-tight text-center tablet:text-left tablet:text-[1.75rem] tablet:ml-[8rem] tablet:max-w-[31rem]"> Programa de fidelidade</h2>  
+                    <h2 className="text-[1.5rem] pt-[1.8rem] text-grafite font-extrabold leading-tight text-center tablet:text-left tablet:text-[1.75rem] tablet:ml-[8rem] tablet:max-w-[31rem]"> Programa de Fidelidade</h2>  
                     <p className="text-[0.87rem] pt-2 w-[13rem] text-grafite mx-auto  text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">No nosso sistema, os clientes acumulam pontos para trocar por brindes ou cashback.</p>
 
                     <h2 className="text-[1.5rem] pt-[1.4rem] text-grafite font-extrabold leading-tight text-center tablet:text-left tablet:text-[1.75rem] tablet:ml-[8rem] tablet:max-w-[31rem]">Comunicação via WhatsApp</h2>  
-                    <p className="text-[0.87rem] pt-2 w-[15.3rem] text-grafite mx-auto   text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">Seja alertado quando medicamentos contínuos dos clientes estão acabando, permitindo que você envie mensagens para informá-los.</p>
+                    <p className="text-[0.87rem] pt-2 w-[15.3rem] text-grafite mx-auto   text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">Seja alertado quando os medicamentos contínuos dos clientes estão acabando, permitindo que você envie mensagens para informá-los.</p>
                 
                     <h2 className="text-[1.5rem] pt-[1.4rem] text-grafite font-extrabold leading-tight text-center tablet:text-left tablet:text-[1.75rem] tablet:ml-[8rem] tablet:max-w-[31rem]">Controle de Encomendas</h2>  
                     <p className="text-[0.87rem] pt-2 w-[15rem] text-grafite mx-auto   text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">Gerencie pedidos e notifique os clientes quando suas encomendas chegarem.</p>

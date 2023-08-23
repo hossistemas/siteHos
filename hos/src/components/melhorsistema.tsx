@@ -35,7 +35,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
       };
 
       return(
-        <div className='bg-fundo'>
+        <div className='bg-fundo '>
             <div className='text-[1.25rem] pt-[1rem] text-left font-extrabold text-grafite leading-tight w-[16rem] flex mx-auto pb-[2rem] tablet:pb-[4rem] tablet:text-center tablet:w-[42.4rem] tablet:text-[2rem]'>
                 <h2>Por que o <span className='text-vermelho'>HOS</span> é o melhor sistema para você? </h2>
             </div>
@@ -61,7 +61,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
                         <Image src={vendas} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[6rem] tablet:pt-[5rem] tablet:pb-[2rem]'/>
-                        <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Prioridade de Vendas</h2>
+                        <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Lucratividade de Vendas</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Cadastre seus produtos e estabeleça cores para indicar as prioridades de vendas (verde, amarelo e vermelho), de acordo com a margem de lucro, vencimento e promoções.</p>
                     </div>
                 </SwiperSlide>
@@ -102,7 +102,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
                         <Image src={atualizacao} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5rem] tablet:pt-[2.8rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Atualização Constante</h2>
-                        <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Possibilita a gestão dos relacionamentos para usuários de medicamentos contínuos, bem como a configuração de plano de fidelidade específico para sua realidade.</p>
+                        <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Os softwares e programas da HOS são atualizados constantemente, adequando rotinas fiscais e boas práticas de gestão.</p>
                     </div>
                 </SwiperSlide>
 

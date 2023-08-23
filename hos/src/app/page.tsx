@@ -25,7 +25,7 @@ export default function Home() {
 
     <>
     <NextUIProvider>
-
+    <div className="overflow-x-hidden tablet:w-full">
     <Header solucoesClassName={''} sobreClassName={''} suporteClassName={''} universidadeClassName={''} />
     <HeroSection 
           bgClassName={"bg-gradient-to-b from-laranja to-magenta"}
@@ -45,8 +45,9 @@ export default function Home() {
     <Depoimentos />
     <Marcas />
     <Footer />
+    </div>
     </NextUIProvider>
-      
+       
 
     </>
  )

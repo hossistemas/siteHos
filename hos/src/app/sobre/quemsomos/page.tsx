@@ -7,7 +7,7 @@ import { Tres } from "@/components/quemsomostres";
 
 export default function Administracao() {
   return(
-      <>
+    <div className="overflow-x-hidden tablet:w-full">
       <Header solucoesClassName={''} sobreClassName={'tablet:font-extrabold tablet:text-vermelho'} suporteClassName={''} universidadeClassName={''} />
       <Subheader
       primeiro={"Quem Somos"} hrefPrimeiro={"/sobre/quemsomos"}
@@ -19,6 +19,6 @@ export default function Administracao() {
       <Tres />
       <Footer />
   
-      </>
+      </div>
    )
   }
