@@ -18,7 +18,7 @@ export function Maximize(props: MaximizeProps){
 
                        
                    <div className="bg-white w-[17.25rem] h-[11.875rem] rounded-xl drop-shadow-lg mx-auto tablet:w-[23.3rem] tablet:h-[17.9rem] ">
-                        <div className="absolute bg-white w-[4.8rem] h-[4.7rem] rounded-3xl flex justify-center mx-auto drop-shadow-botao -mt-6 left-[6rem] tablet:rounded-4xl tablet:w-[7.2rem] tablet:h-[7.1rem] tablet:left-[7rem] tablet:-mt-[5.5rem]">
+                        <div className="absolute bg-white w-[4.8rem] h-[4.7rem] rounded-3xl flex justify-center mx-auto drop-shadow-botao -mt-6 left-[6rem] tablet:rounded-4xl tablet:w-[7.2rem] tablet:h-[7.1rem] tablet:left-[6.5rem] tablet:-mt-[5.5rem]">
                             <Image src={magistral} alt='' className="tablet:w-[4.5rem] tablet:h-auto"/>   
                         </div>
                         <h2 className="text-[1rem] pt-[4.4rem] text-grafite font-extrabold leading-tight text-center tablet:text-center tablet:text-[1.5rem] tablet:pb-[1.6rem] tablet:max-w-[15rem] tablet:mx-auto"> Controle da Produção Magistral</h2>  
@@ -26,7 +26,7 @@ export function Maximize(props: MaximizeProps){
                     </div>
 
                     <div className="bg-white w-[17.25rem] h-[11.875rem] rounded-xl drop-shadow-lg mx-auto  mt-[3rem] tablet:w-[23.3rem] tablet:h-[17.9rem] tablet:mt-0">
-                        <div className="absolute bg-white w-[4.8rem] h-[4.7rem] rounded-3xl flex justify-center mx-auto drop-shadow-botao -mt-6 left-[6rem] tablet:rounded-4xl tablet:w-[7.2rem] tablet:h-[7.1rem] tablet:left-[7rem] tablet:-mt-[5.5rem]">
+                        <div className="absolute bg-white w-[4.8rem] h-[4.7rem] rounded-3xl flex justify-center mx-auto drop-shadow-botao -mt-6 left-[6rem] tablet:rounded-4xl tablet:w-[7.2rem] tablet:h-[7.1rem] tablet:left-[6.5rem] tablet:-mt-[5.5rem]">
                             <Image src={filiais} alt='' className="tablet:w-[4.5rem] tablet:h-auto"/>   
                         </div>
                         <h2 className="text-[1rem] pt-[4.4rem] w-[8rem] mx-auto text-grafite font-extrabold leading-tight text-center tablet:text-center tablet:text-[1.5rem]  tablet:pb-[1.6rem]  tablet:w-[13rem] tablet:mx-auto">Integração Filiais e Laboratórios </h2>  
@@ -34,7 +34,7 @@ export function Maximize(props: MaximizeProps){
                     </div> 
 
                     <div className="bg-white w-[17.25rem] h-[11.875rem] rounded-xl drop-shadow-lg mx-auto mt-[3rem] tablet:w-[23.3rem] tablet:h-[17.9rem] tablet:mt-0">
-                        <div className="absolute bg-white w-[4.8rem] h-[4.7rem] rounded-3xl flex justify-center mx-auto drop-shadow-botao -mt-6 left-[6rem] tablet:rounded-4xl tablet:w-[7.2rem] tablet:h-[7.1rem] tablet:left-[7rem] tablet:-mt-[5.5rem]">
+                        <div className="absolute bg-white w-[4.8rem] h-[4.7rem] rounded-3xl flex justify-center mx-auto drop-shadow-botao -mt-6 left-[6rem] tablet:rounded-4xl tablet:w-[7.2rem] tablet:h-[7.1rem] tablet:left-[6.5rem] tablet:-mt-[5.5rem]">
                             <Image src={pesagem} alt='' className="tablet:w-[4.5rem] tablet:h-auto"/>   
                         </div>
                         <h2 className="text-[1rem] pt-[4.4rem] text-grafite font-extrabold leading-tight text-center tablet:text-center tablet:pt-[5.5rem] tablet:text-[1.5rem] tablet:pb-[2.4rem]  tablet:max-w-[31rem]">Pesagem Monitorada </h2>  

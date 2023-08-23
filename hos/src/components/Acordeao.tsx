@@ -33,7 +33,7 @@ const AcordeaoSection = ({section, isActiveSection, sectionIndex, setActiveIndex
             
             <div onClick={toggleSection} className='flex pl-1 justify-between items-center pb-2 mx-auto  '>
                 <div className='flex ml-2 justify-start items-center  font-semibold text-grafite text-[0.8rem] leading-tight tablet:text-[1.125rem] '>{section.title}</div>
-                <div className=' flex justify-end items-end'>{isActiveSection ? <Image src={setaUp} alt="-" className=' bg-gradient-to-b from-laranja to-magenta rounded-full mx-2  px-[0.5rem] py-[0.6rem] tablet:py-[0.8rem] tablet:px-[0.7rem] tablet:h-auto tablet:w-[2rem] transition-all ease-in-out duration-500 ' /> : <Image src={setaUp} alt="+" className=' bg-gradient-to-b from-laranja to-magenta rounded-full mx-2  px-[0.5rem] py-[0.6rem] -rotate-180 tablet:py-[0.8rem] tablet:px-[0.7rem] tablet:h-auto tablet:w-[2rem] transition-all ease-in-out duration-500'/>}</div>
+                <div className=' flex justify-end items-end'>{isActiveSection ? <Image src={setaUp} alt="-" className=' bg-gradient-to-b from-laranja to-magenta rounded-full mx-2  px-[0.5rem] py-[0.6rem] tablet:py-[0.9rem] tablet:px-[0.8rem] tablet:h-auto tablet:w-[2.3rem] transition-all ease-in-out duration-500 ' /> : <Image src={setaUp} alt="+" className=' bg-gradient-to-b from-laranja to-magenta rounded-full mx-2  px-[0.5rem] py-[0.6rem] -rotate-180 tablet:py-[0.9rem] tablet:px-[0.8rem] tablet:h-auto tablet:w-[2.3rem] transition-all ease-in-out duration-500'/>}</div>
             </div>
             <div className={isActiveSection ? 'expanded' : 'collapsed'}>
                     <div className='bg-cinza bg-opacity-20 h-[0.1rem] w-[16rem] flex mx-auto my-[0.3rem] tablet:w-[26rem] tablet:my-[0.6rem]'></div>

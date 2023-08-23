@@ -23,7 +23,7 @@ export function Painel(props: PainelProps){
                 </Link>
             </div>
         
-        <Image src={dashboard} alt='' className="max-w-[22.4rem] h-auto mx-auto tablet:col-start-1 tablet:max-w-[50rem] tablet:h-auto tablet:-mt-[8rem]"/>
+        <Image src={dashboard} alt='' className="max-w-[22.4rem] h-auto mx-auto tablet:col-start-1 tablet:max-w-[45rem] tablet:h-auto tablet:-mt-[8rem]"/>
 
         </div>
     </div>

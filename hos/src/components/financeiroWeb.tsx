@@ -14,7 +14,7 @@ export function FinanceiroWeb(props: FinanceiroWebProps){
                 <h2 className="text-[1.5rem] w-[19rem] mx-auto text-grafite font-extrabold leading-tight text-center tablet:col-span-3 tablet:text-[2rem] tablet:w-[46.8rem] tablet:pb-[5rem]">Amplie suas possibilidades com o <span className="text-vermelho">Financeiro Web</span></h2>
                 
                 <div className="">
-                    <div className="bg-white w-[5.7rem] h-[5.6rem] mt-[1.9rem]  rounded-3xl drop-shadow-2xl flex justify-center mx-auto tablet:w-[8.1rem] tablet:h-[8rem]">
+                    <div className="bg-white w-[5.7rem] h-[5.6rem] mt-[1.9rem]  rounded-3xl drop-shadow-2xl flex justify-center mx-auto tablet:w-[8.1rem] tablet:h-[8rem] tablet:rounded-4xl">
                         <Image src={gestao} alt="" className=" w-[3.9rem] h-auto mt-[0.2rem] tablet:w-[5rem] tablet:h-auto"/>
                     </div>
                     <h4 className="w-[13rem] text-[1rem] mt-[1.5rem] font-extrabold text-center text-grafite mx-auto tablet:w-[16.1rem] tablet:text-[1.25rem]">Gestão da saúde financeira</h4>
@@ -22,7 +22,7 @@ export function FinanceiroWeb(props: FinanceiroWebProps){
                 </div>
 
                 <div className="">
-                    <div className="bg-white w-[5.7rem] h-[5.6rem] mt-[1.5rem] rounded-3xl drop-shadow-2xl flex justify-center mx-auto tablet:w-[8.1rem] tablet:h-[8rem]">
+                    <div className="bg-white w-[5.7rem] h-[5.6rem] mt-[1.8rem] rounded-3xl drop-shadow-2xl flex justify-center mx-auto tablet:w-[8.1rem] tablet:h-[8rem] tablet:rounded-4xl">
                         <Image src={boletos} alt="" className=" w-[2.9rem] h-auto tablet:w-[4.4rem] tablet:h-auto"/>
                     </div>
                     <h4 className="w-[13rem] text-[1rem] mt-[1.5rem] font-extrabold text-center text-grafite mx-auto tablet:w-[16.1rem] tablet:text-[1.25rem]">Emissão de Boletos</h4>
@@ -30,7 +30,7 @@ export function FinanceiroWeb(props: FinanceiroWebProps){
                 </div>
 
                 <div className="">
-                    <div className="bg-white w-[5.7rem] h-[5.6rem] mt-[1.5rem] rounded-3xl drop-shadow-2xl flex justify-center mx-auto tablet:w-[8.1rem] tablet:h-[8rem]">
+                    <div className="bg-white w-[5.7rem] h-[5.6rem] mt-[1.8rem] rounded-3xl drop-shadow-2xl flex justify-center mx-auto tablet:w-[8.1rem] tablet:h-[8rem] tablet:rounded-4xl">
                         <Image src={sistema} alt="" className=" w-[3.9rem] h-auto tablet:w-[5rem] tablet:h-auto"/>
                     </div>
                     <h4 className="w-[13rem] text-[1rem] mt-[1.5rem] font-extrabold text-center text-grafite mx-auto tablet:w-[16.1rem] tablet:text-[1.25rem]">Sistema de cobrança</h4>

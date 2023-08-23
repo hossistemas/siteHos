@@ -154,7 +154,7 @@ export function Formulario () {
                 </div>
             </form>
         
-        <div className="tablet:col-start-1 tablet:mt-[-48rem] tablet:ml-[10rem] tablet:pb-[19rem]">
+        <div className="tablet:col-start-1 tablet:mt-[-48rem] tablet:ml-[10rem] tablet:pb-[25rem]">
             <div className="pt-[5rem] tablet:flex tablet:items-center">
                 <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full tablet:mx-0'>
                     <Image src={telefone} alt="" />
