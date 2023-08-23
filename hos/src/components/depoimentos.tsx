@@ -36,10 +36,14 @@ export function Depoimentos(props: DepoimentosProps) {
                 <h2>Já ajudamos <span className='text-vermelho'> centenas de farmácias</span> e drogarias a descomplicar suas rotinas. </h2>
              </div>
                 <Swiper
-                    modules={[Pagination, Navigation]}
+                    
                     breakpoints={breakpoints}
                     spaceBetween={20}
-                    pagination={{ clickable: true }}      
+                    pagination={{
+                        type: 'progressbar',
+                      }}
+                      navigation={true}
+                      modules={[Pagination, Navigation]}       
                     className="mySwiper bg-fundo w-[300px] flex justify-center items-center mx-auto tablet:w-[1160px] ">
                 
                 <SwiperSlide>

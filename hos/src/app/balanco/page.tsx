@@ -7,7 +7,7 @@ import { Balanco } from "@/components/balanco";
 export default function Suporte() {
   return(
       <>
-      <Header />
+      <Header solucoesClassName={''} sobreClassName={''} suporteClassName={''} universidadeClassName={''} />
       <Balanco />
       <Footer />
   
