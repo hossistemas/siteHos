@@ -10,7 +10,7 @@ import { Formulario } from "@/components/converse";
 export default function Contato () {
   return(
       <>
-      <Header />
+      <Header solucoesClassName={''} sobreClassName={'tablet:font-extrabold tablet:text-vermelho'} suporteClassName={''} universidadeClassName={''} />
       <Subheader
       primeiro={"Quem Somos"} hrefPrimeiro={"/sobre/quemsomos"}
       segundo={"Perguntas frequentes"}  hrefSegundo={"/sobre/faq"}

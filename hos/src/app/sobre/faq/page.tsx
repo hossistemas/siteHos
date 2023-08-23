@@ -9,7 +9,7 @@ import { Faq } from "@/components/faq";
 export default function Administracao() {
   return(
       <>
-      <Header />
+      <Header solucoesClassName={''} sobreClassName={'tablet:font-extrabold tablet:text-vermelho'} suporteClassName={''} universidadeClassName={''} />
       <Subheader
         primeiro={"Quem Somos"} hrefPrimeiro={"/sobre/quemsomos"}
         segundo={"Perguntas frequentes"} hrefSegundo={"/sobre/faq"}

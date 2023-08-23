@@ -9,7 +9,7 @@ import { Cta } from "@/components/cta";
 export default function Suporte() {
   return(
       <>
-      <Header />
+      <Header solucoesClassName={''} sobreClassName={''} suporteClassName={''} universidadeClassName={'tablet:font-extrabold tablet:text-vermelho'} />
       <Herouniversidade />
       <Videos />
       <Cta />

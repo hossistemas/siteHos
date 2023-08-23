@@ -26,7 +26,7 @@ export default function Home() {
     <>
     <NextUIProvider>
 
-    <Header />
+    <Header solucoesClassName={''} sobreClassName={''} suporteClassName={''} universidadeClassName={''} />
     <HeroSection 
           bgClassName={"bg-gradient-to-b from-laranja to-magenta"}
           title={"Sistema intuitivo, processos claros e suporte simplificado!"}

@@ -8,7 +8,7 @@ import { Tres } from "@/components/quemsomostres";
 export default function Administracao() {
   return(
       <>
-      <Header solucoesClassName={''} />
+      <Header solucoesClassName={''} sobreClassName={'tablet:font-extrabold tablet:text-vermelho'} suporteClassName={''} universidadeClassName={''} />
       <Subheader
       primeiro={"Quem Somos"} hrefPrimeiro={"/sobre/quemsomos"}
       segundo={"Perguntas frequentes"}  hrefSegundo={"/sobre/faq"}

@@ -10,10 +10,14 @@ import { useState } from 'react'
 
 interface HeaderProps {
     solucoesClassName: any,
+    sobreClassName: any,
+    suporteClassName: any,
+    universidadeClassName: any,
 }
 
 
-export function Header({solucoesClassName}: HeaderProps){
+    
+    export function Header({solucoesClassName, sobreClassName, suporteClassName, universidadeClassName}: HeaderProps){
     const [botao1Visivel, setbotao1Visivel] = useState(true)
     const [botao2Visivel, setbotao2Visivel] = useState(false)
 
@@ -50,9 +54,9 @@ export function Header({solucoesClassName}: HeaderProps){
 
                 <div className='tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:text-[0.8rem] tablet:font-semibold tablet:text-grafite '>               
                         <Link href="/solucoes/administracao" className={`mr-[1.8rem] tablet:ml-[1rem] hover:text-vermelho ${solucoesClassName}`}>Soluções </Link>
-                        <Link href="/sobre/quemsomos" className='mr-[1.8rem] hover:text-vermelho'>Sobre</Link>
-                        <Link href="/suporte" className='mr-[1.8rem] hover:text-vermelho'>Suporte</Link>
-                        <Link href="/universidade" className='mr-[1.8rem] hover:text-vermelho'>Universidade</Link>
+                        <Link href="/sobre/quemsomos" className={`mr-[1.8rem] hover:text-vermelho ${sobreClassName}`}>Sobre</Link>
+                        <Link href="/suporte" className={`mr-[1.8rem] hover:text-vermelho ${suporteClassName}`}>Suporte</Link>
+                        <Link href="/universidade" className={`mr-[1.8rem] hover:text-vermelho ${universidadeClassName}`}>Universidade</Link>
                         <Link href="https://www.hos.com.br/nossoblog/" className='mr-[3rem] hover:text-vermelho' target='_blank'>Blog</Link>
                 </div>
 

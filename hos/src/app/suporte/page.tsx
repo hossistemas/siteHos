@@ -10,7 +10,7 @@ import { Atendimento } from "@/components/atendimento";
 export default function Suporte() {
   return(
       <>
-      <Header />
+      <Header solucoesClassName={''} sobreClassName={''} suporteClassName={'tablet:font-extrabold tablet:text-vermelho'} universidadeClassName={''} />
       <HeroSection 
                           bgClassName={"bg-white"}
                           title={"Precisa de suporte?"}

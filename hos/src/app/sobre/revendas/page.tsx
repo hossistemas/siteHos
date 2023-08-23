@@ -9,7 +9,7 @@ import { Lista } from "@/components/listarevendedores";
 export default function Revendas() {
   return(
       <>
-      <Header />
+      <Header solucoesClassName={''} sobreClassName={'tablet:font-extrabold tablet:text-vermelho'} suporteClassName={''} universidadeClassName={''} />
       <Subheader
       primeiro={"Quem Somos"} hrefPrimeiro={"/sobre/quemsomos"}
       segundo={"Perguntas frequentes"}  hrefSegundo={"/sobre/faq"}
