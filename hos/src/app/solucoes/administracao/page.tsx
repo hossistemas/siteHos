@@ -23,7 +23,7 @@ export default function Administracao() {
         text={"Velocidade e entendimento do cliente como chave para o seu sucesso."}
         textClassName={"text-grafite"}
         buttonClassName={"bg-gradient-to-b from-laranja to-magenta text-white hover:bg-gradient-to-b hover:from-darker hover:to-darker hover:transition-all hover:ease-in-out hover:duration-1000"}
-        img={gerenciamento} buttonName={'Solicite uma demonstração'} imageClassName={''}      /> 
+        img={gerenciamento} buttonName={'Solicite uma demonstração'} imageClassName={''} linkName={"/sobre/contato"}      /> 
       <Otimize /> 
       <Render />
       <Cta />

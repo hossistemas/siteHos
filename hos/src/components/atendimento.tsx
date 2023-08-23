@@ -10,7 +10,7 @@ export function Atendimento(){
     return( 
     
      <div className="bg-fundo">
-        <div className="w-[360px] mx-auto pt-[3rem] mt-[-5rem] pb-[4rem] tablet:w-[1200px] ">
+        <div className="w-[360px] mx-auto pt-[3rem] mt-[-5rem] pb-[4rem] tablet:w-[1040px] ">
             <h3 className="text-[1rem] text-grafite font-bold mx-auto text-center pb-[4rem] tablet:text-[1.5rem]">Outras formas de atendimento</h3> 
 
              <div className='tablet:flex'>

@@ -42,7 +42,7 @@ export function Subheader({primeiro, segundo, terceiro, quarto, hrefPrimeiro, hr
     return(
         <>
          <div className='bg-vermelho w-auto h-auto tablet:h-[5.2rem]'>
-            <ul className='grid grid-cols-2  text-[0.87rem]  font-semibold text-fundo tablet:flex tablet:justify-center tablet:mx-auto  tablet:text-[1rem]  tablet:w-[1200px] tablet:px-[8rem] tablet:h-[7rem]' >
+            <ul className='grid grid-cols-2  text-[0.87rem]  font-semibold text-fundo tablet:flex tablet:justify-center tablet:mx-auto  tablet:text-[1rem]  tablet:w-[1040px] tablet:px-[8rem] tablet:h-[7rem]' >
 
                <Menu ativo={menuUm} hrefDesc={`${hrefPrimeiro}`} descricao={`${primeiro}`} />
 

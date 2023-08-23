@@ -73,10 +73,10 @@ export function Formulario () {
         <>
         <div className="bg-fundo">
              <div className="bg-gradient-to-b from-laranja to-magenta w-auto h-[16rem] pt-[3rem] tablet:h-[24rem]">
-                <div className="ml-[3rem]  tablet:pt-[3rem] tablet:ml-[10rem]">
-                    <h4 className="text-[1.25rem] font-bold text-white w-[12.5rem] leading-tight tablet:text-[2.75rem] tablet:w-[29rem]">Converse com um de nossos consultores</h4>
+                <div className="ml-[3rem]  tablet:pt-[3rem] tablet:ml-[5rem]">
+                    <h4 className="text-[1.25rem] font-bold text-white w-[12.5rem] leading-tight tablet:text-[2.75rem] tablet:w-[29rem] tablet:mr-[5rem]">Converse com um de nossos consultores</h4>
                     <div className="bg-white w-[3rem] h-[0.1rem] my-[0.5rem] tablet:hidden"/>
-                    <p className="text-[0.8rem] text-white font-medium w-[12.5rem] leading-tight tablet:text-[1.25rem] tablet:w-[29rem] tablet:pt-[3rem]">Você ainda tem alguma dúvida? Entre em contato conosco pelos canais oficiais.</p>
+                    <p className="text-[0.8rem] text-white font-medium w-[12.5rem] leading-tight tablet:text-[1.25rem] tablet:w-[20rem] tablet:pt-[3rem]">Você ainda tem alguma dúvida? Entre em contato conosco pelos canais oficiais.</p>
                 </div>
             </div>
             
@@ -154,7 +154,7 @@ export function Formulario () {
                 </div>
             </form>
         
-        <div className="tablet:col-start-1 tablet:mt-[-48rem] tablet:ml-[10rem] tablet:pb-[25rem]">
+        <div className="tablet:col-start-1 tablet:mt-[-48rem] tablet:ml-[5rem] tablet:pb-[25rem]">
             <div className="pt-[5rem] tablet:flex tablet:items-center">
                 <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full tablet:mx-0'>
                     <Image src={telefone} alt="" />
@@ -176,10 +176,10 @@ export function Formulario () {
             </div>
 
             <div className=" tablet:flex tablet:items-center">
-                <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full tablet:mx-0'>
+                <div className='w-[2.5rem] h-[2.5rem] flex items-center justify-center mx-auto bg-gradient-to-b from-laranja to-magenta rounded-full tablet:mx-0 tablet:'>
                     <Image src={horario} alt="" />
                 </div>
-                <div  className="tablet:ml-[0.7rem] tablet:mb-[0.8rem]">
+                <div  className="tablet:ml-[0.7rem] tablet:mb-[0.3rem]">
                     <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem] tablet:text-left tablet:mx-0 " >Horário de atendimento</h5>
                     <p className="text-cinza text-[0.9rem] w-[10rem] font-semibold text-center mx-auto mt-[-0.3rem] leading-tight tablet:text-left tablet:w-[20rem]" >Segunda à Sexta-feira: 08h às 18h</p>
                 </div>

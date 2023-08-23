@@ -26,7 +26,7 @@ export default function Administracao() {
         text={"Centralize e automatize as informações da sua farmácia de maneira fácil, e rápida."}
         textClassName={"text-grafite"}
         buttonClassName={"bg-gradient-to-b from-laranja to-magenta text-white hover:bg-gradient-to-b hover:from-darker hover:to-darker hover:transition hover:duration-500"}
-        img={complementares} buttonName={'Solicite uma demonstração'} imageClassName={''}      /> 
+        img={complementares} buttonName={'Solicite uma demonstração'} imageClassName={''} linkName={"/sobre/contato"}      /> 
       <Conformidade />
       <Recurso />
       <Cta />
