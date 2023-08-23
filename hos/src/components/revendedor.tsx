@@ -2,7 +2,7 @@
 
 import useCidades from "@/hooks/useCidades";
 import useEstados from "@/hooks/useEstados";
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useRef, useState } from "react";
 import InputMask from 'react-input-mask';
 import Image from 'next/image'
 import Modal from "./modal";
@@ -15,7 +15,8 @@ export function Revendedor () {
     const [selectedEstado, setSelectedEstado] = useState('')
     const { cidades } = useCidades({siglaUF: selectedEstado});
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+    const formRef = useRef<HTMLFormElement | null>(null);
+    
     const openModal = () => {
       setIsModalOpen(false);
     };
@@ -54,6 +55,17 @@ export function Revendedor () {
         }
       };
       
+      if (formRef.current) {
+        const formElements = formRef.current.elements;
+        for (let i = 0; i < formElements.length; i++) {
+          const element = formElements[i] as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
+          if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
+            if (element.type !== 'checkbox') {
+              element.value = '';
+            }
+          }
+        }}
+      
       const closeModal = () => {
         setIsModalOpen(false);
       };
@@ -75,6 +87,7 @@ export function Revendedor () {
         
                 </div>
                     <form 
+                    ref={formRef}
                     method="post"
                     action="https://sheetdb.io/api/v1/zz4gmvta6q0gc"
                     id="sheetdb-form" 
@@ -95,12 +108,14 @@ export function Revendedor () {
 
                             <label className="estado text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] group hover:text-magenta"> Estado*
                                 <select name="data[estado]" id="" value={selectedEstado} onChange={handleEstadoUpdate} className="hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-2 tablet:text-[1rem] tablet:py-[0.5rem] tablet:w-[13rem] "> 
+                                  <option value="">Selecione um estado</option>
                                     {estados.map((estado) => <option key={estado.id} value={estado.sigla} >{estado.nome}</option>)}
                                 </select>
                             </label>
 
                             <label className="cidades text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2 group hover:text-magenta"> Cidade*
                                 <select name="data[Cidade]" id="" className="hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-2 mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.5rem] tablet:w-[13rem]">
+                                  <option value="">Selecione uma cidade</option>
                                     {cidades.map((cidade) => <option key={cidade.nome}> {cidade.nome} </option>)}
                                 </select>
                             </label>

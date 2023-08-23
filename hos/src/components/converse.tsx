@@ -1,6 +1,6 @@
 import useCidades from "@/hooks/useCidades";
 import useEstados from "@/hooks/useEstados";
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useRef, useState } from "react";
 import InputMask from 'react-input-mask';
 import Image from 'next/image'
 import Modal from '@/components/modal'
@@ -21,7 +21,8 @@ export function Formulario () {
     const [selectedEstado, setSelectedEstado] = useState('')
     const { cidades } = useCidades({siglaUF: selectedEstado});
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+    const formRef = useRef<HTMLFormElement | null>(null);
+    
     const openModal = () => {
       setIsModalOpen(false);
     };
@@ -59,7 +60,21 @@ export function Formulario () {
           }
         }
       };
+
       
+      if (formRef.current) {
+        const formElements = formRef.current.elements;
+        for (let i = 0; i < formElements.length; i++) {
+          const element = formElements[i] as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
+          if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
+            if (element.type !== 'checkbox') {
+              element.value = '';
+            }
+          }
+        }
+      }
+        
+
       const closeModal = () => {
         setIsModalOpen(false);
       };
@@ -82,6 +97,7 @@ export function Formulario () {
             
     <div className="tablet:grid tablet:grid-cols-2">
             <form 
+            ref={formRef}
             method='POST'
             action="https://sheetdb.io/api/v1/jm9ywj1uo51fb"
             id="sheetdb-form" 
@@ -103,12 +119,14 @@ export function Formulario () {
 
                     <label className="estado text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] group hover:text-magenta"> Estado*
                         <select name='data[estado]' id="" value={selectedEstado} onChange={handleEstadoUpdate} className="hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] py-2 pl-[0.7rem] mt-[0.3rem]  tablet:text-[1rem] tablet:py-[0.3rem] tablet:h-[3rem] tablet:w-[13rem]"> 
+                        <option value="">Selecione um estado</option>
                             {estados.map((estado) => <option key={estado.id} value={estado.sigla} >{estado.nome}</option>)}
                         </select>
                     </label>
 
                     <label className="cidades text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2 group hover:text-magenta"> Cidade*
                         <select name='data[cidade]' id="" className="hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-2 mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:h-[3rem]  tablet:w-[13rem]">
+                        <option value="">Selecione uma cidade</option>
                             {cidades.map((cidade) => <option key={cidade.nome}> {cidade.nome} </option>)}
                         </select>
                     </label>
@@ -121,7 +139,7 @@ export function Formulario () {
                         </select>
                     </label>
 
-                    <label className="telefone text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] group hover:text-magenta">Telefone*
+                    <label  className="telefone text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] group hover:text-magenta">Telefone*
                      <InputMask  name='data[telefone]' mask="(99) 99999-9999"  maskChar=""  placeholder="(DD) _____-____" className='hover:border-magenta w-[9rem] py-2 border-2 rounded-lg font-normal text-[0.7rem] tablet:h-[3rem]  pl-[0.7rem] mt-[0.3rem]  tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' required />
                     </label>  
 

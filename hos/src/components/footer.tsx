@@ -8,7 +8,7 @@ import linkedin from '../../public/linkedin.svg'
 import youtube from '../../public/youtube.svg'
 import Link from 'next/link'
 import flecha from '../../public/arrow.svg'
-import { useState } from "react"
+import { useRef, useState } from "react"
 import Modal from "./modal"
 
 interface FooterProps {
@@ -17,7 +17,8 @@ interface FooterProps {
 
 export function Footer(props: FooterProps){
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+    const emailInputRef = useRef<HTMLInputElement | null>(null);
+    
     const openModal = () => {
       setIsModalOpen(true);
     };
@@ -47,16 +48,22 @@ export function Footer(props: FooterProps){
                 
             });
             setIsModalOpen(true);
+            
+            
 
           } catch (error) {      
             console.error('Insira um email correto.', error);
             setIsModalOpen(false);
-           
+            
           }
         }
       };
+
+      if (emailInputRef.current) {
+        emailInputRef.current.value = '';
+      }
       
-      const closeModal = () => {
+    const closeModal = () => {
         setIsModalOpen(false);
       };
       
@@ -141,7 +148,7 @@ export function Footer(props: FooterProps){
                     onSubmit={handleSubmit}  >
                          
                         <label htmlFor=""  className="w-[15.8rem] h-[2.3rem] flex items-center mx-auto bg-white rounded-lg justify-center pl-[0.5rem] ">
-                            <input type="text" name="data[Email]" id="" placeholder="Digite seu e-mail" className=" tablet:w-[10.8rem]"/>
+                            <input  ref={emailInputRef} type="text" name="data[Email]" id="" placeholder="Digite seu e-mail" className=" tablet:w-[10.8rem]"/>
                             <button type="submit" className=" bg-gradient-to-b from-laranja to-magenta rounded-lg ml-[1.98rem] "> <Image src={flecha} alt='' className=" -rotate-90 w-[1.5rem] h-auto py-[0.8rem] mx-2"/></button>
                         </label>
 
