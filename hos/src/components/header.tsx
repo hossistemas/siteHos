@@ -9,11 +9,11 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 interface HeaderProps {
-
+    solucoesClassName: any,
 }
 
 
-export function Header(props: HeaderProps){
+export function Header({solucoesClassName}: HeaderProps){
     const [botao1Visivel, setbotao1Visivel] = useState(true)
     const [botao2Visivel, setbotao2Visivel] = useState(false)
 
@@ -49,7 +49,7 @@ export function Header(props: HeaderProps){
             <div className='hidden tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:-ml-[5rem] '>
 
                 <div className='tablet:flex tablet:justify-center tablet:items-center tablet:mx-auto tablet:text-[0.8rem] tablet:font-semibold tablet:text-grafite '>               
-                        <Link href="/solucoes/administracao" className='mr-[1.8rem] tablet:ml-[1rem] hover:text-vermelho'>Soluções </Link>
+                        <Link href="/solucoes/administracao" className={`mr-[1.8rem] tablet:ml-[1rem] hover:text-vermelho ${solucoesClassName}`}>Soluções </Link>
                         <Link href="/sobre/quemsomos" className='mr-[1.8rem] hover:text-vermelho'>Sobre</Link>
                         <Link href="/suporte" className='mr-[1.8rem] hover:text-vermelho'>Suporte</Link>
                         <Link href="/universidade" className='mr-[1.8rem] hover:text-vermelho'>Universidade</Link>

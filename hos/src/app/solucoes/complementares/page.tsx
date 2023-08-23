@@ -11,7 +11,7 @@ import { Recurso } from "@/components/recurso";
 export default function Administracao() {
   return(
       <>
-      <Header />
+      <Header solucoesClassName={'tablet:font-extrabold tablet:text-vermelho'} />
       <Subheader
       primeiro={"Administração de Vendas"} hrefPrimeiro={"/solucoes/administracao"}
       segundo={"Gerenciamento de Loja"}  hrefSegundo={"/solucoes/gerenciamento"}

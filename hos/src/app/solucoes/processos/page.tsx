@@ -11,7 +11,7 @@ import { Emuitomais } from "@/components/emuitomais";
 export default function Processos() {
   return(
       <>
-      <Header />
+      <Header solucoesClassName={'tablet:font-extrabold tablet:text-vermelho'}/>
       <Subheader
       primeiro={"Administração de Vendas"} hrefPrimeiro={"/solucoes/administracao"}
       segundo={"Gerenciamento de Loja"}  hrefSegundo={"/solucoes/gerenciamento"}
