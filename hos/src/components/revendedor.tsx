@@ -128,7 +128,7 @@ export function Revendedor () {
                                 <p>Formulário enviado com sucesso!</p>
                             </Modal>
                             <button type="submit" className="col-start-2 w-[9rem] h-[2.5rem] mt-[1.4rem] ml-[1.2rem] tablet:w-[12.5rem] tablet:h-[3rem] rounded-lg bg-gradient-to-b from-laranja to-magenta hover:bg-gradient-to-b hover:from-darker hover:to-darker"  onClick={openModal}>
-                                <p className="text-white text-[0.7rem] font-semibold">Enviar</p>
+                                <p className="text-white text-[14px] font-semibold">Enviar</p>
                                 </button>
                         </div>
                     </form>

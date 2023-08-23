@@ -65,7 +65,7 @@ export function Render(props: RenderProps) {
         <div className=" tablet:flex tablet:justify-center ">
             <div  className=' w-[16rem] h-[15rem] mb-3 mx-auto justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[23.3rem] tablet:h-[23rem] tablet:mx-6'>
               <Image src={simultanes} alt='' className='w-[3.8rem] h-auto flex mx-auto pt-[2rem]  tablet:w-[5.8rem] tablet:pt-[3.5rem] tablet:pb-[2rem]'/>
-              <h2 className='text-center text-[1rem] mt-[1.9rem] text-grafite font-bold tablet:text-[1.3] tablet:px-[1.5rem]  tablet:pb-[0.7rem]'>Vendas Simultâneas</h2>
+              <h2 className='text-center text-[1rem] mt-[1.9rem] text-grafite font-bold tablet:text-[1.3rem] tablet:px-[1.5rem]  tablet:pb-[0.7rem]'>Vendas Simultâneas</h2>
               <p className='text-center text-[0.8rem] mt-[0.9rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:pb-[4.9rem] tablet:flex tablet:mx-auto'>Flexibilidade de usar múltiplas telas de vendas para consultar preços e atender clientes de forma simultânea.</p>
             </div>
 
