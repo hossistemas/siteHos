@@ -66,6 +66,9 @@ module.exports = {
         'formulario': [
           '-3px -5px 8px rgba(0, 0, 0, 0.1)',
           '4px 8px 8px rgba(0, 0, 0, 0.2)'
+      ],
+      'tres': [
+        '0 15px 18px rgb(0 0 0 / 0.15)'
       ]
       },
       boxShadow: {
