@@ -20,7 +20,7 @@ export function Balanco(props : BalancoProps){
                 <Image src={balanco} alt='' className='w-full h-[12rem] tablet:max-w-full tablet:h-[25rem]'/>
             </div>
             <div className='mx-auto flex justify-center items-center'>
-                <h4 className='-mt-[11rem] ml-[3rem] mb-5 w-[15rem] text-white text-[1.5rem] font-bold leading-tight tablet:text-[2.25rem] tablet:w-[37rem] tablet:ml-[-15rem] tablet:-mt-[29rem] tablet:pb-[4rem]'>Confira as demonstrações financeiras do Balanço</h4>
+                <h4 className='-mt-[11rem] ml-[3rem] mb-5 w-[15rem] text-white text-[1.5rem] font-bold leading-tight tablet:text-[2.25rem] tablet:w-[37rem] tablet:ml-[-15rem] tablet:-mt-[22rem] tablet:pb-[4rem]'>Confira as demonstrações financeiras do Balanço</h4>
             
             </div>
         </div>
