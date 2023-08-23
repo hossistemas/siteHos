@@ -19,7 +19,7 @@ export function Cta(props: CtaProps){
                         <h3 className="text-[0.68rem] flex mx-auto justify-center mt-[2rem] text-grafite tablet:text-[1.25rem] tablet:mt-[3rem]">Descubra como podemos impulsionar seus resultados</h3>
                         <p className="text-[1.2rem] font-extrabold text-center w-[16.8rem] mt-[0.4rem] mb-[1.3rem] flex mx-auto justify-center leading-none text-grafite tablet:text-[2rem] tablet:w-[39.1rem] tablet:mt-[1rem] tablet:mb-[3rem]">Solicite uma demonstração agora mesmo</p>
                         <Link href="/sobre/contato">
-                            <button className="bg-vermelho w-[14rem] h-[2rem] flex mx-auto rounded-sm items-center tablet:w-[22rem] tablet:h-[3.5rem] tablet:rounded-lg hover:bg-sub hover:transition-all hover:ease-in-out hover:duration-500">
+                            <button className="bg-vermelho w-[14rem] h-[2rem] flex mx-auto rounded-md items-center tablet:w-[22rem] tablet:h-[3.5rem] tablet:rounded-lg hover:bg-sub hover:transition-all hover:ease-in-out hover:duration-500">
                                 <p className="text-[0.9rem] text-white flex mx-auto tablet:text-[1.25rem]">Converse com um especialista</p>
                             </button>
                         </Link>

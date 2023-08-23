@@ -46,52 +46,25 @@ export function Potencialize(props: PotencializeProps) {
     setCurrentIndex((prevIndex) => (prevIndex + itemsPerSlide) % images.length);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1400) {
-        setItemsPerSlide(3);
-      } else {
-        setItemsPerSlide(1);
-      }
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
     return( 
     
-    <div className="relative bg-fundo">
-        <div className='text-[1.25rem] pt-[5rem] -mt-[5rem] text-center font-extrabold text-grafite leading-tight w-[18rem] flex mx-auto pb-[2rem] tablet:text-center tablet:w-[45rem] tablet:text-[2rem] tablet:pb-[4rem]'>
+    <div className="relative bg-fundo pb-[35rem]">
+        <div className='text-[1.25rem] pt-[5rem]  -mt-[5rem] text-center font-extrabold text-grafite leading-tight w-[18rem] flex mx-auto pb-[2rem] tablet:text-center tablet:w-[45rem] tablet:text-[2rem] tablet:pb-[4rem]'>
                 <h2 className='mx-auto'>Potencialize o gerenciamento da sua farmácia</h2>
             </div>
-      <div className="carousel overflow-hidden  flex mx-auto h-[19rem] tablet:h-[26rem] tablet:w-[1090px] ">
-        <div className="carousel-slides flex transition-transform ease-in-out duration-300  tablet:w-1/3" style={{ transform: `translateX(-${currentIndex *(100 / itemsPerSlide)}%)` }}>
+      <div className="flex mx-auto h-[19rem]  tablet:h-[30rem] tablet:w-[1100px] ">
+        <div className="grid grid-cols-1 ml-[3.8rem] tablet:flex tablet:gap-x-4 tablet:mx-auto tablet:justify-center tablet:w-1/3">
           {images.map((item, index) => (
-            <div key={index} className={`carousel-slide flex-shrink-0 w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[22rem] ${index === currentIndex ? 'active' : ''} ${index === 2 ? 'tablet:pt-[1.2rem]' : ''} `} >
-              <Image src={item.image} alt={`Image ${index + 1}`} width={80} height={100} className='flex mx-auto pt-[2rem]  tablet:w-[7rem] tablet:pt-[3rem]'/>
-              <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem] tablet:pt-[2rem]'>{item.title}</h2>
-              <p className='text-center text-[0.8rem] text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>{item.text}</p>
+            <div key={index} className={`mx-auto w-[16rem] h-[15rem] my-2 items-center bg-white  drop-shadow-lg rounded-xl tablet:w-[23.5rem] tablet:h-[22.3rem] ${index === currentIndex ? 'active' : ''} ${index === 2 ? 'tablet:pt-[1.2rem]' : ''} `} >
+              <Image src={item.image} alt={`Image ${index + 1}`} width={80} height={100} className='flex mx-auto pt-[2rem]  tablet:w-[7rem] tablet:mt-[1rem]'/>
+              <h2 className='text-center text-[1rem] text-grafite font-bold pt-4 tablet:text-[1.5rem] tablet:px-[1.5rem] tablet:pb-[1rem] tablet:pt-[3rem] tablet:w-[23rem]'>{item.title}</h2>
+              <p className='text-center text-[0.8rem] text-grafite tablet:text-[0.8rem] tablet:w-[16rem] tablet:flex tablet:mx-auto'>{item.text}</p>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="flex justify-center -mt-[2rem] pb-[3rem] tablet:invisible ">
-        <button
-            className=" bg-fundo tablet:bg-none mr-[1rem] border-2 tablet:border-none rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer hover:px-[0.6rem] hover:py-[1.1rem] hover:bg-magenta hover:transition hover:ease-in hover:duration-300 hover:border-0"
-            onClick={prevSlide}
-            >
-            <Image src={arrowRight} alt='' className='rotate-180 w-[1rem] tablet:w-[2rem] tablet:h-[2rem] h-[1rem] mx-[0.4rem] hover:filter hover:grayscale '/>
-            </button>
-            <button
-            className=" bg-fundo tablet:bg-none  tablet:px-0 tablet:py-0 border-2  tablet:border-none rounded-full text-[24px] px-[0.5rem] py-[1rem] cursor-pointer  hover:px-[0.6rem] hover:py-[1.1rem] hover:bg-magenta hover:hover:transition hover:ease-in hover:duration-300 hover:border-0"
-            onClick={nextSlide}
-            >
-            <Image src={arrowRight} alt='' className='w-[1rem] h-[1rem] tablet:w-[2rem] tablet:h-[2rem] mx-[0.4rem] '/>
-            </button>
-        </div>
 
 
 

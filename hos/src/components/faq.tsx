@@ -54,7 +54,7 @@ export function Faq () {
                     <h2 className="text-[1.5rem] text-white font-bold flex justify-center mx-auto pt-[0.8rem] tablet:mx-0 tablet:text-[2.75rem] tablet:ml-6 tablet:mb-3">Perguntas Frequentes</h2>
                 </div>
             </div>
-            <div className="bg-fundo">
+            <div className="bg-fundo pt-5">
                 <div className="pb-[5rem] ">
                     <Acordeao sections={perguntasRespostas} section={undefined} index={undefined} sectionIndex={undefined}/>
                 </div>

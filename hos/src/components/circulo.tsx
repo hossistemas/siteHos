@@ -18,16 +18,16 @@ export function Circulo(props: CirculoProps){
                 
                 <div className="mx-auto pb-[4rem] tablet:col-start-1 tablet:-mt-[32rem] tablet:ml-[-10rem]">
                     <h2 className="text-[1.5rem] pt-[1.8rem] text-grafite font-extrabold leading-tight text-center tablet:text-left tablet:text-[1.75rem] tablet:ml-[8rem] tablet:max-w-[31rem]"> Programa de fidelidade</h2>  
-                    <p className="text-[0.87rem] text-grafite mx-auto  w-[17.2rem] text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">No nosso sistema, os clientes acumulam pontos para trocar por brindes ou cashback.</p>
+                    <p className="text-[0.87rem] pt-2 w-[13rem] text-grafite mx-auto  text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">No nosso sistema, os clientes acumulam pontos para trocar por brindes ou cashback.</p>
 
                     <h2 className="text-[1.5rem] pt-[1.4rem] text-grafite font-extrabold leading-tight text-center tablet:text-left tablet:text-[1.75rem] tablet:ml-[8rem] tablet:max-w-[31rem]">Comunicação via WhatsApp</h2>  
-                    <p className="text-[0.87rem] text-grafite mx-auto  w-[17.2rem] text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">Seja alertado quando medicamentos contínuos dos clientes estão acabando, permitindo que você envie mensagens para informá-los.</p>
+                    <p className="text-[0.87rem] pt-2 w-[15.3rem] text-grafite mx-auto   text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">Seja alertado quando medicamentos contínuos dos clientes estão acabando, permitindo que você envie mensagens para informá-los.</p>
                 
                     <h2 className="text-[1.5rem] pt-[1.4rem] text-grafite font-extrabold leading-tight text-center tablet:text-left tablet:text-[1.75rem] tablet:ml-[8rem] tablet:max-w-[31rem]">Controle de Encomendas</h2>  
-                    <p className="text-[0.87rem] text-grafite mx-auto  w-[17.2rem] text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">Gerencie pedidos e notifique os clientes quando suas encomendas chegarem.</p>
+                    <p className="text-[0.87rem] pt-2 w-[15rem] text-grafite mx-auto   text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">Gerencie pedidos e notifique os clientes quando suas encomendas chegarem.</p>
 
                     <h2 className="text-[1.5rem] pt-[1.4rem] text-grafite font-extrabold leading-tight text-center tablet:text-left tablet:text-[1.75rem] tablet:ml-[8rem] tablet:max-w-[31rem]">Suporte ativo 7 dias por semana </h2>  
-                    <p className="text-[0.87rem] text-grafite mx-auto  w-[17.2rem] text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">Tenha suporte ativo todos os dias da semana, para que você nunca fique desamparado.</p>
+                    <p className="text-[0.87rem] pt-2 w-[15rem] text-grafite mx-auto   text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[8rem] tablet:w-[30rem] ">Tenha suporte ativo todos os dias da semana, para que você nunca fique desamparado.</p>
                 </div>
                 
             </div>
