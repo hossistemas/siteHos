@@ -36,18 +36,19 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
       return(
         <div className='bg-fundo '>
+
             <div className='text-[1.25rem] pt-[1rem] text-left font-extrabold text-grafite leading-tight w-[16rem] flex mx-auto pb-[2rem] tablet:pb-[4rem] tablet:text-center tablet:w-[42.4rem] tablet:text-[2rem]'>
                 <h2>Por que o <span className='text-vermelho'>HOS</span> é o melhor sistema para você? </h2>
             </div>
                 <Swiper
                     breakpoints={breakpoints}
-            
+                    
                     spaceBetween={20}
                     pagination={{
                         type: 'progressbar',
-                      }}
-                      navigation={true}
-                      modules={[Pagination, Navigation]}       
+                    }}
+                    navigation={true}
+                    modules={[Pagination, Navigation]}       
                     className="mySwiper bg-fundo w-[300px] flex justify-center items-center mx-auto tablet:w-[69.2rem]  ">
                 
                 <SwiperSlide>
@@ -121,7 +122,8 @@ export function Melhorsistema(props: MelhorsistemaProps) {
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Trabalhe com a segurança de um parceiro com mais de 29 anos de experiência.</p>
                     </div>
                 </SwiperSlide>
-            </Swiper>
+            </Swiper>     
+
     </div>
       )
     }

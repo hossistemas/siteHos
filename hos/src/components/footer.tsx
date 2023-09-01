@@ -73,7 +73,7 @@ export function Footer(props: FooterProps){
    
     return(
       <footer className="bg-fundofooter w-auto h-[58rem] tablet:h-[22rem] tablet:bg-fundoescuro">
-        <div className="mx-auto tablet:flex tablet:max-w-[1200px] tablet:pt-[3rem] tablet:justify-center">
+        <div className="mx-auto tablet:flex tablet:max-w-[1000px] tablet:pt-[3rem] tablet:justify-center">
 
             <div className="">
                 <Link href='/'> 
