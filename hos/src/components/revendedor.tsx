@@ -48,6 +48,17 @@ export function Revendedor () {
             });
             setIsModalOpen(true);
 
+            if (formRef.current) {
+              const formElements = formRef.current.elements;
+              for (let i = 0; i < formElements.length; i++) {
+                const element = formElements[i] as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
+                if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
+                  if (element.type !== 'checkbox') {
+                    element.value = '';
+                  }
+                }
+              }}
+
           } catch (error) {      
             console.error('Erro ao enviar o formulário:', error);
             setIsModalOpen(false);
@@ -56,16 +67,7 @@ export function Revendedor () {
         }
       };
       
-      if (formRef.current) {
-        const formElements = formRef.current.elements;
-        for (let i = 0; i < formElements.length; i++) {
-          const element = formElements[i] as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
-          if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
-            if (element.type !== 'checkbox') {
-              element.value = '';
-            }
-          }
-        }}
+
       
       const closeModal = () => {
         setIsModalOpen(false);

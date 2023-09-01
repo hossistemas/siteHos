@@ -65,7 +65,10 @@ export function Formulario () {
                     }
                   }
                 }
-              }
+            }
+
+
+
           } catch (error) {      
             console.error('Erro ao enviar o formulário:', error);
             setIsModalOpen(false);
@@ -87,21 +90,6 @@ export function Formulario () {
             setSelectedEstado(event.target.value)
         }
         
-    const [telefone, setTelefone] = useState('');
-    const [telefoneValido, setTelefoneValido] = useState(true);
-
-    const validarTelefone = (inputTelefone: string) => {
-        const parsedTelefone = parsePhoneNumberFromString(inputTelefone, 'BR');
-        return parsedTelefone ? parsedTelefone.isValid() : false;
-      };
-    
-      const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const novoTelefone = event.target.value;
-        setTelefone(novoTelefone);
-    
-        const valido = validarTelefone(novoTelefone);
-        setTelefoneValido(valido);
-      };
     
 
     return (
