@@ -7,6 +7,7 @@ import InputMask from 'react-input-mask';
 import Image from 'next/image'
 import Modal from "./modal";
 import TelefoneInput from "./telefone";
+import Email from "./email";
 
 
 
@@ -101,9 +102,7 @@ export function Revendedor () {
                                 <input name="data[nome]" type="text" placeholder="Digite aqui seu nome completo" className="hover:border-magenta w-[20rem] h-[2rem] py-4 border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1.3rem]" />
                             </label>
 
-                            <label className="email text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem] group hover:text-magenta" >E-mail*
-                                <input name="data[email]" type="text" placeholder="seu-email@gmail.com" className="hover:border-magenta w-[20rem] h-[2rem] py-4 border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1.3rem]"/>
-                            </label>
+                            <Email />
 
                             <label className="empresa text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem] group hover:text-magenta">Nome da Empresa*
                                 <input name="data[empresa]" type="text" placeholder="Digite aqui o nome da empresa" className="hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] py-4 tablet:w-[27rem] tablet:text-[1rem] tablet:py-[1.3rem]"/>

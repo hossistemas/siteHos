@@ -15,6 +15,7 @@ import youtube from '../../public/youtube.svg'
 import Link from "next/link";
 import { input } from "@nextui-org/react";
 import TelefoneInput from "./telefone";
+import Email from "./email";
 
 
 export function Formulario () {
@@ -118,9 +119,7 @@ export function Formulario () {
                         <input type="text" name='data[nome]' placeholder="Digite aqui seu nome completo" className="hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal py-4 text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:h-[3rem] tablet:text-[1rem] tablet:py-[1rem]" />
                     </label>
 
-                    <label className="email text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem] group hover:text-magenta" >E-mail*
-                        <input type="text" name='data[email]' placeholder="seu-email@gmail.com" className="hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:h-[3rem]  tablet:py-[1rem]"/>
-                    </label>
+                    <Email />
 
                     <label className="empresa text-[0.875rem] text-cinza font-bold col-span-2 tablet:text-[1.125rem] group hover:text-magenta">Nome da Empresa*
                         <input type="text" name='data[empresa]' placeholder="Digite aqui o nome da empresa" className=" hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal py-4 text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] tablet:w-[27rem] tablet:text-[1rem] tablet:h-[3rem] tablet:py-[1rem]"/>
