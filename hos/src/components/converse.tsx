@@ -13,8 +13,7 @@ import instagram from '../../public/instagram.svg'
 import linkedin from '../../public/linkedin.svg'
 import youtube from '../../public/youtube.svg'
 import Link from "next/link";
-import { input } from "@nextui-org/react";
-import TelefoneInput from "./telefone";
+import TelefoneInput, { TelefoneInputRef } from "./telefone";
 import Email from "./email";
 
 
@@ -24,7 +23,7 @@ export function Formulario () {
     const { cidades } = useCidades({siglaUF: selectedEstado});
     const [isModalOpen, setIsModalOpen] = useState(false);
     const formRef = useRef<HTMLFormElement | null>(null);
-    
+    const telefoneInputRef = useRef<TelefoneInputRef>(null);
     const openModal = () => {
       setIsModalOpen(false);
     };
@@ -68,6 +67,9 @@ export function Formulario () {
                 }
             }
 
+            if (telefoneInputRef.current) {
+                telefoneInputRef.current.clearTelefoneInput();
+              }
 
 
           } catch (error) {      
@@ -147,7 +149,7 @@ export function Formulario () {
                         </select>
                     </label>
 
-                    <TelefoneInput />
+                    <TelefoneInput ref={telefoneInputRef} />
                     
                     <label className="horário text-[0.875rem]  text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2 group hover:text-magenta">Horário para contato*
                         <input type="time" name='data[horario]' placeholder="00:00" className='hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] py-2 pl-[0.7rem] mt-[0.3rem]  tablet:h-[3rem]   mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' />
