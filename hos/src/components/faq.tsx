@@ -55,7 +55,7 @@ export function Faq () {
                 </div>
             </div>
             <div className="bg-fundo pt-5">
-                <div className="pb-[5rem] ">
+                <div className="pb-[5rem] mx-auto">
                     <Acordeao sections={perguntasRespostas} section={undefined} index={undefined} sectionIndex={undefined}/>
                 </div>
 

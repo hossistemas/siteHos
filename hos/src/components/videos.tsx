@@ -21,7 +21,7 @@ export function Videos(props : VideosProps){
                     <Link href='https://www.youtube.com/watch?v=_l5KEDfDiDc&ab_channel=HosSistemas' target='_blank'>
                         <Image src={indicadores} alt='' className='  w-auto h-[12rem] mx-auto tablet:h-[18rem] transition-all ease-in-out duration-300' />
                         <div className=' absolute bg-cinza top-[4rem] left-[9rem] w-[3.59rem] h-[3.59rem]  rounded-full tablet:top-[7rem] tablet:left-[14rem]  hover:bg-vermelho transition-all ease-in-out duration-500'>
-                            <Image src={play} alt='' className='flex justify-center items-center mx-auto mt-4'/>
+                            <Image src={play} alt='' className='relative flex justify-center items-center mx-auto mt-4'/>
                         </div>         
                     </Link>
                     <p className='text-center text-[0.87rem] font-semibold mt-2 mx-auto tablet:text-[1.5rem] tablet:w-[24rem] tablet:pt-4'>Indicadores na Gestão de Drogarias</p>
@@ -30,7 +30,7 @@ export function Videos(props : VideosProps){
                 <div className='mx-auto py-[2rem] relative w-4/4 tablet:py-0'>
                     <Link href='https://www.youtube.com/watch?v=lm1aYxNGV3E&ab_channel=HosSistemas' target='_blank'>
                     <Image src={dicas} alt='' className='  w-auto h-[12rem] mx-auto tablet:h-[18rem] transition-all ease-in-out duration-300' />
-                        <div className=' absolute bg-cinza top-[6rem] left-[9rem] w-[3.59rem] h-[3.59rem]  rounded-full tablet:top-[7rem] tablet:left-[14rem]  hover:bg-vermelho transition-all ease-in-out duration-500'>
+                        <div className=' absolute mx-auto bg-cinza top-[6rem] left-[9rem] w-[3.59rem] h-[3.59rem]  rounded-full tablet:top-[7rem] tablet:left-[14rem]  hover:bg-vermelho transition-all ease-in-out duration-500'>
                             <Image src={play} alt='' className='flex justify-center items-center mx-auto mt-4'/>
                         </div>  
                     </Link>
