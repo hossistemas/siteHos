@@ -6,6 +6,7 @@ import { SetStateAction, useRef, useState } from "react";
 import InputMask from 'react-input-mask';
 import Image from 'next/image'
 import Modal from "./modal";
+import TelefoneInput from "./telefone";
 
 
 
@@ -121,12 +122,10 @@ export function Revendedor () {
                             </label>
 
                             <label className="cnpj text-[0.875rem] text-cinza col-span-2 font-bold tablet:text-[1.125rem] group hover:text-magenta">CNPJ*
-                                <InputMask  name="data[cnpj]" mask="99.999.999/9999-99"  maskChar=""  placeholder="00.000.000/0001-00" className='hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] py-4 tablet:w-[27rem] tablet:text-[1rem]  tablet:py-[1.3rem]' required />
+                                <input name="data[cnpj]"   placeholder="00.000.000/0001-00" className='hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] mb-[1.5rem] py-4 tablet:w-[27rem] tablet:text-[1rem]  tablet:py-[1.3rem]' required />
                             </label>  
 
-                            <label className="telefone text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] group hover:text-magenta">Telefone*
-                                <InputMask  name="data[telefone]" mask="(99) 99999-9999"  maskChar=""  placeholder="(DD) _____-____" className='hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-2 tablet:text-[1rem] tablet:py-[0.5rem] tablet:w-[13rem]' required />
-                            </label>  
+                           <TelefoneInput />
  
                             <label className="horário text-[0.875rem]  text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2 group hover:text-magenta">Horário para contato*
                                 <input name="data[horario]" type="time" placeholder="00:00" className='hover:text-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-2 mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.5rem] tablet:w-[13rem]' />

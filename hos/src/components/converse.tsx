@@ -1,10 +1,9 @@
 import useCidades from "@/hooks/useCidades";
 import useEstados from "@/hooks/useEstados";
 import { SetStateAction, useRef, useState } from "react";
-import InputMask from 'react-input-mask';
 import Image from 'next/image'
 import Modal from '@/components/modal'
-
+import PhoneNumber, { parsePhoneNumberFromString } from 'libphonenumber-js';
 import telefone from '../../public/telefone.svg'
 import whatsapp from '../../public/whatsapp.svg'
 import localizacao from '../../public/localizacao.svg'
@@ -14,6 +13,8 @@ import instagram from '../../public/instagram.svg'
 import linkedin from '../../public/linkedin.svg'
 import youtube from '../../public/youtube.svg'
 import Link from "next/link";
+import { input } from "@nextui-org/react";
+import TelefoneInput from "./telefone";
 
 
 export function Formulario () {
@@ -51,8 +52,20 @@ export function Formulario () {
             body: new FormData(event.currentTarget),
                 
             });
+            
             setIsModalOpen(true);
 
+            if (formRef.current) {
+                const formElements = formRef.current.elements;
+                for (let i = 0; i < formElements.length; i++) {
+                  const element = formElements[i] as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
+                  if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
+                    if (element.type !== 'checkbox') {
+                      element.value = '';
+                    }
+                  }
+                }
+              }
           } catch (error) {      
             console.error('Erro ao enviar o formulário:', error);
             setIsModalOpen(false);
@@ -62,30 +75,38 @@ export function Formulario () {
       };
 
       
-      if (formRef.current) {
-        const formElements = formRef.current.elements;
-        for (let i = 0; i < formElements.length; i++) {
-          const element = formElements[i] as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
-          if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
-            if (element.type !== 'checkbox') {
-              element.value = '';
-            }
-          }
-        }
-      }
+ 
         
 
       const closeModal = () => {
         setIsModalOpen(false);
       };
       
-  
-      const handleEstadoUpdate = (event: { target: { value: SetStateAction<string>; }; }) => {
-        setSelectedEstado(event.target.value)
-    }
-      
+    
+        const handleEstadoUpdate = (event: { target: { value: SetStateAction<string>; }; }) => {
+            setSelectedEstado(event.target.value)
+        }
+        
+    const [telefone, setTelefone] = useState('');
+    const [telefoneValido, setTelefoneValido] = useState(true);
+
+    const validarTelefone = (inputTelefone: string) => {
+        const parsedTelefone = parsePhoneNumberFromString(inputTelefone, 'BR');
+        return parsedTelefone ? parsedTelefone.isValid() : false;
+      };
+    
+      const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const novoTelefone = event.target.value;
+        setTelefone(novoTelefone);
+    
+        const valido = validarTelefone(novoTelefone);
+        setTelefoneValido(valido);
+      };
+    
+
     return (
         <>
+        
         <div className="bg-fundo">
              <div className="bg-gradient-to-b from-laranja to-magenta w-auto h-[16rem] pt-[3rem] tablet:h-[24rem]">
                 <div className="ml-[3rem]  tablet:pt-[3rem] tablet:ml-[5rem]">
@@ -139,10 +160,8 @@ export function Formulario () {
                         </select>
                     </label>
 
-                    <label  className="telefone text-[0.875rem] text-cinza font-bold tablet:text-[1.125rem] group hover:text-magenta">Telefone*
-                     <InputMask  name='data[telefone]' mask="(99) 99999-9999"  maskChar=""  placeholder="(DD) _____-____" className='hover:border-magenta w-[9rem] py-2 border-2 rounded-lg font-normal text-[0.7rem] tablet:h-[3rem]  pl-[0.7rem] mt-[0.3rem]  tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' required />
-                    </label>  
-
+                    <TelefoneInput />
+                    
                     <label className="horário text-[0.875rem]  text-cinza font-bold tablet:text-[1.125rem] tablet:ml-2 group hover:text-magenta">Horário para contato*
                         <input type="time" name='data[horario]' placeholder="00:00" className='hover:border-magenta w-[9rem] border-2 rounded-lg font-normal text-[0.7rem] py-2 pl-[0.7rem] mt-[0.3rem]  tablet:h-[3rem]   mb-[1.5rem] tablet:text-[1rem] tablet:py-[0.3rem] tablet:w-[13rem]' />
                     </label>  
