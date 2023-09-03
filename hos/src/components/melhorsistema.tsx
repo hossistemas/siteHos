@@ -69,7 +69,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={SNGPC} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5rem] tablet:pt-[4.3rem] tablet:pb-[2rem]'/>
+                        <Image src={SNGPC} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5.5rem] tablet:pt-[4.3rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Integração com SNGPC</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Aprimore a gestão de medicamentos controlados. Agilize a movimentação, acompanhe envios e entregas e mantenha o controle de inventário atualizado.</p>
                     </div>
@@ -77,7 +77,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={inteligente} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5rem] tablet:pt-[2.8rem] tablet:pb-[2rem]'/>
+                        <Image src={inteligente} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5.3rem] tablet:pt-[2.8rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Associação Inteligente</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Utiliza o histórico de vendas para identificar tendências e oferece produtos complementares mais adequados para cada atendimento, maximizando suas vendas.</p>
                     </div>
@@ -85,7 +85,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={PBM} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5rem] tablet:pt-[4rem] tablet:pb-[2rem]'/>
+                        <Image src={PBM} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[4.9rem] tablet:pt-[4rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Integração com PBMs</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Consulte de forma atualizada o PBM, gerencie a quantidade de itens vendidos e obtenha descontos dos fabricantes, proporcionando ainda mais benefícios para sua farmácia.</p>
                     </div>
@@ -93,7 +93,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={fidelizacao} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5rem] tablet:pt-[4rem] tablet:pb-[2rem]'/>
+                        <Image src={fidelizacao} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[6.3rem] tablet:pt-[4rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Sistema de Fidelização</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Possibilita a gestão dos relacionamentos para usuários de medicamentos contínuos, bem como a configuração de plano de fidelidade específico para sua realidade.</p>
                     </div>
@@ -101,7 +101,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={atualizacao} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5rem] tablet:pt-[2.8rem] tablet:pb-[2rem]'/>
+                        <Image src={atualizacao} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[6rem] tablet:pt-[2.8rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Atualização Constante</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Os softwares e programas da HOS são atualizados constantemente, adequando rotinas fiscais e boas práticas de gestão.</p>
                     </div>
@@ -109,7 +109,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={suporte} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5rem] tablet:pt-[3.5rem] tablet:pb-[2rem]'/>
+                        <Image src={suporte} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[6rem] tablet:pt-[3.5rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Suporte Ágil</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Na HOS Sistemas você conta com uma ampla equipe de técnicos para lhe atender de maneira simples e rápida.</p>
                     </div>
@@ -117,7 +117,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={anos} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5rem] tablet:pt-[3.1rem] tablet:pb-[2rem]'/>
+                        <Image src={anos} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[6rem] tablet:pt-[3.1rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>29 anos de mercado</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Trabalhe com a segurança de um parceiro com mais de 29 anos de experiência.</p>
                     </div>
