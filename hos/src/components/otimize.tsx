@@ -14,9 +14,9 @@ export function Otimize(props: OtimizeProps){
                     <h2 className="text-[1.5rem] pb-[2rem] w-[17rem] mx-auto text-grafite font-extrabold leading-tight text-center tablet:w-[50rem] tablet:flextablet:justify-center tablet:text-center tablet:text-[2rem]">Otimize a <span className="text-vermelho">eficiência</span> dos seus atendimentos</h2>  
                 </div>
             
-                <Image src={pc} alt='' className=" w-[20rem] h-auto flex justify-center items-center self-center mx-auto tablet:col-start-2 tablet:w-[40rem] tablet:-mb-[5rem]"/>
+                <Image src={pc} alt='' className=" w-[20rem] h-auto flex justify-center items-center self-center mx-auto tablet:col-start-2 tablet:w-[45rem] tablet:-mb-[5rem]"/>
                 
-                <div className="mx-auto tablet:col-start-1 tablet:-mt-[27rem] ">
+                <div className="mx-auto tablet:col-start-1 tablet:-mt-[28rem] ">
                     <h2 className="text-[1.5rem] pt-[1.8rem] text-grafite font-extrabold leading-tight text-center tablet:text-left tablet:text-[1.75rem] tablet:ml-[2rem] tablet:max-w-[31rem]">Controle de caixa </h2>  
                     <p className="text-[0.87rem] text-grafite mx-auto  w-[17.2rem] text-center tablet:text-left tablet:text-[1.25rem] tablet:ml-[2rem] tablet:w-[30rem]">Tenha segurança nas transações financeiras de maneira prática e eficiente.</p>
 

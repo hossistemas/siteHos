@@ -49,7 +49,7 @@ export function Potencialize(props: PotencializeProps) {
 
     return( 
     
-    <div className="relative bg-fundo pb-[35rem]">
+    <div className="relative bg-fundo pb-[35rem] tablet:pb-[27rem]">
         <div className='text-[1.25rem] pt-[5rem]  -mt-[5rem] text-center font-extrabold text-grafite leading-tight w-[18rem] flex mx-auto pb-[2rem] tablet:text-center tablet:w-[45rem] tablet:text-[2rem] tablet:pb-[4rem]'>
                 <h2 className='mx-auto'>Potencialize o gerenciamento da sua farmácia</h2>
             </div>
