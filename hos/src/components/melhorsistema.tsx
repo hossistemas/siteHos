@@ -69,7 +69,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={SNGPC} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5.5rem] tablet:pt-[4.3rem] tablet:pb-[2rem]'/>
+                        <Image src={SNGPC} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[6rem] tablet:pt-[4.3rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Integração com SNGPC</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Aprimore a gestão de medicamentos controlados. Agilize a movimentação, acompanhe envios e entregas e mantenha o controle de inventário atualizado.</p>
                     </div>
@@ -101,7 +101,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={atualizacao} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[6rem] tablet:pt-[2.8rem] tablet:pb-[2rem]'/>
+                        <Image src={atualizacao} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5.5rem] tablet:pt-[2.8rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>Atualização Constante</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Os softwares e programas da HOS são atualizados constantemente, adequando rotinas fiscais e boas práticas de gestão.</p>
                     </div>
@@ -117,7 +117,7 @@ export function Melhorsistema(props: MelhorsistemaProps) {
 
                 <SwiperSlide>
                     <div className='w-[16rem] h-[15rem] mb-[5rem]  mx-[0.8rem] justify-center bg-white  drop-shadow-lg rounded-xl tablet:w-[21.1rem] tablet:h-[25.4rem]'>
-                        <Image src={anos} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[6rem] tablet:pt-[3.1rem] tablet:pb-[2rem]'/>
+                        <Image src={anos} alt='' className='flex mx-auto pt-[2rem] w-[3rem] pb-3 tablet:w-[5.5rem] tablet:pt-[3.1rem] tablet:pb-[2rem]'/>
                         <h2 className='text-center text-[1rem] text-grafite font-bold tablet:text-[1.25rem] tablet:px-[1.5rem] tablet:pb-[1.3rem]'>29 anos de mercado</h2>
                         <p className='text-center text-[0.8rem] w-[14rem] mx-auto text-grafite tablet:text-[1rem] tablet:w-[18rem] tablet:flex tablet:mx-auto'>Trabalhe com a segurança de um parceiro com mais de 29 anos de experiência.</p>
                     </div>
