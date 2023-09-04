@@ -19,7 +19,7 @@ export function HeroSection({title, text, img, bgClassName, titleClassName, text
     return(
         <>
 
-        <div className={` mb-[5rem] overflow-x-hidden tablet:pb-[1rem] ${bgClassName}`}>
+        <div className={` mb-[5rem] overflow-x-hidden overflow-y-hidden tablet:pb-[1rem] ${bgClassName}`}>
           
             <div className=" mx-auto max-w-[460px] tablet:flex tablet:justify-center tablet:items-center  tablet:max-w-[1200px] tablet:h-[570px]">
 
@@ -32,7 +32,7 @@ export function HeroSection({title, text, img, bgClassName, titleClassName, text
                 </div>
 
                 <div className=' tablet:flex  '>
-                    <Image src={img} alt='' className={` tablet:w-auto tablet:h-[560px] tablet:mt-[2.6rem] ${imageClassName}`}/>
+                    <Image src={img} alt='' className={` tablet:w-auto tablet:h-[560px] tablet:mt-[2.6rem]  ${imageClassName}`}/>
                 </div>
             </div>
 
