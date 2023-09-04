@@ -26,7 +26,7 @@ export default function Processos() {
         text={"Manipulação, Frente de Caixa e Controles Administrativos em um só lugar!"}
         textClassName={"text-fundo"}
         buttonClassName={"bg-darker text-white hover:bg-fundo hover:text-darker hover:transition hover:duration-500"}
-        img={manipulacao} buttonName={'Solicite uma demonstração'} imageClassName={'tablet:mr-0 tablet:ml-[3.8rem] tablet:h-auto tablet:w-[91rem] tablet:mt-[5.1rem]'} linkName={"/sobre/contato"}      /> 
+        img={manipulacao} buttonName={'Solicite uma demonstração'} imageClassName={'mb-2 tablet:ml-[9rem] tablet:h-auto tablet:w-[91rem] tablet:mt-[5.1rem] ' } linkName={"/sobre/contato"}      /> 
       <Maximize />
       <Gestao />
       <Emuitomais />
