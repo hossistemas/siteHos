@@ -53,7 +53,7 @@ export  function Contador(props: ContadorProps)  {
       return (
         <>
             <div className="bg-fundo max-w-auto pt-5 px-[1rem]  ">  
-                <div className='grid grid-cols-4 w-[360px] mx-auto tablet:w-[1400px] tablet:flex tablet:mx-auto tablet:items-center tablet:justify-center tablet:mt-[5rem] tablet:gap-x-2'>
+                <div className='grid grid-cols-4 w-[360px] mx-auto tablet:w-[1024px] tablet:flex tablet:mx-auto tablet:items-center tablet:justify-center tablet:mt-[5rem] tablet:gap-x-2'>
                     
                     <div className="col-span-2 w-[9.8rem] h-[12.3rem] mr-[0.8rem] b-[1.5rem] rounded-lg bg-gradient-to-b from-degradeUm  to-degradeDois tablet:w-[20.8rem] tablet:h-[22.5rem] tablet:rounded-xl tablet:mr-8 " ref={targetRef}>               
                             <Image src={pdv} alt='' className='mx-auto pt-[1.9rem] tablet:w-[7.8rem] tablet:h-auto tablet:mt-[2rem]'/>
