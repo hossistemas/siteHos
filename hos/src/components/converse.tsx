@@ -145,7 +145,7 @@ export function Formulario () {
                         <select name='data[assunto]' id=""  className="hover:border-magenta w-[20rem] h-[2rem] border-2 rounded-lg font-normal text-[0.7rem] pl-[0.7rem] mt-[0.3rem] py-2 mb-[1.5rem] tablet:w-[27rem] tablet:h-[3rem]  tablet:text-[1rem] tablet:py-[0rem]">
                             <option value="financeiro">Quero o HOS para minha farmácia</option>
                             <option value="suporte">Dúvidas</option>
-                            <option value="nao-listado">Solicitar demonstração</option>
+                            <option value="demonstracao">Solicitar demonstração</option>
                         </select>
                     </label>
 
