@@ -8,6 +8,7 @@ import Image from 'next/image'
 import Modal from "./modal";
 import TelefoneInput from "./telefone";
 import Email from "./email";
+import sendMail from "@/app/functions/sendMail";
 
 
 
@@ -39,34 +40,50 @@ export function Revendedor () {
         if (missingFields.length > 0) {
           alert(`Os seguintes campos são obrigatórios: ${missingFields.join(', ')}`);
           setIsModalOpen(false);
-        } else {
-          try {
-            
-            await fetch('https://sheetdb.io/api/v1/zz4gmvta6q0gc', {
-            method: 'POST',
-            body: new FormData(event.currentTarget),
+        } else {            
+            // await fetch('https://sheetdb.io/api/v1/zz4gmvta6q0gc', {
+            // method: 'POST',
+            // body: new FormData(event.currentTarget),
                 
-            });
-            setIsModalOpen(true);
+            // });
+            const emailData : {
+                [key:string]: string
+            } = {}
 
-            if (formRef.current) {
-              const formElements = formRef.current.elements;
-              for (let i = 0; i < formElements.length; i++) {
-                const element = formElements[i] as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
-                if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
-                  if (element.type !== 'checkbox') {
-                    element.value = '';
-                  }
-                }
-              }}
+            Array.from(formRef.current?.elements ?? []).forEach((e:any, i:number) => {
+                emailData[e.name.replaceAll('data[', '').replaceAll(']','').toLowerCase()] = e.value;
+            })
 
-          } catch (error) {      
-            console.error('Erro ao enviar o formulário:', error);
-            setIsModalOpen(false);
-           
-          }
-        }
-      };
+            emailData['formReq'] = 'Representante';
+            emailData['assunto'] = 'representante';
+            await sendMail(
+              emailData
+            )
+            .then((e: any) => {
+              if (e?.status == 200 || e?.type == 'opaque') {
+                setIsModalOpen(true);
+
+                if (formRef.current) {
+                  const formElements = formRef.current.elements;
+                  for (let i = 0; i < formElements.length; i++) {
+                    const element = formElements[i] as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
+                    if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
+                      if (element.type !== 'checkbox') {
+                        element.value = '';
+                      }
+                    }
+                  }}
+
+                } else {
+                  console.error('Erro ao enviar o E-mail:', e);
+                  setIsModalOpen(false);
+              }
+          }).catch((e: Response) => {
+              console.error('Erro ao enviar o E-mail:', e);
+              setIsModalOpen(false);
+          })
+      }
+    }
       
 
       
@@ -140,7 +157,7 @@ export function Revendedor () {
                             </label>
                             
                             <Modal isOpen={isModalOpen} onClose={closeModal} modalClassName={''}>
-                                <p>Formulário enviado com sucesso!</p>
+                                <p>E-mail enviado com Sucesso!</p>
                             </Modal>
                             <button type="submit" className="col-start-2 w-[9rem] h-[2.5rem] mt-[1.4rem] ml-[1.2rem] tablet:w-[12.5rem] tablet:h-[3rem] rounded-lg bg-gradient-to-b from-laranja to-magenta hover:bg-gradient-to-b hover:from-darker hover:to-darker"  onClick={openModal}>
                                 <p className="text-white text-[14px] font-semibold">Enviar</p>

@@ -15,7 +15,7 @@ import youtube from '../../public/youtube.svg'
 import Link from "next/link";
 import TelefoneInput, { TelefoneInputRef } from "./telefone";
 import Email from "./email";
-
+import sendMail from "@/app/functions/sendMail";
 
 export function Formulario () {
     const { estados } = useEstados();
@@ -30,8 +30,9 @@ export function Formulario () {
   
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-      
+        console.log(event.target)
         const requiredFields = ['nome', 'email', 'empresa', 'estado', 'cidade', 'assunto', 'telefone', 'horario', 'LGPD'];
+
         let missingFields: string[] = [];
       
         requiredFields.forEach((field) => {
@@ -44,39 +45,52 @@ export function Formulario () {
         if (missingFields.length > 0) {
           alert(`Os seguintes campos são obrigatórios: ${missingFields.join(', ')}`);
           setIsModalOpen(false);
-        } else {
-          try {
-            
-            await fetch('https://sheetdb.io/api/v1/jm9ywj1uo51fb', {
-            method: 'POST',
-            body: new FormData(event.currentTarget),
+        } else {    
+            const emailData : {
+                [key:string]: string
+            } = {}
+
+            Array.from(formRef.current?.elements ?? []).forEach((e:any, i:number) => {
+                emailData[e.name.replaceAll('data[', '').replaceAll(']','')] = e.value;
+            })
+
+            // await fetch('https://sheetdb.io/api/v1/jm9ywj1uo51fb', {
+            // method: 'POST',
+            // body: new FormData(event.currentTarget),
                 
-            });
-            
-            setIsModalOpen(true);
+            // });
+            emailData['formReq'] = 'Clientes';
 
-            if (formRef.current) {
-                const formElements = formRef.current.elements;
-                for (let i = 0; i < formElements.length; i++) {
-                  const element = formElements[i] as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
-                  if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
-                    if (element.type !== 'checkbox') {
-                      element.value = '';
+            await sendMail(
+                emailData
+            )
+            .then((e: any) => {
+                if (e?.status == 200 || e?.type == 'opaque') {
+                    setIsModalOpen(true);
+
+                    if (formRef.current) {
+                        const formElements = formRef.current.elements;
+                        for (let i = 0; i < formElements.length; i++) {
+                        const element = formElements[i] as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
+                        if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
+                            if (element.type !== 'checkbox') {
+                            element.value = '';
+                            }
+                        }
+                        }
                     }
-                  }
+
+                    if (telefoneInputRef.current) {
+                        telefoneInputRef.current.clearTelefoneInput();
+                    }
+                } else {
+                    console.error('Erro ao enviar o E-mail:', e);
+                    setIsModalOpen(false);
                 }
-            }
-
-            if (telefoneInputRef.current) {
-                telefoneInputRef.current.clearTelefoneInput();
-              }
-
-
-          } catch (error) {      
-            console.error('Erro ao enviar o formulário:', error);
-            setIsModalOpen(false);
-           
-          }
+            }).catch((e: Response) => {
+                console.error('Erro ao enviar o E-mail:', e);
+                setIsModalOpen(false);
+            })
         }
       };
 
@@ -111,7 +125,8 @@ export function Formulario () {
             <form 
             ref={formRef}
             method='POST'
-            action="https://sheetdb.io/api/v1/jm9ywj1uo51fb"
+            // action="https://sheetdb.io/api/v1/jm9ywj1uo51fb"
+            action={process.env.API_EMAIL}
             id="sheetdb-form" 
             onSubmit={handleSubmit}
             
@@ -162,7 +177,7 @@ export function Formulario () {
                     <p className="text-[0.6rem] text-grafite flex items-end justify-end col-start-2 tablet:text-[0.8rem] ">*Campos obrigatórios</p>
 
                     <Modal isOpen={isModalOpen} onClose={closeModal} modalClassName={''}>
-                    <p className="flex mx-auto text-center font-bold ">Formulário enviado com sucesso!</p>
+                    <p className="flex mx-auto text-center font-bold ">E-mail enviado com sucesso!</p>
                     </Modal>
 
 
