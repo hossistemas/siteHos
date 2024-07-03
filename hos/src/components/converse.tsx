@@ -232,7 +232,8 @@ export function Formulario () {
                 </div>
                 <div  className="tablet:ml-[0.7rem] tablet:mb-[0.8rem]">
                     <h5 className="text-grafite text-[0.9rem] w-[10rem] font-semibold mx-auto text-center mt-[0.6rem] tablet:text-left tablet:mx-0" >Endereço</h5>
-                    <p className="text-cinza text-[0.9rem] w-[12.2rem] font-semibold text-center mx-auto mt-[-0.3rem] leading-tight tablet:text-left tablet:w-[18rem]">Rua Pernambuco, 212, Bairro Humaitá, Bento Gonçalves RS - 95705-024</p>
+                    {/* <p className="text-cinza text-[0.9rem] w-[12.2rem] font-semibold text-center mx-auto mt-[-0.3rem] leading-tight tablet:text-left tablet:w-[18rem]">Rua Pernambuco, 212, Bairro Humaitá, Bento Gonçalves RS - 95705-024</p> */}
+                    <p className="text-cinza text-[0.9rem] w-[12.2rem] font-semibold text-center mx-auto mt-[-0.3rem] leading-tight tablet:text-left tablet:w-[18rem]">Rua Maria Margarida Zambom Benini, 83 - Planalto, Bento Gonçalves  RS - 95703-205</p>
                 </div>
             </div>
 

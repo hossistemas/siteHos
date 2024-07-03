@@ -34,6 +34,17 @@ export function Balanco(props : BalancoProps){
 
             <div className='bg-fundo pb-[5rem]'>
                 <div className='flex ml-[3rem] text-[0.7rem] items-center py-[0.5rem] pt-[1rem] tablet:ml-[15rem] tablet:w-[55rem] group tablet:text-[1rem] hover:bg-fundofooter'>
+                    <p className='mr-[2rem] tablet:mr-[5rem]'>31/12/2023</p>
+                    <Link href="/BALANCO_2023.pdf" target="_blank" className='flex items-center' >
+                        <Image src={pdf} alt="" className='w-[0.9rem] mr-[0.5rem] tablet:w-[1.6rem] tablet:mr-[1rem]'/>
+                        <p>Balanço 2023</p>
+                    </Link>
+                    <Link href="/BALANCO_2023.pdf" target="_blank" className='flex items-center'>
+                        <Image src={download} alt='' className='w-0 tablet:w-[1.5rem] tablet:ml-[34.6rem]'/>
+                    </Link>
+                </div>
+
+                <div className='flex ml-[3rem] text-[0.7rem] items-center py-[0.5rem] pt-[1rem] tablet:ml-[15rem] tablet:w-[55rem] group tablet:text-[1rem] hover:bg-fundofooter'>
                     <p className='mr-[2rem] tablet:mr-[5rem]'>31/12/2022</p>
                     <Link href="/BALANCO_2022.pdf" target="_blank" className='flex items-center' >
                         <Image src={pdf} alt="" className='w-[0.9rem] mr-[0.5rem] tablet:w-[1.6rem] tablet:mr-[1rem]'/>
